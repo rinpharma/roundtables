@@ -15,7 +15,7 @@ The discussion was crowdsourced via a github discussion, and led to the
 following topics:
 
 - [What are our goals for a modern clinical reporting workflow, on a modern SCE?](/modern-sce.html)
-- [What are the risks with our increasing external business code dependencies?](/os-dependencies.html)
+- [What are the risks with our increasing external business code dependencies?](/os-depends.html)
 - [We have a path to R package validation - but what are we doing with shiny apps?](/validate-shiny.html)
 - [What is the path to an interactive CSR?](/shiny-csr.html)
 - [The case for contributing to OS](/case-os.html)
