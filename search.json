@@ -1,0 +1,202 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SCE Roundtables",
+    "section": "",
+    "text": "Scope and purpose\nThis document captures discussion, pain points and a path to next steps after the R/Pharma events of 2023. There are two events that led to this document being created.\n\n\n\n\n\n\n F2F Roundtables in Chicago\n\n\n\n~60 leaders from 40+ companies met F2F in Chicago for a series of discussions on the most pressing topics for late-stage reporting in R.\nThe discussion was crowdsourced via a github discussion, and led to the following topics:\n\nWhat are our goals for a modern clinical reporting workflow, on a modern SCE?\nWhat are the risks with our increasing external business code dependencies?\nWe have a path to R package validation - but what are we doing with shiny apps?\nWhat is the path to an interactive CSR?\nThe case for contributing to OS\nWhere are we with our people?\nWhat should we be doing to leverage advances in LLMs/AA/AI impact? (at the drug development through to developer efficiency levels)\nWhat are the barriers bringing imaging/genomics/digital biomarkers and the CRF closer?\n\n\n\n\n\n\n\n\n\n References\n\n\n\nPromotional site for round-tables R Validation Hub update Doug’s slides on the shared validated repo CAMIS - comparing differences based on tool used",
+    "crumbs": [
+      "Scope and purpose"
+    ]
+  },
+  {
+    "objectID": "definitions.html",
+    "href": "definitions.html",
+    "title": "Definitions",
+    "section": "",
+    "text": "Abbreviation\nDescription\n\n\n\n\nSCE\nStatistical/Scientific Computing Environment",
+    "crumbs": [
+      "Definitions"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html",
+    "href": "modern-sce.html",
+    "title": "1  Modern SCEs",
+    "section": "",
+    "text": "2 Topics discussed",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html#is-the-next-step-homegrown-or-vendor",
+    "href": "modern-sce.html#is-the-next-step-homegrown-or-vendor",
+    "title": "1  Modern SCEs",
+    "section": "2.1 Is the next step Homegrown or vendor",
+    "text": "2.1 Is the next step Homegrown or vendor\n\nSplit in vendor approaches (GSK, AZ) vs homegrown (Roche, J&J, Amgen) for the new generation. We don’t know what the ideal is today, but we know we need to be able to evolve and adapt to new technologies and approaches much more than we did in the past.\nHomegrown usually means modular, as still relient on different open soruce and vendor solutions (e.g. AWS, Hashicorp, etc). Is a more accurate description turnkey vs modular?\nHow to ensure our modular platform scales is an important new aspect, especially using new open source tools.\nIn a turnkey, the vendor will have baked in provenance. In a modular we must focus on making sure metadata/provenance runs as a background across the system to ensure we can trace back from an insights and transformations to the source data.\nA major pain point is how things are funded - we are not used to funding a platform for sustained evolution/innovation, but in the data science space things are constantly evolving - so moving to operations/maintenance is equilivant to decay.\n\n\n2.1.1 Relationship with informatics partners\n\nThere is often tension between informatics and the business, with the growth of business written code that looks more like software (e.g. R packages) vs the the scripts/macros we use to make. We shared experiences finding a balance as we entered this new phase.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html#what-is-an-sce",
+    "href": "modern-sce.html#what-is-an-sce",
+    "title": "1  Modern SCEs",
+    "section": "2.2 What is an SCE?",
+    "text": "2.2 What is an SCE?\n\nShould GxP and exploratory remain seperate platforms?\n\nSplit across companies in the group, with some companies having a single platform for both, and others having seperate platforms.\nWith initiatives like the digital protocol coming, we don’t know what the impact will be on routine clinical reporting (but could become further optimised)\nPain points merging:\n\nvalidation (CSV) is a long process in most companaies, which can impact ability to support exploratory work.\nNeeds are different. E.g. clinical reporting is low compute, while design and biomarker work is often heavy in memory and data.\n\n\nIs data part of the SCE? Traditionally yes, but some but not all companies are de-coupling data from compute.\nWhether it’s in the SCE or not, tracebility is uniquely important in our domain of regulatory reporting.\nIt appeared across all companies access to an SCE is now through a web-browser (not a local application)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html#building-trust-in-businessopen-source-code",
+    "href": "modern-sce.html#building-trust-in-businessopen-source-code",
+    "title": "1  Modern SCEs",
+    "section": "2.3 Building trust in business/open source code",
+    "text": "2.3 Building trust in business/open source code\n\nThe Cathedral and the Bazaar by Eric Rayman was a recomended essay to read, that talks about ‘Cathedral’ products where the code is developed in a closed environment then released, vs ‘Bazaar’ products where the code is developed in the open. An arguement is the Bazaar model, as long as it is a project with enough eyeballs, will lead to shallow bugs; this is also known as Linus’ Law.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html#change-management-into-a-modern-sce",
+    "href": "modern-sce.html#change-management-into-a-modern-sce",
+    "title": "1  Modern SCEs",
+    "section": "2.4 Change-management into a modern SCE",
+    "text": "2.4 Change-management into a modern SCE\n\nWhat are we actually building? A general data science platform? A platform optimised for clinical reporting?\n\nThese are not the same platform, and which you pick has an impact. e.g. should statisticals programmers learn git, or should we give a simple GUI for pushing code through QC and to Prod?\nThere is not a consensus about this for next-gen, with only a handful of companies expecting statistical programmers to work in the same way general data scientists.\n\nHistorically we depended on SAS, it’s data formats, and filesystems. How to build a modern SCE that doesn’t?\n\nDo we enable legacy workflows to work in the new SCE? Only new ways, or how do we find a balance to ensure business continuity while enabling innovation?\nThe human and process change management piece is massive, and SCE POs must work in tandem with statistical programming leadership.\nAgreement the biggest pain point is the dependency on filebased network share drives for data and insight outputs. One company mentioned they have millions of directories in their legacy SCE.\n\nMost companies have carried over having the outputs server be a network share drive, but would a more ‘publishing’ type model be more robust?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html#general-notes",
+    "href": "modern-sce.html#general-notes",
+    "title": "1  Modern SCEs",
+    "section": "2.5 General notes",
+    "text": "2.5 General notes\n\nWe manage on user access. A question is whether we can control access based on user access, and the intended use. In terms of both where they are working and what the context of the work is.\nWe need to rightsize our ambitions, as going to broad will slow us down.\nHow will moving to this latest generation be a positive impact on our financials? Interesting discussion putting ourselves in a CMO’s shoes - if you don’t care about how the CSR is generated, how is the new SCE making the company money?\nInteractive analysis is growing - need to prepare for when people want to use something like shiny for GxP\nThe ideal people to work on the SCEs are unicorns - they need to be able to work with the business, understand the trial processes, and be able to work with the technology. We need to be able to train people to be unicorns, and we need to be able to retain them.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "validate-shiny.html",
+    "href": "validate-shiny.html",
+    "title": "2  Validate shiny?",
+    "section": "",
+    "text": "3 Question\nWe have a path to R package validation - but what about shiny apps? In what context would validation become relevant to shiny app code, and how can we get ahead of this topic to pave a way forward for interactive CSRs?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Validate shiny?</span>"
+    ]
+  },
+  {
+    "objectID": "validate-shiny.html#do-we-need-to-validate",
+    "href": "validate-shiny.html#do-we-need-to-validate",
+    "title": "2  Validate shiny?",
+    "section": "4.1 Do we need to validate?",
+    "text": "4.1 Do we need to validate?\n\nTiered approach / decision tree\n\nLowest is made by study team for study team. 2nd level is risk is unsupervised use, or specific contexts - e.g. making an app for dosing or safety. 3rd would be shiny CSR.\nIs the results going directly from the app into a submission?\nDon’t validate a shiny app - validate the static functions in the R packages. CSV may not be relevant for UIs (vs static R packages)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Validate shiny?</span>"
+    ]
+  },
+  {
+    "objectID": "validate-shiny.html#robust-uis",
+    "href": "validate-shiny.html#robust-uis",
+    "title": "2  Validate shiny?",
+    "section": "4.2 Robust UIs?",
+    "text": "4.2 Robust UIs?\n\nGood to have unit tests - often manual testing. Automated can easily get messed up as the code evolves.\nWe should use the git flow - e.g. protect master and disable manual deployments\nShow or download R code is perfect for reproducibility → e.g. show code button\n\nBut then need to actually run that in a prod batch run\nthis use can case skip validation as code is run as study code\n\nSome cases where you don’t want to export and run code → e.g. output used directly for decision making are coming\nHow to handle risk of UI problems if our focus is on the static code - e.g. misnamed reactive values so wrong values being shown, even if static R packages giving correct results.\nRisk based is really important - e.g. for something like dark mode breaking, we need to know what requirements are high risk (e.g. table is correct) vs low risk (e.g. dark mode button)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Validate shiny?</span>"
+    ]
+  },
+  {
+    "objectID": "change-management.html",
+    "href": "change-management.html",
+    "title": "3  Change management",
+    "section": "",
+    "text": "Chairs: Matthew Kumar and Cassie Burns\n\n4 Question\nWhere are we on getting data analysts and data scientists that work with clinical data on board (in particular, those delivering CSRs and submission packages)? What are the challenges - what has been overcome?\n\n\n5 Who are our people?\nPrefaced both sessions by asking individuals to define the our in our people;\n\nStat Programmers\nStatisticians\nData Management\nOther CSR-deliverable oriented roles (e.g. medical and scientific writing)\nManagement, Leadership\n\nTheme: R Adoption and Challenges\n\nThe adoption of R requires varied types of commitment depending on the perspective of the stakeholders involved, notably management and employees.\nLeadership usually supports the adoption of R, yet, in many cases, they don’t adequately communicate or advocate its application. Common concerns include the lack of realized ROI and the perception of R as a “nice-to-have” rather than a necessity.\nIt is not viable to mandate or compel individuals to learn R.\nSeasoned programmers, who prefer proprietary software, may leave the company if forced to switch.\nThese programmers often prefer to maintain current workflows that involve proprietary tools, established macros, homegrown IDEs, etc.\nSome in management endorse an approach of “mandate” or “force,” while others aim to “encourage.”\nExperienced stat programmers cite R’s learning curve as an obstacle to transition, and some don’t see the ROI in making the switch.\n\nTheme: Change Management\n\nImplementing proper change management was emphasized by several attendees in both sessions.\nOrganically, through change management, approximately 25% of experienced statistical programmers or statisticians have successfully completed R training, while the remaining 75% have shown resistance.\nAmong the successful 25%, only 5% have applied what they’ve learned in actual study work. This is often due to time constraints related to product deliverables.\nMapping the transition to R with learning and development goals is one strategy.\nA structured learning plan and a roadmap for R upskilling are essential. This includes trainings focused on R, particularly in the context of the pharmaceutical industry, and from a proprietary software programmer’s perspective.\nIdentification of champions or early adopters among statistical programmers could aid in transitioning colleagues.\nSeveral companies shared their strategies for promoting community learning (e.g., bi-monthly meetings, presentations, assignments), both on a “just in time” basis and on a regular schedule.\nPointing individuals to ongoing efforts and resources, such as R in Pharma, PharmaVerse, Phuse, etc., can boost awareness and participation.\nGranting individuals protected or dedicated time to learn and fail is recommended. An analogy used was “giving them a safe sandbox to try making a castle.”\nR need not be used for all tasks immediately. A more measured approach, such as starting with creating figures and then moving to more complex tasks, like AdAM programming, could better build confidence and competence.\nEnsuring enough transition time and clear direction (“as of X date, we’ll work in R”) is crucial.\nHaving leadership advocacy is vital at the end of the day.\n\n\n\n6 Theme: Emerging Talent\n\nNewer talent is increasingly trained in open-source approaches and languages, with fewer exposed to proprietary tools.\nWith the rise of data science as a field of study, many are less interested in joining a company for routine implementation work; they identify as “data scientists” and have been trained in markedly different ways.\nThis affects talent attraction, development, and retention within a company.\nInnovation can come from new hires, justifying the need to foster their development and listen to their insights.\nThere’s a unique opportunity for co-mentorship: new hires (proficient in R, Python, etc.) and existing staff (experts in domain knowledge, clinical trials, etc.): how vs what/why\nThere’s a need for clear “career pathing” or “trajectories” within statistical programming as roles evolve. Examples include:\n\n “Analyst” requires traditional statistical programming knowledge and training\n“Engineer” needs DevOps skills and a systems mindset\n“Tool builder” needs a software engineering mindset\n\nGeneral trends suggest companies are demanding a secondary language in addition to proprietary software (not necessarily R), but knowledge of at least two languages indicates an individual could reasonably learn R.\n\n\n\n7 Theme: Other Points and Considerations\n\nQuestions to consider include: What kind of training will people need in the future state? How should the support be arranged to enable the future state, potentially with IT and DEV involvement?\nDue to the required skillset, statistics and programming now need to work together more than ever\nStakeholders seek the benefits of R (e.g., Shiny, Rmarkdown), but often lack personnel to build and maintain these assets.\nR and Shiny tools can be utilized in more areas beyond TLF programming such as dose decision meetings, clinical trial design, administrative tasks, and long-term-focused applications.\nLegacy infrastructure (e.g., virtual machines and proprietary software) can pose challenges when implementing newer approaches like R and Shiny, making the transition difficult and cumbersome.\nAI and GPT can be a valuable tool in transitioning to R, but won’t completely replace a programmer. It can be used to effectively explain or translate existing code or generate entirely new code.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Change management</span>"
+    ]
+  },
+  {
+    "objectID": "multi-modal.html",
+    "href": "multi-modal.html",
+    "title": "4  Multi-modal drug development",
+    "section": "",
+    "text": "Chair: Katie Igartua\n\n5 Question\nThere is more need than ever to integrate different roles, and ways of working, along with different data modalities. What are the barriers bringing imaging/genomics/digital biomarkers and the CRF closer, how could we overcome them, and what is our envisioned benefit?\n\n\n6 Topics discussed\n\nUse of real-world evidence data (RWE) for contextualizing clinical trial samples to support indication selection, patient settings and combination therapy strategies.\n\nChallenges for users arise when leveraging multiple sources (both public and licensed) given biases such as in abstraction rules or genomic assays.\nBest practices of real world evidence outcomes analyses (eg. rwPFS, rwOS).\n\nIntegration of Claims datasets and validation. Requirement for multiple lines of evidence for a given event would enrich the quality and usability of the data and bypass biases from the source of claims data.\nImaging validation frameworks. Challenges discussed include i) interpretability and adoption of deep networks models and utility relative to the gold standard (e.g. prediction vs. RESIST criteria), ii) transferability of models across different instrument platforms and iii) variability of pathologist vs. radiologist calls in the labels.\nUse of smart devices in clinical trials. Consensus was that this is more common in non-oncology areas (e.g. cardio). How can we mitigate risk of compliance in trials?\nContextualizing small patient cohorts with rich phenotype data and longitudinal data. Liquid assays for monitoring resistance mechanisms in oncology.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multi-modal drug development</span>"
+    ]
+  },
+  {
+    "objectID": "os-depends.html",
+    "href": "os-depends.html",
+    "title": "5  Depending on OS",
+    "section": "",
+    "text": "Chairs: Mike Smith & Ed Lauzier\n\n6 Question\nHow much risk is there in depending on external packages, and can we foster a clearer set of expectations between developers and people/companies that depend on these packages?\n\n\n\n\n\n\nMissing notes\n\n\n\nContent is still coming, an email will be shared once the site is complete.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Depending on OS</span>"
+    ]
+  },
+  {
+    "objectID": "shiny-csr.html",
+    "href": "shiny-csr.html",
+    "title": "6  Interactive CSR",
+    "section": "",
+    "text": "Chairs: Ning Leng and Phil Bowsher\n\n7 Question\nIf we assume it’s technically possible to transfer - what would it mean to give an interactive CSR? How would primary, secondary and ad-hoc analysis be viewed? Would views change depending on role (e.g. sponsor, statistical reviewer, clinical reviewer)?\n\n\n\n\n\n\nMissing notes\n\n\n\nContent is still coming, an email will be shared once the site is complete.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Interactive CSR</span>"
+    ]
+  },
+  {
+    "objectID": "case-os.html",
+    "href": "case-os.html",
+    "title": "7  The case for OS",
+    "section": "",
+    "text": "Chairs: Satish Murphy & Becca Krouse\n\n8 Question\nWhat is stopping people and companies from contributions in OS? Can we define the case for contributing to OS?\n\n\n\n\n\n\nMissing notes\n\n\n\nContent is still coming, an email will be shared once the site is complete.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+    ]
+  },
+  {
+    "objectID": "contributors.html#round-table-advisory-board",
+    "href": "contributors.html#round-table-advisory-board",
+    "title": "8  Contributors",
+    "section": "8.1 Round table advisory board",
+    "text": "8.1 Round table advisory board\nOrdered alphabetically by company;\n\nCassie Milmont; Amgen\nLee Min; Amgen\nMichael Blanks, R/Pharma executive; Beigene\nNing Leng, R/Pharma organizing committee; Genentech\nDoug Kehlkoff, R Validation Hub Lead; Genentech\nMichael Rimler; GSK\nAndy Nicholls; GSK\nVolha Tryputsen, R/Pharma organizing committee; J&J\nSumesh Kalappurakal; J&J\nMark Bynens; J&J\nHarvey Lieberman, R/Pharma executive; Novartis\nShannon Pileggi; The Prostate Cancer Clinical Trials Consortium (PCCTC)\nMike Smith; Pfizer\nMax Kuhn; Posit\nRich Ioannone; Posit\nPaulo Bargo, R/Pharma executive\nJames Black, R/Pharma executive; Roche",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Contributors</span>"
+    ]
+  },
+  {
+    "objectID": "contributors.html#participants",
+    "href": "contributors.html#participants",
+    "title": "8  Contributors",
+    "section": "8.2 Participants",
+    "text": "8.2 Participants\nOrdered alphabetically by company;\n\nRose (Abbot Labs)\nMike (Astellas)\nLimin (Atmos)\nDaniel (Astrazeneca)\nKevin (BI)\nMathias (BI)\nEric (Biogen)\nMary (BMS)\nNicole (Denali)\nMike Thomas (Flatiron Health)\nDaniel (Formycin)\nSatish Murphy (Johnson & Johnson)\nNick (Johnson & Johnson)\nJan (Moffat Cancer Centre)\nHarvey (Novartis)\nLi (Onc)\nJames Kim (Pfizer)\nMike (Pfizer)\nMichael Meyer (Posit)\nDoug (Roche)\nJeeva (Roche)\nJames Black (Roche)\nAndrew (Sanofi)\nAbigail (Tempest)\nSusheel (Vertex)\nDerek (WL Gore)",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Contributors</span>"
+    ]
+  },
+  {
+    "objectID": "contributors.html#organising-committee",
+    "href": "contributors.html#organising-committee",
+    "title": "8  Contributors",
+    "section": "8.3 Organising committee",
+    "text": "8.3 Organising committee\n\nPhil Bowsher, R/Pharma executive; Posit\nJames Black, R/Pharma executive; Roche\nHarvey Lieberman, R/Pharma executive; Novartis",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Contributors</span>"
+    ]
+  },
+  {
+    "objectID": "contributors.html#advisory-board",
+    "href": "contributors.html#advisory-board",
+    "title": "8  Contributors",
+    "section": "8.4 Advisory board",
+    "text": "8.4 Advisory board\n\nCassie Milmont; Amgen\nLee Min; Amgen\nMichael Blanks, R/Pharma executive; Beigene\nNing Leng, R/Pharma organizing committee; Genentech\nDoug Kehlkoff, R Validation Hub Lead; Genentech\nMichael Rimler; GSK\nAndy Nicholls; GSK\nVolha Tryputsen, R/Pharma organizing committee; J&J\nSumesh Kalappurakal; J&J\nMark Bynens; J&J\nHarvey Lieberman, R/Pharma executive; Novartis\nShannon Pileggi; The Prostate Cancer Clinical Trials Consortium (PCCTC)\nMike Smith; Pfizer\nMax Kuhn; Posit\nRich Ioannone; Posit\nPaulo Bargo, R/Pharma executive\nJames Black, R/Pharma executive; Roche",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Contributors</span>"
+    ]
+  }
+]
