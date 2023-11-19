@@ -17,11 +17,11 @@ following topics:
 - [What are our goals for a modern clinical reporting workflow, on a modern SCE?](/modern-sce.html)
 - [What are the risks with our increasing external business code dependencies?](/os-dependencies.html)
 - [We have a path to R package validation - but what are we doing with shiny apps?](/validate-shiny.html)
-- What is the path to an interactive CSR?
-- The case for contributing to OS
-- Where are we with our people?
-- What should we be doing to leverage advances in LLMs/AA/AI impact? (at the drug development through to developer efficiency levels)
-- What are the barriers bringing imaging/genomics/digital biomarkers and the CRF closer?
+- [What is the path to an interactive CSR?](/shiny-csr.html)
+- [The case for contributing to OS](/case-os.html)
+- [Where are we with our people?](/change-management.html)
+- [What should we be doing to leverage advances in LLMs/AA/AI impact? (at the drug development through to developer efficiency levels)](/llms.html)
+- [What are the barriers bringing imaging/genomics/digital biomarkers and the CRF closer?](/multi-modal.html)
 
 :::
 
