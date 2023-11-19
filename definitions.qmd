@@ -1,0 +1,6 @@
+# Definitions {.unnumbered}
+
+| **Abbreviation** | **Description** |
+| ---------------- | ----------------|
+| SCE | Statistical/Scientific Computing Environment |
+

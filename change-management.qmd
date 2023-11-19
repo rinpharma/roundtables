@@ -1,0 +1,92 @@
+# Change management
+
+Chairs: Matthew Kumar and Cassie Burns
+
+# Question
+
+Where are we on getting data analysts and data scientists that work with clinical data on board (in particular, those delivering CSRs and submission packages)? What are the challenges - what has been overcome?
+
+# Who are our people?
+
+Prefaced both sessions by asking individuals to define the *our* in *our people*;
+
+- Stat Programmers
+- Statisticians
+- Data Management
+- Other CSR-deliverable oriented roles (e.g. medical and scientific writing)
+- Management, Leadership
+
+**Theme: R Adoption and Challenges**
+
+- The adoption of R requires varied types of commitment depending on the perspective of the stakeholders involved, notably management and employees.
+
+- Leadership usually supports the adoption of R, yet, in many cases, they don't adequately communicate or advocate its application. Common concerns include the lack of realized ROI and the perception of R as a "nice-to-have" rather than a necessity.
+
+- It is not viable to mandate or compel individuals to learn R.
+
+- Seasoned programmers, who prefer proprietary software, may leave the company if forced to switch.
+
+- These programmers often prefer to maintain current workflows that involve proprietary tools, established macros, homegrown IDEs, etc.
+
+- Some in management endorse an approach of “mandate” or “force,” while others aim to “encourage.”
+
+- Experienced stat programmers cite R's learning curve as an obstacle to transition, and some don't see the ROI in making the switch.
+
+**Theme: Change Management**
+
+- Implementing proper change management was emphasized by several attendees in both sessions.
+
+- Organically, through change management, approximately 25% of experienced statistical programmers or statisticians have successfully completed R training, while the remaining 75% have shown resistance.
+
+- Among the successful 25%, only 5% have applied what they've learned in actual study work. This is often due to time constraints related to product deliverables.
+
+- Mapping the transition to R with learning and development goals is one strategy.
+
+- A structured learning plan and a roadmap for R upskilling are essential. This includes trainings focused on R, particularly in the context of the pharmaceutical industry, and from a proprietary software programmer's perspective.
+
+- Identification of champions or early adopters among statistical programmers could aid in transitioning colleagues.
+
+- Several companies shared their strategies for promoting community learning (e.g., bi-monthly meetings, presentations, assignments), both on a "just in time" basis and on a regular schedule.
+
+- Pointing individuals to ongoing efforts and resources, such as R in Pharma, PharmaVerse, Phuse, etc., can boost awareness and participation.
+
+- Granting individuals protected or dedicated time to learn and fail is recommended. An analogy used was "giving them a safe sandbox to try making a castle."
+
+- R need not be used for all tasks immediately. A more measured approach, such as starting with creating figures and then moving to more complex tasks, like AdAM programming, could better build confidence and competence.
+
+- Ensuring enough transition time and clear direction ("as of X date, we’ll work in R") is crucial.
+
+- Having leadership advocacy is vital at the end of the day.
+
+# Theme: Emerging Talent
+
+- Newer talent is increasingly trained in open-source approaches and languages, with fewer exposed to proprietary tools.
+
+- With the rise of data science as a field of study, many are less interested in joining a company for routine implementation work; they identify as “data scientists” and have been trained in markedly different ways.
+
+- This affects talent attraction, development, and retention within a company.
+
+- Innovation can come from new hires, justifying the need to foster their development and listen to their insights.
+
+- There's a unique opportunity for co-mentorship: new hires (proficient in R, Python, etc.) and existing staff (experts in domain knowledge, clinical trials, etc.): *how vs what/why*
+
+- There's a need for clear "career pathing" or "trajectories" within statistical programming as roles evolve. Examples include:
+    -  "Analyst" requires traditional statistical programming knowledge and training
+    - "Engineer" needs DevOps skills and a systems mindset
+    - "Tool builder” needs a software engineering mindset
+
+- General trends suggest companies are demanding a secondary language in addition to proprietary software (not necessarily R), but knowledge of at least two languages indicates an individual could reasonably learn R.
+
+# Theme: Other Points and Considerations
+
+- Questions to consider include: *What kind of training will people need in the future state?* *How should the support be arranged to enable the future state, potentially with IT and DEV involvement?*
+
+- Due to the required skillset, statistics and programming now need to work together more than ever
+
+- Stakeholders seek the benefits of R (e.g., Shiny, Rmarkdown), but often lack personnel to build and maintain these assets.
+
+- R and Shiny tools can be utilized in more areas beyond TLF programming such as dose decision meetings, clinical trial design, administrative tasks, and long-term-focused applications.
+
+- Legacy infrastructure (e.g., virtual machines and proprietary software) can pose challenges when implementing newer approaches like R and Shiny, making the transition difficult and cumbersome.
+
+- AI and GPT can be a valuable tool in transitioning to R, but won’t completely replace a programmer. It can be used to effectively explain or translate existing code or generate entirely new code.

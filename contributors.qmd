@@ -1,0 +1,64 @@
+# Contributors
+
+## Round table advisory board
+
+Ordered alphabetically by company;
+
+- Cassie Milmont; Amgen
+- Lee Min; Amgen
+- Michael Blanks, R/Pharma executive; Beigene
+- Ning Leng, R/Pharma organizing committee; Genentech
+- Doug Kehlkoff, R Validation Hub Lead; Genentech
+- Michael Rimler; GSK
+- Andy Nicholls; GSK
+- Volha Tryputsen, R/Pharma organizing committee; J&J
+- Sumesh Kalappurakal; J&J
+- Mark Bynens; J&J
+- Harvey Lieberman, R/Pharma executive; Novartis
+- Shannon Pileggi; The Prostate Cancer Clinical Trials Consortium (PCCTC)
+- Mike Smith; Pfizer
+- Max Kuhn; Posit
+- Rich Ioannone; Posit
+- Paulo Bargo, R/Pharma executive
+- James Black, R/Pharma executive; Roche
+
+## Participants
+
+Ordered alphabetically by company;
+
+- Rose (Abbot Labs)
+- Mike (Astellas)
+- Limin (Atmos)
+- Daniel (Astrazeneca)
+- Kevin (BI)
+- Mathias (BI)
+- Eric (Biogen)
+- Mary (BMS)
+- Nicole (Denali)
+- Mike Thomas (Flatiron Health)
+- Daniel (Formycin)
+- Satish Murphy (Johnson & Johnson)
+- Nick (Johnson & Johnson)
+- Jan (Moffat Cancer Centre)
+- Harvey (Novartis)
+- Li (Onc)
+- James Kim (Pfizer)
+- Mike (Pfizer)
+- Michael Meyer (Posit)
+- Doug (Roche)
+- Jeeva (Roche)
+- James Black (Roche)
+- Andrew (Sanofi)
+- Abigail (Tempest)
+- Susheel (Vertex)
+- Derek (WL Gore)
+
+
+ 
+
+## Organising committee
+
+- Phil Bowsher, R/Pharma executive; Posit
+- James Black, R/Pharma executive; Roche
+- Harvey Lieberman, R/Pharma executive; Novartis
+

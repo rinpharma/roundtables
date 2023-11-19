@@ -1,0 +1,21 @@
+# Multi-modal drug development
+
+Chair: Katie Igartua
+
+# Question
+
+There is more need than ever to integrate different roles, and ways of working, along with different data modalities. What are the barriers bringing imaging/genomics/digital biomarkers and the CRF closer, how could we overcome them, and what is our envisioned benefit?
+
+# Topics discussed
+
+1. Use of real-world evidence data (RWE) for contextualizing clinical trial samples to support indication selection, patient settings and combination therapy strategies. 
+    - Challenges for users arise when leveraging multiple sources (both public and licensed) given biases such as in abstraction rules or genomic assays.
+    - Best practices of real world evidence outcomes analyses (eg. rwPFS, rwOS).
+
+1. Integration of Claims datasets and validation. Requirement for multiple lines of evidence for a given event would enrich the quality and usability of the data and bypass biases from the source of claims data. 
+
+1. Imaging validation frameworks.  Challenges discussed include i) interpretability and adoption of deep networks models and utility relative to the gold standard (e.g. prediction vs. RESIST criteria), ii) transferability of models across different instrument platforms and iii) variability of pathologist vs. radiologist calls in the labels. 
+
+1. Use of smart devices in clinical trials. Consensus was that this is more common in non-oncology areas (e.g. cardio). How can we mitigate risk of compliance in trials?
+
+1. Contextualizing small patient cohorts with rich phenotype data and longitudinal data. Liquid assays for monitoring resistance mechanisms in oncology.

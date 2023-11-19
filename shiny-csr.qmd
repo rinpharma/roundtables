@@ -1,0 +1,15 @@
+# Interactive CSR
+
+Chairs: Ning Leng and Phil Bowsher
+
+# Question
+
+If we assume it's technically possible to transfer - what would it mean to give an interactive CSR? How would primary, secondary and ad-hoc analysis be viewed? Would views change depending on role (e.g. sponsor, statistical reviewer, clinical reviewer)?
+
+::: {.callout-warning}
+
+## Missing notes
+
+Content is still coming, an email will be shared once the site is complete.
+
+:::

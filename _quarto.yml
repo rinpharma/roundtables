@@ -1,17 +1,48 @@
 project:
-  type: manuscript
+  type: book
+  render:
+    - "*.qmd"
+    - "!slides/" # do not render slides folder
+  output-dir: _rendered
 
-execute:
-  freeze: auto
+book:
+  title: "SCE Roundtables"
+  subtitle: "A forum for Scientific Computing Environment product owners"
+  edition: "DRAFT"
+  author: "R/Pharma contributors"
+  repo-url: https://github.com/rinpharma/sce-round-table
+  #date: "2/2/2023"
+  abstract: "This document captures discussions across R/Pharma in 2023"
+  sharing: [twitter, facebook]
+  downloads: [pdf, docx]
+  sidebar:
+    search: true
+    logo: assets/logo.png
+  chapters:
+    - index.qmd
+    - definitions.qmd
+    - modern-sce.qmd
+    - validate-shiny.qmd
+    - change-management.qmd
+    - multi-modal.qmd
+    - os-depends.qmd
+    - shiny-csr.qmd
+    - case-os.qmd
+    - contributors.qmd
+    - references.qmd
+
+csl: jama.csl
+bibliography: references.bib
 
 format:
   html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+  docx:
     toc: true
-    comments:
-      hypothesis: true
-  docx: default
-  jats: default
-  agu-pdf: default
+    number-sections: true
+    highlight-style: github
 
 
 

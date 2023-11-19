@@ -1,0 +1,15 @@
+# Depending on OS
+
+Chairs: Mike Smith & Ed Lauzier
+
+# Question
+
+How much risk is there in depending on external packages, and can we foster a clearer set of expectations between developers and people/companies that depend on these packages?
+
+::: {.callout-warning}
+
+## Missing notes
+
+Content is still coming, an email will be shared once the site is complete.
+
+:::

@@ -1,0 +1,15 @@
+# The case for OS
+
+Chairs: Satish Murphy & Becca Krouse
+
+# Question
+
+What is stopping people and companies from contributions in OS? Can we define the case for contributing to OS?
+
+::: {.callout-warning}
+
+## Missing notes
+
+Content is still coming, an email will be shared once the site is complete.
+
+:::

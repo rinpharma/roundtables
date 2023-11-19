@@ -1,0 +1,15 @@
+# LLMs/AA/AI opportunities?
+
+Chairs: Paulo Bargo & Ning Leng
+
+# Question
+
+What should we be doing to leverage advances in LLMs/AA/AI impact? (at the drug development through to developer efficiency levels)
+
+::: {.callout-warning}
+
+## Missing notes
+
+Content is still coming, an email will be shared once the site is complete.
+
+:::

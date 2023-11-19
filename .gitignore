@@ -8,3 +8,7 @@
 /trackchanges.sty
 
 /.luarc.json
+
+_rendered
+
+.DS_Store

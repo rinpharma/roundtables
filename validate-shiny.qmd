@@ -1,0 +1,38 @@
+# Validate shiny?
+
+Chairs: James Black and Harvey Lieberman
+
+# Question
+
+We have a path to R package validation - but what about shiny apps? In what context would validation become relevant to shiny app code, and how can we get ahead of this topic to pave a way forward for interactive CSRs?
+
+# Topics discussed
+
+## Do we need to validate?
+
+- Tiered approach / decision tree
+    - Lowest is made by study team for study team. 2nd level is risk is unsupervised use, or specific contexts - e.g. making an app for dosing or safety. 3rd would be shiny CSR.
+    - Is the results going directly from the app into a submission?
+    - Don’t validate a shiny app - validate the static functions in the R packages. CSV may not be relevant for UIs (vs static R packages)
+
+## Robust UIs?
+
+- Good to have unit tests - often manual testing. Automated can easily get messed up as the code evolves.
+- We should use the git flow - e.g. protect master and disable manual deployments
+- Show or download R code is perfect for reproducibility → e.g. show code button
+    - But then need to actually run that in a prod batch run
+    - this use can case skip validation as code is run as study code
+- Some cases where you don’t want to export and run code → e.g. output used directly for decision making are coming
+- How to handle risk of UI problems if our focus is on the static code - e.g. misnamed reactive values so wrong values being shown, even if static R packages giving correct results.
+- Risk based is really important - e.g. for something like dark mode breaking, we need to know what requirements are high risk (e.g. table is correct) vs low risk (e.g. dark mode button)
+
+# Actions
+
+::: {.callout-note icon=false}
+
+# {{< fa list-check >}} 
+
+- Can we share some common high level guidance on stratifying risk in shiny shared across companies? (Pfizer has written this already internally). 
+- Discuss if we should have an extension of R package whitepaper to cover shiny?
+
+:::
