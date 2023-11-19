@@ -62,3 +62,22 @@ Ordered alphabetically by company;
 - James Black, R/Pharma executive; Roche
 - Harvey Lieberman, R/Pharma executive; Novartis
 
+## Advisory board
+
+- Cassie Milmont; Amgen
+- Lee Min; Amgen
+- Michael Blanks, R/Pharma executive; Beigene
+- Ning Leng, R/Pharma organizing committee; Genentech
+- Doug Kehlkoff, R Validation Hub Lead; Genentech
+- Michael Rimler; GSK
+- Andy Nicholls; GSK
+- Volha Tryputsen, R/Pharma organizing committee; J&J
+- Sumesh Kalappurakal; J&J
+- Mark Bynens; J&J
+- Harvey Lieberman, R/Pharma executive; Novartis
+- Shannon Pileggi; The Prostate Cancer Clinical Trials Consortium (PCCTC)
+- Mike Smith; Pfizer
+- Max Kuhn; Posit
+- Rich Ioannone; Posit
+- Paulo Bargo, R/Pharma executive
+- James Black, R/Pharma executive; Roche

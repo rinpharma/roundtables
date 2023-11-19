@@ -30,7 +30,7 @@ We have a path to R package validation - but what about shiny apps? In what cont
 
 ::: {.callout-note icon=false}
 
-# {{< fa list-check >}} 
+# {{< fa list >}} 
 
 - Can we share some common high level guidance on stratifying risk in shiny shared across companies? (Pfizer has written this already internally). 
 - Discuss if we should have an extension of R package whitepaper to cover shiny?

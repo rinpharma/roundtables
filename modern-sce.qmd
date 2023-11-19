@@ -57,7 +57,7 @@ Chairs: James Black and Satish Murphy
 
 ::: {.callout-note icon=false}
 
-# {{< fa list-check >}} 
+# {{< fa list >}} 
 
 - Can we have a learning series / discussion / panel on experience using a designing git flows
 - What are companies experiences across the diverse scopes we've placed onto SCEs - need to share more here.

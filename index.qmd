@@ -27,10 +27,14 @@ following topics:
 
 ::: {.callout-note icon=false}
 
-## {{< fa person-chalkboard >}} References
+## {{< fa graduation-cap >}} References
+
+[Promotional site for round-tables](https://rinpharma.github.io/positconf-roundtables-2023/)
 
 [R Validation Hub update](https://pharmar.github.io/events-rpharma2023/)
+
 [Doug's slides on the shared validated repo](https://pharmar.github.io/events-positconf2023/#/title-slide)
+
 [CAMIS - comparing differences based on tool used](https://psiaims.github.io/CAMIS/)
 
 :::
