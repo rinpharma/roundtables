@@ -41,4 +41,10 @@ Can commenting be possible (as you can markup a PDF/work doc)?
 
 Existing frameworks exist - e.g. `teal` from NEST. ARDs may mean additional results can be pre-generated in a controlled way - but ARDs can't further process data.
 
+# Resources
+
+Eric Nantz, from the R Submissions working group, [which have been working with the FDA on a shiny submisson as part of pilot 2](https://rconsortium.github.io/submissions-wg/pilot2.html):
+
+{{ video https://www.youtube.com/embed/5TEpJruIm-Y?si=-B8yoFhrPKGw_8CP }}
+
 
