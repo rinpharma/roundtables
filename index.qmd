@@ -37,4 +37,6 @@ following topics:
 
 [CAMIS - comparing differences based on tool used](https://psiaims.github.io/CAMIS/)
 
+[PHUSE Open Source guidance](https://phuse-org.github.io/E2E-OS-Guidance/)
+
 :::

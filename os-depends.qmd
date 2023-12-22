@@ -12,4 +12,6 @@ How much risk is there in depending on external packages, and can we foster a cl
 
 Content is still coming, an email will be shared once the site is complete.
 
+In the interim - the [PHUSE Open Source guidance includes a chapter on  depending on Open Source](https://phuse-org.github.io/E2E-OS-Guidance/using.html).
+
 :::

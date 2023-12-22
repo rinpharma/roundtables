@@ -15,6 +15,34 @@ We have a path to R package validation - but what about shiny apps? In what cont
     - Is the results going directly from the app into a submission?
     - Don’t validate a shiny app - validate the static functions in the R packages. CSV may not be relevant for UIs (vs static R packages)
 
+## What are we Testing and Why?
+
+There is a clear difference of opinion throughout the industry, often led by quality groups.  Some companies validate shiny apps as if they were distinct pieces of software, using their internal software validation procedures.  These processes are often outdated and unsuitable, requiring timestamped user-testing and screen captures.
+
+Other companies solely consider packages, not even validating shiny apps, but validating just the logic. The group discussed a preferred way of working – separating the logic and the UI.
+
+This brings up the question – **do we really need to validate shiny apps?  Can we just validate the logic?**
+
+## Who Does the Testing?
+
+Again, there is some difference between companies in who does the testing.  Generally, the developer writes the tests but tests are performed either by the business or by the quality group.
+
+## Use of Automation
+
+Question posed to people present around the table: Does your company’s validation system allow for automation?  Answers from the table: 8 companies = yes, 2 companies = no.  Another 4 companies = no (offered by consultant who works with Pharma companies).  Clearly a range of capabilities across the industry.
+
+From an automation perspective, the Pharma industry is very far behind the technology industry.  Technology codebases tend to be far more complex but they are also automated.  Can we learn from their platforms and apply their processes to validating shiny apps?
+Tools such as {shinytest2} are daunting to use.  Can they be made more user friendly?  There have been some steps to help automate these tasks – eg {shinyvalidator} but more work is needed in this area.
+
+It’s very challenging to validate a reactive graph.  Automated processes have the ability to detect changes in a single pixel – is this desirable or undesirable?
+
+## Types of Testing
+
+There is a clear difference across companies in opinions as to the amount of unit testing vs UAT and end-user testing.  Unit tests are easy to write but are do not demonstrate how an app works.  {shinytest2} can be used for end-user testing but, as mentioned above, may be daunting to use, may not be acceptable within a quality organization and may not fit in current work practices.
+
+Unit tests are generally written as code is written.  They are fast to write and fast to execute.  End-to-end tests, however, are written once code is complete and tend to be slow to execute.
+
+
 ## Robust UIs?
 
 - Good to have unit tests - often manual testing. Automated can easily get messed up as the code evolves.
@@ -26,13 +54,31 @@ We have a path to R package validation - but what about shiny apps? In what cont
 - How to handle risk of UI problems if our focus is on the static code - e.g. misnamed reactive values so wrong values being shown, even if static R packages giving correct results.
 - Risk based is really important - e.g. for something like dark mode breaking, we need to know what requirements are high risk (e.g. table is correct) vs low risk (e.g. dark mode button)
 
+# Ideas to improve the process 
+
+- Validation tests as text files (ATDD/BDD from software engineering).  
+- Frame in [Gherkin format](https://www.guru99.com/gherkin-test-cucumber.html) plus package of fixtures
+- Contribute test code to public packages
+- When companies write extra tests, make a PR to add them to the actual package test suite and get others in the community to review and comment
+- Extend to more than tests – documentation, etc.
+- We need clarity around packages used in submissions.
+- Would big Pharma be willing to list all packages that pass their internal risk-assessment and share?  Also share why they pass/fail a risk-assessment?
+- Validating shiny apps – can we share some cross-industry experience?
+- QA vs validation.  At what stage should I worry about validation?
+    - Can we talk to QA departments / QA senior leadership to get them to write up their thoughts / requirements?  Ask “How can we make your job easier?”  
+- Should we include QA and more IT at next year’s summit?
+
 # Actions
+
+- Can we share some common high level guidance on stratifying risk in shiny shared across companies? (Pfizer has written this already internally). 
+- Discuss if we should have an extension of R package whitepaper to cover shiny?
 
 ::: {.callout-note icon=false}
 
 # {{< fa list >}} 
 
-- Can we share some common high level guidance on stratifying risk in shiny shared across companies? (Pfizer has written this already internally). 
-- Discuss if we should have an extension of R package whitepaper to cover shiny?
+- Establish a CSR working group (first talk to Shiny submissions working group to establish overlap?)
 
 :::
+
+

@@ -27,7 +27,7 @@ What are our goals for a modern clinical reporting workflow, on a modern SCE? Wh
     - Split across companies in the group, with some companies having a single platform for both, and others having seperate platforms.
     - With initiatives like the digital protocol coming, we don't know what the impact will be on routine clinical reporting, and what impacts this will have on the types of people and tasks needed to execute a CSR.
     - Pain points merging:
-        - Validation (CSV) is a long and high cost process in most companaies, which can impact ability to support exploratory work.
+        - Validation (CSV) is a long and high cost process in most companies, which can impact ability to support exploratory work.
         - Needs are different. E.g. clinical reporting is low compute, while design and biomarker work is often heavy in memory and data.
 - Is data part of the SCE? Traditionally yes, but some but not all companies are de-coupling data from compute.
 - Whether it's in the SCE or not, tracebility is extra important in our domain of regulatory reporting.
@@ -40,10 +40,10 @@ What are our goals for a modern clinical reporting workflow, on a modern SCE? Wh
 ## Change-management into a modern SCE
 
 - What are we actually building? A general data science platform? A platform optimised for clinical reporting?
-    - These are not the same platform, and which you pick has an impact. e.g. should statisticals programmers learn git, or should we give a simple GUI for pushing code through QC and to Prod?
+    - These are not the same platform, and which you pick has an impact. e.g. should statistical programmers learn git, or should we give a simple GUI for pushing code through QC and to Prod?
     - There is not a consensus about this for next-gen, with only a handful of companies expecting statistical programmers to work in the same way as general data scientists.
 - Historically we depended on SAS, it's data formats, and filesystems. How to build a modern SCE that doesn't?
-    - 1) Do we enable legacy workflows to work in the new SCE? 2) Only new ways, or 3) how do we find a balance to ensure business continuity while enabling innovation?
+    - Do we enable legacy workflows to work in the new SCE?; Only new ways; or  how do we find a balance to ensure business continuity while enabling innovation?
     - The human and process change management piece is massive, and SCE POs must work in tandem with statistical programming leadership.
     - Agreement the biggest pain point is the dependency on file-based network share drives for data and insight outputs. One company mentioned they have millions of directories in their legacy SCE.
 - Most companies have carried over having the outputs server be a network share drive, but would a more 'publishing' type model be more robust?

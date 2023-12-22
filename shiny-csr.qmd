@@ -6,10 +6,39 @@ Chairs: Ning Leng and Phil Bowsher
 
 If we assume it's technically possible to transfer - what would it mean to give an interactive CSR? How would primary, secondary and ad-hoc analysis be viewed? Would views change depending on role (e.g. sponsor, statistical reviewer, clinical reviewer)?
 
-::: {.callout-warning}
+# Why?
 
-## Missing notes
+The current process of CSR generation and review involves generating large amounts of tables and plots. In such scenarios, we believe an interactive application would provide a more efficient method to explore both primary and secondary analysis results. 
 
-Content is still coming, an email will be shared once the site is complete.
+# Barriers
 
-:::
+- Internally
+    - Most companies have a highly process driven to medical writing, where any change is difficult to implement
+- External / FDA
+    - Concern of encouraging data fishing, if controls on for instance subgroup analysis are not in place?
+    - Need cross industry harmonization as HA is highly unlikely to accept each pharma company submitting an interactive CSR based on a different framework
+
+# Requirements
+
+- Can an interactive CSR by default be limited to only analyses defined in the SAP, should/can exploring a wider scope be allowed with clear and explicit intent by the app user?
+  - How is the ROI of interactivity in a CSR impacted if it's limited to produce only pre-specified anlayses? Would different reviewers have different access? (e.g. statisticla vs clinical) 
+- There is a gap in patient profile modules and patient narratives in shiny apps
+
+# Path to the CSR
+
+There are many places where this tooling can be applied before the CSR:
+
+- Monitoring
+- Decision making - data in clinical science hands
+- Efficiency boost (e.g. at unblinding app is on hand)
+- CSR
+
+Can we define the tangible benefits? What is the ROI over different use cases? Could this allow health authorities to make less requests? How does this lead to faster reviews in tangible terms?
+
+How would access control and security work? How would this be audited? Would this be validated? How would results be archived?
+
+Can commenting be possible (as you can markup a PDF/work doc)?
+
+Existing frameworks exist - e.g. `teal` from NEST. ARDs may mean additional results can be pre-generated in a controlled way - but ARDs can't further process data.
+
+

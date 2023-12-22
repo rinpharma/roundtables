@@ -2,5 +2,7 @@
 
 | **Abbreviation** | **Description** |
 | ---------------- | ----------------|
+| CSR | Clinical Study Report |
 | SCE | Statistical/Scientific Computing Environment |
+| OS | Open Source |
 

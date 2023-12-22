@@ -6,10 +6,38 @@ Chairs: Satish Murphy & Becca Krouse
 
 What is stopping people and companies from contributions in OS? Can we define the case for contributing to OS?
 
-::: {.callout-warning}
+# Main concerns
 
-## Missing notes
+## Licencing
 
-Content is still coming, an email will be shared once the site is complete.
+- R's core is released on a copyleft GPL license, so there are concerns around any additions we make being required to publish back to the community. This is a concern for companies that are not in the business of selling software, but rather use software as a tool to do their business.
+- Python is seen as less of risk, as it is released via permissive licence
+- Is there really a legal risk for copy-left licences, and if so under what circumstances? (e.g. using it internally for a plot vs making and selling an app or algorithm that uses the copyleft dependency)
+- Can we understand better how IP is protected in OS?
 
-:::
+## Process
+
+- When using an internal package in a filing, we can package it directly as part of the study code and give to the FDA - which is seen as less of a risk than publishing it as OS where the global community can view the code.
+- Folks often want to contribute - but there are some limitations both professionally (e.g. internal process to contribute) and personally
+- If someone works on a project in their own time, there is a concern that treated is a company asset even though they are doing it outside of working hours. What is the actual boundary between work and personal contributions?
+- People making the policies need to actually understand the topic of OS
+
+## Liability
+
+- We know the liability is similar between OS and proprietary software, but there is a perception that all OS is more risky
+
+## People
+
+- OS contributions are seen as nice to have - how can this be prioritised vs project work?
+- Be involved in projects like Oak, NEST and admiral brings recognition to the contributors 
+- Often projects are mostly driven by a handful, or even a couple, of people. What if someone leaves? Is OS actually a benefit here as same developer could promote and lead to use of the package at their new company?
+- Write up a short post / article titled “Here’s why you should allow your people to contribute to open source”
+- Write a blog post and short PDF that can be shared internally at the leadership level
+
+## Resources
+
+- [PHUSE Open Source guidance](https://phuse-org.github.io/E2E-OS-Guidance/slides/eu23)
+
+## What can we do?
+
+- Create a framework to help articulate the benefit, and help to tackle the concerns/process that gets in the way
