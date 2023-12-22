@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.506">
+<meta name="generator" content="quarto-1.4.533">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SCE Roundtables - 1&nbsp; Modern SCEs</title>
+<title>R/Pharma round tables - 1&nbsp; Modern SCEs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,6 +64,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -100,20 +101,20 @@ ul.task-list li input[type="checkbox"] {
       <img src="./assets/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">SCE Roundtables</a> 
+      <a href="./">R/Pharma round tables</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/rinpharma/sce-round-table" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./SCE-Roundtables.pdf">
+            <a class="dropdown-item sidebar-tools-main-item" href="./R-Pharma-round-tables.pdf">
               <i class="bi bi-bi-file-pdf pe-1"></i>
             Download PDF
             </a>
           </li>
           <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./SCE-Roundtables.docx">
+            <a class="dropdown-item sidebar-tools-main-item" href="./R-Pharma-round-tables.docx">
               <i class="bi bi-bi-file-word pe-1"></i>
             Download Docx
             </a>
@@ -236,6 +237,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#general-notes" id="toc-general-notes" class="nav-link" data-scroll-target="#general-notes"><span class="header-section-number">3.5</span> General notes</a></li>
   </ul></li>
   <li><a href="#actions" id="toc-actions" class="nav-link" data-scroll-target="#actions"><span class="header-section-number">4</span> Actions</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources"><span class="header-section-number">5</span> Resources</a></li>
   </ul>
 </nav>
     </div>
@@ -294,7 +296,7 @@ ul.task-list li input[type="checkbox"] {
 <li>With initiatives like the digital protocol coming, we don’t know what the impact will be on routine clinical reporting, and what impacts this will have on the types of people and tasks needed to execute a CSR.</li>
 <li>Pain points merging:
 <ul>
-<li>Validation (CSV) is a long and high cost process in most companaies, which can impact ability to support exploratory work.</li>
+<li>Validation (CSV) is a long and high cost process in most companies, which can impact ability to support exploratory work.</li>
 <li>Needs are different. E.g. clinical reporting is low compute, while design and biomarker work is often heavy in memory and data.</li>
 </ul></li>
 </ul></li>
@@ -314,14 +316,12 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>What are we actually building? A general data science platform? A platform optimised for clinical reporting?
 <ul>
-<li>These are not the same platform, and which you pick has an impact. e.g.&nbsp;should statisticals programmers learn git, or should we give a simple GUI for pushing code through QC and to Prod?</li>
+<li>These are not the same platform, and which you pick has an impact. e.g.&nbsp;should statistical programmers learn git, or should we give a simple GUI for pushing code through QC and to Prod?</li>
 <li>There is not a consensus about this for next-gen, with only a handful of companies expecting statistical programmers to work in the same way as general data scientists.</li>
 </ul></li>
 <li>Historically we depended on SAS, it’s data formats, and filesystems. How to build a modern SCE that doesn’t?
 <ul>
-<li><ol type="1">
-<li>Do we enable legacy workflows to work in the new SCE? 2) Only new ways, or 3) how do we find a balance to ensure business continuity while enabling innovation?</li>
-</ol></li>
+<li>Do we enable legacy workflows to work in the new SCE?; Only new ways; or how do we find a balance to ensure business continuity while enabling innovation?</li>
 <li>The human and process change management piece is massive, and SCE POs must work in tandem with statistical programming leadership.</li>
 <li>Agreement the biggest pain point is the dependency on file-based network share drives for data and insight outputs. One company mentioned they have millions of directories in their legacy SCE.</li>
 </ul></li>
@@ -359,6 +359,12 @@ Note
 </ul>
 </div>
 </div>
+</section>
+<section id="resources" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Resources</h1>
+<p><a href="https://phuse.s3.eu-central-1.amazonaws.com/Events/2021/US+Connect+2021/SCE_White_Paper_Final_15Dec2021.pdf">White paper on late-stage SCEs</a></p>
+<p>Keynote incoporating the discussion at the round tables:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/XO-oPX1TBuw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
 
 </section>
@@ -492,27 +498,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
     if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
@@ -527,10 +512,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             break;
           }
         }
-        typesetMath(container);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
         return container.innerHTML
       } else {
-        typesetMath(note);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
         return note.innerHTML;
       }
     } else {
@@ -539,7 +528,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
-      typesetMath(note);
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
       return note.innerHTML;
     }
   }

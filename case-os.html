@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.506">
+<meta name="generator" content="quarto-1.4.533">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SCE Roundtables - 7&nbsp; The case for OS</title>
+<title>R/Pharma round tables - 7&nbsp; The case for OS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -98,20 +99,20 @@ ul.task-list li input[type="checkbox"] {
       <img src="./assets/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">SCE Roundtables</a> 
+      <a href="./">R/Pharma round tables</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/rinpharma/sce-round-table" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./SCE-Roundtables.pdf">
+            <a class="dropdown-item sidebar-tools-main-item" href="./R-Pharma-round-tables.pdf">
               <i class="bi bi-bi-file-pdf pe-1"></i>
             Download PDF
             </a>
           </li>
           <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./SCE-Roundtables.docx">
+            <a class="dropdown-item sidebar-tools-main-item" href="./R-Pharma-round-tables.docx">
               <i class="bi bi-bi-file-word pe-1"></i>
             Download Docx
             </a>
@@ -222,6 +223,15 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#question" id="toc-question" class="nav-link active" data-scroll-target="#question"><span class="header-section-number">8</span> Question</a></li>
+  <li><a href="#main-concerns" id="toc-main-concerns" class="nav-link" data-scroll-target="#main-concerns"><span class="header-section-number">9</span> Main concerns</a>
+  <ul class="collapse">
+  <li><a href="#licencing" id="toc-licencing" class="nav-link" data-scroll-target="#licencing"><span class="header-section-number">9.1</span> Licencing</a></li>
+  <li><a href="#process" id="toc-process" class="nav-link" data-scroll-target="#process"><span class="header-section-number">9.2</span> Process</a></li>
+  <li><a href="#liability" id="toc-liability" class="nav-link" data-scroll-target="#liability"><span class="header-section-number">9.3</span> Liability</a></li>
+  <li><a href="#people" id="toc-people" class="nav-link" data-scroll-target="#people"><span class="header-section-number">9.4</span> People</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources"><span class="header-section-number">9.5</span> Resources</a></li>
+  <li><a href="#what-can-we-do" id="toc-what-can-we-do" class="nav-link" data-scroll-target="#what-can-we-do"><span class="header-section-number">9.6</span> What can we do?</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -251,21 +261,57 @@ ul.task-list li input[type="checkbox"] {
 <section id="question" class="level1" data-number="8">
 <h1 data-number="8"><span class="header-section-number">8</span> Question</h1>
 <p>What is stopping people and companies from contributions in OS? Can we define the case for contributing to OS?</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Missing notes
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Content is still coming, an email will be shared once the site is complete.</p>
-</div>
-</div>
+</section>
+<section id="main-concerns" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Main concerns</h1>
+<section id="licencing" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="licencing"><span class="header-section-number">9.1</span> Licencing</h2>
+<ul>
+<li>R’s core is released on a copyleft GPL license, so there are concerns around any additions we make being required to publish back to the community. This is a concern for companies that are not in the business of selling software, but rather use software as a tool to do their business.</li>
+<li>Python is seen as less of risk, as it is released via permissive licence</li>
+<li>Is there really a legal risk for copy-left licences, and if so under what circumstances? (e.g.&nbsp;using it internally for a plot vs making and selling an app or algorithm that uses the copyleft dependency)</li>
+<li>Can we understand better how IP is protected in OS?</li>
+</ul>
+</section>
+<section id="process" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="process"><span class="header-section-number">9.2</span> Process</h2>
+<ul>
+<li>When using an internal package in a filing, we can package it directly as part of the study code and give to the FDA - which is seen as less of a risk than publishing it as OS where the global community can view the code.</li>
+<li>Folks often want to contribute - but there are some limitations both professionally (e.g.&nbsp;internal process to contribute) and personally</li>
+<li>If someone works on a project in their own time, there is a concern that treated is a company asset even though they are doing it outside of working hours. What is the actual boundary between work and personal contributions?</li>
+<li>People making the policies need to actually understand the topic of OS</li>
+</ul>
+</section>
+<section id="liability" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="liability"><span class="header-section-number">9.3</span> Liability</h2>
+<ul>
+<li>We know the liability is similar between OS and proprietary software, but there is a perception that all OS is more risky</li>
+</ul>
+</section>
+<section id="people" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="people"><span class="header-section-number">9.4</span> People</h2>
+<ul>
+<li>OS contributions are seen as nice to have - how can this be prioritised vs project work?</li>
+<li>Be involved in projects like Oak, NEST and admiral brings recognition to the contributors</li>
+<li>Often projects are mostly driven by a handful, or even a couple, of people. What if someone leaves? Is OS actually a benefit here as same developer could promote and lead to use of the package at their new company?</li>
+<li>Write up a short post / article titled “Here’s why you should allow your people to contribute to open source”</li>
+<li>Write a blog post and short PDF that can be shared internally at the leadership level</li>
+</ul>
+</section>
+<section id="resources" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="resources"><span class="header-section-number">9.5</span> Resources</h2>
+<ul>
+<li><a href="https://phuse-org.github.io/E2E-OS-Guidance/slides/eu23">PHUSE Open Source guidance</a></li>
+</ul>
+</section>
+<section id="what-can-we-do" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="what-can-we-do"><span class="header-section-number">9.6</span> What can we do?</h2>
+<ul>
+<li>Create a framework to help articulate the benefit, and help to tackle the concerns/process that gets in the way</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -397,27 +443,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
     if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
@@ -432,10 +457,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             break;
           }
         }
-        typesetMath(container);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
         return container.innerHTML
       } else {
-        typesetMath(note);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
         return note.innerHTML;
       }
     } else {
@@ -444,7 +473,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
-      typesetMath(note);
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
       return note.innerHTML;
     }
   }

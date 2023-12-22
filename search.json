@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "SCE Roundtables",
+    "title": "R/Pharma round tables",
     "section": "",
-    "text": "Scope and purpose\nThis document captures discussion, pain points and a path to next steps after the R/Pharma events of 2023. There are two events that led to this document being created.\n\n\n\n\n\n\n F2F Roundtables in Chicago\n\n\n\n~60 leaders from 40+ companies met F2F in Chicago for a series of discussions on the most pressing topics for late-stage reporting in R.\nThe discussion was crowdsourced via a github discussion, and led to the following topics:\n\nWhat are our goals for a modern clinical reporting workflow, on a modern SCE?\nWhat are the risks with our increasing external business code dependencies?\nWe have a path to R package validation - but what are we doing with shiny apps?\nWhat is the path to an interactive CSR?\nThe case for contributing to OS\nWhere are we with our people?\nWhat should we be doing to leverage advances in LLMs/AA/AI impact? (at the drug development through to developer efficiency levels)\nWhat are the barriers bringing imaging/genomics/digital biomarkers and the CRF closer?\n\n\n\n\n\n\n\n\n\n References\n\n\n\nPromotional site for round-tables\nR Validation Hub update\nDoug’s slides on the shared validated repo\nCAMIS - comparing differences based on tool used",
+    "text": "Scope and purpose\nThis document captures discussion, pain points and a path to next steps after the R/Pharma events of 2023. There are two events that led to this document being created.\n\n\n\n\n\n\n F2F Roundtables in Chicago\n\n\n\n~60 leaders from 40+ companies met F2F in Chicago for a series of discussions on the most pressing topics for late-stage reporting in R.\nThe discussion was crowdsourced via a github discussion, and led to the following topics:\n\nWhat are our goals for a modern clinical reporting workflow, on a modern SCE?\nWhat are the risks with our increasing external business code dependencies?\nWe have a path to R package validation - but what are we doing with shiny apps?\nWhat is the path to an interactive CSR?\nThe case for contributing to OS\nWhere are we with our people?\nWhat should we be doing to leverage advances in LLMs/AA/AI impact? (at the drug development through to developer efficiency levels)\nWhat are the barriers bringing imaging/genomics/digital biomarkers and the CRF closer?\n\n\n\n\n\n\n\n\n\n References\n\n\n\nPromotional site for round-tables\nR Validation Hub update\nDoug’s slides on the shared validated repo\nCAMIS - comparing differences based on tool used\nPHUSE Open Source guidance",
     "crumbs": [
       "Scope and purpose"
     ]
@@ -14,7 +14,7 @@
     "href": "definitions.html",
     "title": "Definitions",
     "section": "",
-    "text": "Abbreviation\nDescription\n\n\n\n\nSCE\nStatistical/Scientific Computing Environment",
+    "text": "Abbreviation\nDescription\n\n\n\n\nCSR\nClinical Study Report\n\n\nSCE\nStatistical/Scientific Computing Environment\n\n\nOS\nOpen Source",
     "crumbs": [
       "Definitions"
     ]
@@ -24,7 +24,7 @@
     "href": "modern-sce.html",
     "title": "1  Modern SCEs",
     "section": "",
-    "text": "2 Question\nWhat are our goals for a modern clinical reporting workflow, on a modern SCE? What are our learnings today achieving that goal, and how can we better prepare ourselves to balance the drive to innovate while having to evolve people and processes?",
+    "text": "2 Question\nWhat are our goals for a modern clinical reporting workflow, on a modern SCE? What are our learnings today achieving that goal, and how can we better prepare ourselves to balance the drive to innovate while having to evolve people and processes?\nWhite paper on late-stage SCEs\nKeynote incoporating the discussion at the round tables:",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
     ]
@@ -44,7 +44,7 @@
     "href": "modern-sce.html#what-is-an-sce",
     "title": "1  Modern SCEs",
     "section": "3.2 What is an SCE?",
-    "text": "3.2 What is an SCE?\n\nShould GxP and exploratory remain seperate platforms?\n\nSplit across companies in the group, with some companies having a single platform for both, and others having seperate platforms.\nWith initiatives like the digital protocol coming, we don’t know what the impact will be on routine clinical reporting, and what impacts this will have on the types of people and tasks needed to execute a CSR.\nPain points merging:\n\nValidation (CSV) is a long and high cost process in most companaies, which can impact ability to support exploratory work.\nNeeds are different. E.g. clinical reporting is low compute, while design and biomarker work is often heavy in memory and data.\n\n\nIs data part of the SCE? Traditionally yes, but some but not all companies are de-coupling data from compute.\nWhether it’s in the SCE or not, tracebility is extra important in our domain of regulatory reporting.\nIt appeared across all companies access to an SCE is through a web-browser (not a local application)",
+    "text": "3.2 What is an SCE?\n\nShould GxP and exploratory remain seperate platforms?\n\nSplit across companies in the group, with some companies having a single platform for both, and others having seperate platforms.\nWith initiatives like the digital protocol coming, we don’t know what the impact will be on routine clinical reporting, and what impacts this will have on the types of people and tasks needed to execute a CSR.\nPain points merging:\n\nValidation (CSV) is a long and high cost process in most companies, which can impact ability to support exploratory work.\nNeeds are different. E.g. clinical reporting is low compute, while design and biomarker work is often heavy in memory and data.\n\n\nIs data part of the SCE? Traditionally yes, but some but not all companies are de-coupling data from compute.\nWhether it’s in the SCE or not, tracebility is extra important in our domain of regulatory reporting.\nIt appeared across all companies access to an SCE is through a web-browser (not a local application)",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
     ]
@@ -64,7 +64,7 @@
     "href": "modern-sce.html#change-management-into-a-modern-sce",
     "title": "1  Modern SCEs",
     "section": "3.4 Change-management into a modern SCE",
-    "text": "3.4 Change-management into a modern SCE\n\nWhat are we actually building? A general data science platform? A platform optimised for clinical reporting?\n\nThese are not the same platform, and which you pick has an impact. e.g. should statisticals programmers learn git, or should we give a simple GUI for pushing code through QC and to Prod?\nThere is not a consensus about this for next-gen, with only a handful of companies expecting statistical programmers to work in the same way as general data scientists.\n\nHistorically we depended on SAS, it’s data formats, and filesystems. How to build a modern SCE that doesn’t?\n\n\nDo we enable legacy workflows to work in the new SCE? 2) Only new ways, or 3) how do we find a balance to ensure business continuity while enabling innovation?\n\nThe human and process change management piece is massive, and SCE POs must work in tandem with statistical programming leadership.\nAgreement the biggest pain point is the dependency on file-based network share drives for data and insight outputs. One company mentioned they have millions of directories in their legacy SCE.\n\nMost companies have carried over having the outputs server be a network share drive, but would a more ‘publishing’ type model be more robust?",
+    "text": "3.4 Change-management into a modern SCE\n\nWhat are we actually building? A general data science platform? A platform optimised for clinical reporting?\n\nThese are not the same platform, and which you pick has an impact. e.g. should statistical programmers learn git, or should we give a simple GUI for pushing code through QC and to Prod?\nThere is not a consensus about this for next-gen, with only a handful of companies expecting statistical programmers to work in the same way as general data scientists.\n\nHistorically we depended on SAS, it’s data formats, and filesystems. How to build a modern SCE that doesn’t?\n\nDo we enable legacy workflows to work in the new SCE?; Only new ways; or how do we find a balance to ensure business continuity while enabling innovation?\nThe human and process change management piece is massive, and SCE POs must work in tandem with statistical programming leadership.\nAgreement the biggest pain point is the dependency on file-based network share drives for data and insight outputs. One company mentioned they have millions of directories in their legacy SCE.\n\nMost companies have carried over having the outputs server be a network share drive, but would a more ‘publishing’ type model be more robust?",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
     ]
@@ -100,11 +100,51 @@
     ]
   },
   {
+    "objectID": "validate-shiny.html#what-are-we-testing-and-why",
+    "href": "validate-shiny.html#what-are-we-testing-and-why",
+    "title": "2  Validate shiny?",
+    "section": "4.2 What are we Testing and Why?",
+    "text": "4.2 What are we Testing and Why?\nThere is a clear difference of opinion throughout the industry, often led by quality groups. Some companies validate shiny apps as if they were distinct pieces of software, using their internal software validation procedures. These processes are often outdated and unsuitable, requiring timestamped user-testing and screen captures.\nOther companies solely consider packages, not even validating shiny apps, but validating just the logic. The group discussed a preferred way of working – separating the logic and the UI.\nThis brings up the question – do we really need to validate shiny apps? Can we just validate the logic?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Validate shiny?</span>"
+    ]
+  },
+  {
+    "objectID": "validate-shiny.html#who-does-the-testing",
+    "href": "validate-shiny.html#who-does-the-testing",
+    "title": "2  Validate shiny?",
+    "section": "4.3 Who Does the Testing?",
+    "text": "4.3 Who Does the Testing?\nAgain, there is some difference between companies in who does the testing. Generally, the developer writes the tests but tests are performed either by the business or by the quality group.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Validate shiny?</span>"
+    ]
+  },
+  {
+    "objectID": "validate-shiny.html#use-of-automation",
+    "href": "validate-shiny.html#use-of-automation",
+    "title": "2  Validate shiny?",
+    "section": "4.4 Use of Automation",
+    "text": "4.4 Use of Automation\nQuestion posed to people present around the table: Does your company’s validation system allow for automation? Answers from the table: 8 companies = yes, 2 companies = no. Another 4 companies = no (offered by consultant who works with Pharma companies). Clearly a range of capabilities across the industry.\nFrom an automation perspective, the Pharma industry is very far behind the technology industry. Technology codebases tend to be far more complex but they are also automated. Can we learn from their platforms and apply their processes to validating shiny apps? Tools such as {shinytest2} are daunting to use. Can they be made more user friendly? There have been some steps to help automate these tasks – eg {shinyvalidator} but more work is needed in this area.\nIt’s very challenging to validate a reactive graph. Automated processes have the ability to detect changes in a single pixel – is this desirable or undesirable?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Validate shiny?</span>"
+    ]
+  },
+  {
+    "objectID": "validate-shiny.html#types-of-testing",
+    "href": "validate-shiny.html#types-of-testing",
+    "title": "2  Validate shiny?",
+    "section": "4.5 Types of Testing",
+    "text": "4.5 Types of Testing\nThere is a clear difference across companies in opinions as to the amount of unit testing vs UAT and end-user testing. Unit tests are easy to write but are do not demonstrate how an app works. {shinytest2} can be used for end-user testing but, as mentioned above, may be daunting to use, may not be acceptable within a quality organization and may not fit in current work practices.\nUnit tests are generally written as code is written. They are fast to write and fast to execute. End-to-end tests, however, are written once code is complete and tend to be slow to execute.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Validate shiny?</span>"
+    ]
+  },
+  {
     "objectID": "validate-shiny.html#robust-uis",
     "href": "validate-shiny.html#robust-uis",
     "title": "2  Validate shiny?",
-    "section": "4.2 Robust UIs?",
-    "text": "4.2 Robust UIs?\n\nGood to have unit tests - often manual testing. Automated can easily get messed up as the code evolves.\nWe should use the git flow - e.g. protect master and disable manual deployments\nShow or download R code is perfect for reproducibility → e.g. show code button\n\nBut then need to actually run that in a prod batch run\nthis use can case skip validation as code is run as study code\n\nSome cases where you don’t want to export and run code → e.g. output used directly for decision making are coming\nHow to handle risk of UI problems if our focus is on the static code - e.g. misnamed reactive values so wrong values being shown, even if static R packages giving correct results.\nRisk based is really important - e.g. for something like dark mode breaking, we need to know what requirements are high risk (e.g. table is correct) vs low risk (e.g. dark mode button)",
+    "section": "4.6 Robust UIs?",
+    "text": "4.6 Robust UIs?\n\nGood to have unit tests - often manual testing. Automated can easily get messed up as the code evolves.\nWe should use the git flow - e.g. protect master and disable manual deployments\nShow or download R code is perfect for reproducibility → e.g. show code button\n\nBut then need to actually run that in a prod batch run\nthis use can case skip validation as code is run as study code\n\nSome cases where you don’t want to export and run code → e.g. output used directly for decision making are coming\nHow to handle risk of UI problems if our focus is on the static code - e.g. misnamed reactive values so wrong values being shown, even if static R packages giving correct results.\nRisk based is really important - e.g. for something like dark mode breaking, we need to know what requirements are high risk (e.g. table is correct) vs low risk (e.g. dark mode button)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Validate shiny?</span>"
     ]
@@ -134,7 +174,7 @@
     "href": "os-depends.html",
     "title": "5  Depending on OS",
     "section": "",
-    "text": "Chairs: Mike Smith & Ed Lauzier\n\n6 Question\nHow much risk is there in depending on external packages, and can we foster a clearer set of expectations between developers and people/companies that depend on these packages?\n\n\n\n\n\n\nMissing notes\n\n\n\nContent is still coming, an email will be shared once the site is complete.",
+    "text": "Chairs: Mike Smith & Ed Lauzier\n\n6 Question\nHow much risk is there in depending on external packages, and can we foster a clearer set of expectations between developers and people/companies that depend on these packages?\n\n\n\n\n\n\nMissing notes\n\n\n\nContent is still coming, an email will be shared once the site is complete.\nIn the interim - the PHUSE Open Source guidance includes a chapter on depending on Open Source.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Depending on OS</span>"
     ]
@@ -144,7 +184,7 @@
     "href": "shiny-csr.html",
     "title": "6  Interactive CSR",
     "section": "",
-    "text": "Chairs: Ning Leng and Phil Bowsher\n\n7 Question\nIf we assume it’s technically possible to transfer - what would it mean to give an interactive CSR? How would primary, secondary and ad-hoc analysis be viewed? Would views change depending on role (e.g. sponsor, statistical reviewer, clinical reviewer)?\n\n\n\n\n\n\nMissing notes\n\n\n\nContent is still coming, an email will be shared once the site is complete.",
+    "text": "Chairs: Ning Leng and Phil Bowsher\n\n7 Question\nIf we assume it’s technically possible to transfer - what would it mean to give an interactive CSR? How would primary, secondary and ad-hoc analysis be viewed? Would views change depending on role (e.g. sponsor, statistical reviewer, clinical reviewer)?\n\n\n8 Why?\nThe current process of CSR generation and review involves generating large amounts of tables and plots. In such scenarios, we believe an interactive application would provide a more efficient method to explore both primary and secondary analysis results.\n\n\n9 Barriers\n\nInternally\n\nMost companies have a highly process driven to medical writing, where any change is difficult to implement\n\nExternal / FDA\n\nConcern of encouraging data fishing, if controls on for instance subgroup analysis are not in place?\nNeed cross industry harmonization as HA is highly unlikely to accept each pharma company submitting an interactive CSR based on a different framework\n\n\n\n\n10 Requirements\n\nCan an interactive CSR by default be limited to only analyses defined in the SAP, should/can exploring a wider scope be allowed with clear and explicit intent by the app user?\n\nHow is the ROI of interactivity in a CSR impacted if it’s limited to produce only pre-specified anlayses? Would different reviewers have different access? (e.g. statisticla vs clinical)\n\nThere is a gap in patient profile modules and patient narratives in shiny apps\n\n\n\n11 Path to the CSR\nThere are many places where this tooling can be applied before the CSR:\n\nMonitoring\nDecision making - data in clinical science hands\nEfficiency boost (e.g. at unblinding app is on hand)\nCSR\n\nCan we define the tangible benefits? What is the ROI over different use cases? Could this allow health authorities to make less requests? How does this lead to faster reviews in tangible terms?\nHow would access control and security work? How would this be audited? Would this be validated? How would results be archived?\nCan commenting be possible (as you can markup a PDF/work doc)?\nExisting frameworks exist - e.g. teal from NEST. ARDs may mean additional results can be pre-generated in a controlled way - but ARDs can’t further process data.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Interactive CSR</span>"
     ]
@@ -154,7 +194,67 @@
     "href": "case-os.html",
     "title": "7  The case for OS",
     "section": "",
-    "text": "Chairs: Satish Murphy & Becca Krouse\n\n8 Question\nWhat is stopping people and companies from contributions in OS? Can we define the case for contributing to OS?\n\n\n\n\n\n\nMissing notes\n\n\n\nContent is still coming, an email will be shared once the site is complete.",
+    "text": "8 Question\nWhat is stopping people and companies from contributions in OS? Can we define the case for contributing to OS?",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+    ]
+  },
+  {
+    "objectID": "case-os.html#licencing",
+    "href": "case-os.html#licencing",
+    "title": "7  The case for OS",
+    "section": "9.1 Licencing",
+    "text": "9.1 Licencing\n\nR’s core is released on a copyleft GPL license, so there are concerns around any additions we make being required to publish back to the community. This is a concern for companies that are not in the business of selling software, but rather use software as a tool to do their business.\nPython is seen as less of risk, as it is released via permissive licence\nIs there really a legal risk for copy-left licences, and if so under what circumstances? (e.g. using it internally for a plot vs making and selling an app or algorithm that uses the copyleft dependency)\nCan we understand better how IP is protected in OS?",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+    ]
+  },
+  {
+    "objectID": "case-os.html#process",
+    "href": "case-os.html#process",
+    "title": "7  The case for OS",
+    "section": "9.2 Process",
+    "text": "9.2 Process\n\nWhen using an internal package in a filing, we can package it directly as part of the study code and give to the FDA - which is seen as less of a risk than publishing it as OS where the global community can view the code.\nFolks often want to contribute - but there are some limitations both professionally (e.g. internal process to contribute) and personally\nIf someone works on a project in their own time, there is a concern that treated is a company asset even though they are doing it outside of working hours. What is the actual boundary between work and personal contributions?\nPeople making the policies need to actually understand the topic of OS",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+    ]
+  },
+  {
+    "objectID": "case-os.html#liability",
+    "href": "case-os.html#liability",
+    "title": "7  The case for OS",
+    "section": "9.3 Liability",
+    "text": "9.3 Liability\n\nWe know the liability is similar between OS and proprietary software, but there is a perception that all OS is more risky",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+    ]
+  },
+  {
+    "objectID": "case-os.html#people",
+    "href": "case-os.html#people",
+    "title": "7  The case for OS",
+    "section": "9.4 People",
+    "text": "9.4 People\n\nOS contributions are seen as nice to have - how can this be prioritised vs project work?\nBe involved in projects like Oak, NEST and admiral brings recognition to the contributors\nOften projects are mostly driven by a handful, or even a couple, of people. What if someone leaves? Is OS actually a benefit here as same developer could promote and lead to use of the package at their new company?\nWrite up a short post / article titled “Here’s why you should allow your people to contribute to open source”\nWrite a blog post and short PDF that can be shared internally at the leadership level",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+    ]
+  },
+  {
+    "objectID": "case-os.html#resources",
+    "href": "case-os.html#resources",
+    "title": "7  The case for OS",
+    "section": "9.5 Resources",
+    "text": "9.5 Resources\n\nPHUSE Open Source guidance",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+    ]
+  },
+  {
+    "objectID": "case-os.html#what-can-we-do",
+    "href": "case-os.html#what-can-we-do",
+    "title": "7  The case for OS",
+    "section": "9.6 What can we do?",
+    "text": "9.6 What can we do?\n\nCreate a framework to help articulate the benefit, and help to tackle the concerns/process that gets in the way",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
     ]
