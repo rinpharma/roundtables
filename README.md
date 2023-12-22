@@ -16,49 +16,6 @@
 
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://phuse-org.github.io/E2E-OS-Guidance/">
-    <img src="assets/phuse.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">E2E OS guidance</h3>
-
-  <p align="center">
-    A pan-company effort to help guide open source use and contributions sponsored by PHUSE.
-    <br />
-    <a href="https://phuse-org.github.io/E2E-OS-Guidance/"><strong>Explore the guidance »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/phuse-org/E2E-OS-Guidance/issues">Report Bug or Mistake</a>
-    ·
-    <a href="https://github.com/phuse-org/E2E-OS-Guidance/issues">Suggest improvement</a>
-  </p>
-</div>
-
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Screenshot][product-screenshot]](https://phuse-org.github.io/E2E-OS-Guidance/)
-
-This guidance was built through the contributions 
-of [individuals across multiple companies](https://phuse-org.github.io/E2E-OS-Guidance/contributors.html). 
-Please use the issues to 
-reach out if you have suggestions to improve this document. 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make this document valuable. Please reach out via the issues, 
-ask a co-lead, jump straight in with a PR, or get 
-in [contact with PHUSE](https://phuse.global/Community/Get_Involved).
-
-
 <!-- GETTING STARTED -->
 ## Rebuilding this site
 
@@ -93,21 +50,3 @@ In order to contribute code (assumption is you do not have write access):
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/phuse-org/E2E-OS-Guidance.svg?style=for-the-badge
-[contributors-url]: https://github.com/phuse-org/E2E-OS-Guidance/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/phuse-org/E2E-OS-Guidance.svg?style=for-the-badge
-[forks-url]: https://github.com/phuse-org/E2E-OS-Guidance/network/members
-[update-shield]: https://img.shields.io/github/last-commit/phuse-org/E2E-OS-Guidance.svg?style=for-the-badge
-[update-url]: https://github.com/phuse-org/E2E-OS-Guidance
-[stars-shield]: https://img.shields.io/github/stars/phuse-org/E2E-OS-Guidance.svg?style=for-the-badge
-[stars-url]: https://github.com/phuse-org/E2E-OS-Guidance/stargazers
-[issues-shield]: https://img.shields.io/github/issues/phuse-org/E2E-OS-Guidance.svg?style=for-the-badge
-[issues-url]: https://github.com/phuse-org/E2E-OS-Guidance/issues
-[license-shield]: https://img.shields.io/github/license/phuse-org/E2E-OS-Guidance.svg?style=for-the-badge
-[license-url]: https://github.com/phuse-org/E2E-OS-Guidance/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/company/phuse/
-[product-screenshot]: assets/screenshot.png

@@ -6,8 +6,8 @@ project:
   output-dir: _rendered
 
 book:
-  title: "SCE Roundtables"
-  subtitle: "A forum for Scientific Computing Environment product owners"
+  title: "R/Pharma round tables"
+  subtitle: "A forum for R leaders across Pharma"
   edition: "DRAFT"
   author: "R/Pharma contributors"
   repo-url: https://github.com/rinpharma/sce-round-table
