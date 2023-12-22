@@ -69,7 +69,10 @@ What are our goals for a modern clinical reporting workflow, on a modern SCE? Wh
 
 :::
 
+# Resources
 
+[White paper on late-stage SCEs](https://phuse.s3.eu-central-1.amazonaws.com/Events/2021/US+Connect+2021/SCE_White_Paper_Final_15Dec2021.pdf)
 
+Keynote incoporating the discussion at the round tables:
 
-
+{{< video https://www.youtube.com/embed/XO-oPX1TBuw >}}

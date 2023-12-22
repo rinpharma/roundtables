@@ -37,12 +37,12 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
-  docx:
-    toc: true
-    number-sections: true
-    highlight-style: github
+#  pdf:
+#    documentclass: scrreprt
+#  docx:
+#    toc: true
+#    number-sections: true
+#    highlight-style: github
 
 
 
