@@ -45,6 +45,6 @@ Existing frameworks exist - e.g. `teal` from NEST. ARDs may mean additional resu
 
 Eric Nantz, from the R Submissions working group, [which have been working with the FDA on a shiny submisson as part of pilot 2](https://rconsortium.github.io/submissions-wg/pilot2.html):
 
-{{ video https://www.youtube.com/embed/5TEpJruIm-Y?si=-B8yoFhrPKGw_8CP }}
+{{< video https://www.youtube.com/embed/5TEpJruIm-Y?si=-B8yoFhrPKGw_8CP >}}
 
 
