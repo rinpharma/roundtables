@@ -1,0 +1,44 @@
+# Small/mid pharma & OS
+
+Chair: Katie Igartua and Kas Yousefi
+
+### Proposal
+
+A pressing topic I think we should discuss is how best to engage and enable small/mid-sized pharma to use open source Ecosystems.
+
+It can be sometimes overwhelming and would be helpful to have an idea where to start to join the open source journey and utilize the resources and approaches already available.
+
+Some questions:
+
+1. How to go about setting up an open source Environment? What are the hurdles? How can the crowd-sourced groups help?
+2. Could small pharma use R for IB/DSUR? Does this need to be in a validated environment?
+3. How do other small pharma companies uses open-source environments? and what would be areas for collaboration?
+
+### Expected impact
+
+I believe this topic would be a benefit because small pharma often needs to be innovative, but due to resource limits may rely on traditional approaches and heavily rely on CROs. Having stronger small pharma presence could help in new resources and approaches for open-sourced solutions
+
+### Prior discussions/work
+
+Some prior work includes......
+
+- BBSW Panel Discussion for Open Source Tools in Small/mid sized pharma 
+- [How best to engage and enable small/mid-size pharma to use open source tools · rinpharma rinpharma-summit-2024 · Discussion #17](https://github.com/rinpharma/rinpharma-summit-2024/discussions/17)
+
+# Round table
+
+- Open sourcing adoption/contribution barrier
+    - risk taking when you only have one product
+    - cost: small companies often fully outsource regulatory work to CROs, hard to justify additional investment on infra or open source work for non regulatory tasks
+    - IT resource: posit installation for small pharma - small company may not have the right in house IT talent to even get posit running
+    - Are you ready to be a shiny dev ops person & R admin?
+- What are use cases to use open source? mainly in non validated env
+    - data review, monitoring, visualization, patient profile, DSUR
+    - IDCC uses shiny for IDMC close sessions (instead of long pdf)
+- Asks to the community
+    - can large pharma open source their infra config? such as AMS yaml file?
+        - from the perspective at the intersection of IT, DS, stat
+    - what about a “single” opinionated workflow (pharmaverse is seen more as a comprehensive tool box)
+        - from an independent body such as r consortium?
+        - or can individual big pharma publish the whole workflow
+- GxP set up: timing tradeoff - is it good to set up early or late? setting up early can put on restrictions that is hard to change later. balance of flexibility, best practice and cost
