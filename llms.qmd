@@ -1,14 +1,113 @@
-# LLMs/AA/AI opportunities?
+# AI opportunities
+
+## 2024
+
+### LLMs/AA/AI opportunities?
+
+Chairs: Vincent Shen and Melanie Hullings
+
+### 1. Current AI Usage and Adoption
+
+- **Academia**:
+    - Cautious approach with AI project review committees and approvals
+    - Concern on safety safety, trust, and legal implications
+    - Challenges in education, balancing AI use without it becoming a crutch
+- **Pharma**:
+    - Varying levels of adoption across companies
+    - Legal and trust issues often limiting factor
+    - Emphasis on human-in-the-loop approaches
+    - Some companies offer a wide range of AI tools and models
+- **Smaller Pharma/Biotech**:
+    - More open to AI and developing custom tools
+    - Applications in genomics data querying, report generation, and biological discovery
+
+### 2. Specific Use Cases and Tools
+
+- Writing a first draft that is then reviewed by human experts
+- DSUR report generation automation
+- Querying public databases and grant-writing assistance
+- Code conversion (e.g., R to Python)
+- Tools mentioned: Copilot, rtutor, Chattr
+- Fine-tuning of open-source models for specific tasks (e.g., R package chatbot)
+- Prototypes of AI agents for data analysis
+- Manufacturing use case: API access to all kinds of GenAI models / RAG-based application to search from historic logs on certain process
+- LLM/GenAI for drug discovery (on genetic structures)
+
+### 3. Challenges and Limitations
+
+- Legal and regulatory concerns, including new EU law with assigned risk levels
+- Resistance to using clinical data with LLMs
+- Hosting issues for AI models and applications
+- Need for better tools in data processing and manipulation
+- Potential dangers of using AI without understanding the underlying processes
+
+### 4. Implementation and Cultural Shifts
+
+- Need for workforce training on responsible AI use
+- Varying levels of AI adoption across companies require guides and training
+- Importance of leadership support, IT infrastructure, and legal guidance
+- Need for standardization and policies (e.g., documentation of AI-generated code)
+
+### 5. Opportunities and Benefits
+
+- Time-saving potential, especially for those with basic programming knowledge
+- Knowledge management improvements
+- Potential for automating routine tasks and reports
+- Use of RAG (Retrieval-Augmented Generation) for various applications
+
+### 6. Future of Statistical Programming
+
+- Main benefit of AI is increased efficiency in programming tasks
+- Leadership questioning the impact on workforce size and composition
+- Current stage: Proof of concept tools, full impact still uncertain
+- Evolution of programmer roles:
+    - Shift from coding from scratch to code review and oversight
+    - Expansion into new areas within clinical data analysis domain
+    - Transition from coding to solution architecture
+- Need to redefine essential aspects of the AP (Analysis Programmer) role as tasks become automated
+- Statistical Programmer job will evolve but not be eliminated
+- Increased efficiency allows for focus on more complex analytical tasks
+
+### 7. AI Model Development and Evaluation
+
+- Transition from general GPT models to fine-tuned, domain-specific models
+- Distinct approaches needed for coding vs. RAG/document tasks
+- Importance of evaluating RAG effectiveness, potentially using LLMs for this purpose
+
+### Next Steps
+
+1. **Establish AI<>R Working Group**
+    - Goal would be to develop an open-source R package bot but would need to figure out how to fine-tune, host, collaborate, etc.
+    - Address model storage and deployment challenges
+2. **Enhance Education and Standardization**
+    - Create guidelines for responsible AI use in statistical programming
+    - Develop industry-wide best practices and policies
+3. **Advance Use Cases and Infrastructure**
+    - Validate AI tools for specific tasks (e.g., DSUR report generation)
+    - Develop secure frameworks for AI use with clinical data
+4. **Redefine Roles and Processes**
+    - Analyze impact of AI on statistical programming roles
+    - Integrate AI into workflows while maintaining human oversight
+5. **Improve Knowledge Management and Collaboration**
+    - Implement systems for sharing AI solutions across organizations
+    - Foster partnerships for developing industry-specific AI models
+6. **Develop AI Evaluation Methods**
+    - Create standardized processes for QC of AI outputs
+    - Improve methods for assessing AI-generated code quality
+
+## 2023
+
+### LLMs/AA/AI opportunities?
 
 Chairs: Paulo Bargo & Ning Leng
 
-# Question
+### Question
 
 What should we be doing to leverage advances in LLMs/AA/AI impact? (at the drug development through to developer efficiency levels)
 
 ::: {.callout-warning}
 
-## Missing notes
+### Missing notes
 
 Content is still coming, an email will be shared once the site is complete.
 
