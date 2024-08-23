@@ -28,8 +28,10 @@ book:
     - os-depends.qmd
     - shiny-csr.qmd
     - case-os.qmd
+    - smallmidpharma.qmd
     - contributors.qmd
     - references.qmd
+
 
 csl: jama.csl
 bibliography: references.bib
