@@ -1,12 +1,47 @@
 # Change management
 
+## 2024 notes
+
+Chairs: Cassie Murcray and Dror Berel 
+
+### Summary: Transitioning from SAS to R in the Pharmaceutical Industry
+
+Over the past two years, there has been a significant shift in the pharmaceutical industry from SAS to R, driven by the rising costs of SAS licenses and the influx of new talent trained in R and other open-source tools. Despite these trends, the industry’s conservative nature, particularly in a highly regulated environment, often results in a reluctance to change well-established practices.
+
+As of 2024, this transition is well underway, with several companies already setting timelines for a complete migration to R. This includes replicating legacy SAS code in R for ongoing and long-term studies, as well as opting not to renew SAS licenses. While some SAS programmers find the transition to R more intuitive, others may face significant challenges.
+
+### Supporting SAS Programmers in Transitioning to R
+
+To facilitate the learning process for SAS programmers, various strategies can be employed:
+
+1. **Traditional Training and Mentorship**: Programs such as Posit Academy and mentoring from experienced R programmers are essential. Large organizations often establish Centers of Excellence, where a designated "R floating buddy" mentors SAS programmers throughout the various stages of learning R. This mentorship should be conducted with patience and empathy, recognizing the challenges of adapting to a new programming language with different principles and syntax.
+2. **Strategic Learning Approaches**:
+    - **Address Key Pain Points**: Focus on demonstrating how specific challenges are effectively resolved with R, highlighting the value of the R-based solution, and celebrating small wins to foster continued learning.
+    - **Simplify the Learning Ecosystem**: Introduce a simple set of R packages, such as the tidyverse, before gradually introducing more advanced concepts. Avoid overwhelming learners with multiple equivalent approaches.
+    - **Gradual Progression**: Start with basic concepts and gradually introduce more advanced topics like version control, beginning with individual contributions and progressing to collaborative work.
+
+### Managing the Transition
+
+The successful shift from SAS to R requires active management by senior leadership, including clear directives, timelines, and ongoing support. It is crucial to allocate time for learning while maintaining productivity on ongoing projects.
+
+### Action Items
+
+To support this transition, the following resources should be developed:
+
+- **Cheat Sheets**: Create reference guides with common code examples translated from SAS to R.
+- **Cross-Tool Comparison**: Develop a Comparative Analysis of Methods and Implementations in SAS, R, and Python (CAMIS) to help programmers understand the default parameters and methods used in each tool.
+
+This transition will not happen organically; it requires deliberate management and a structured approach to ensure successful adoption of R across the industry.
+
+## 2023 notes
+
 Chairs: Matthew Kumar and Cassie Burns
 
-# Question
+### Question
 
 Where are we on getting data analysts and data scientists that work with clinical data on board (in particular, those delivering CSRs and submission packages)? What are the challenges - what has been overcome?
 
-# Who are our people?
+### Who are our people?
 
 Prefaced both sessions by asking individuals to define the *our* in *our people*;
 
@@ -58,7 +93,7 @@ Prefaced both sessions by asking individuals to define the *our* in *our people*
 
 - Having leadership advocacy is vital at the end of the day.
 
-# Theme: Emerging Talent
+### Theme: Emerging Talent
 
 - Newer talent is increasingly trained in open-source approaches and languages, with fewer exposed to proprietary tools.
 
@@ -77,7 +112,7 @@ Prefaced both sessions by asking individuals to define the *our* in *our people*
 
 - General trends suggest companies are demanding a secondary language in addition to proprietary software (not necessarily R), but knowledge of at least two languages indicates an individual could reasonably learn R.
 
-# Theme: Other Points and Considerations
+### Theme: Other Points and Considerations
 
 - Questions to consider include: *What kind of training will people need in the future state?* *How should the support be arranged to enable the future state, potentially with IT and DEV involvement?*
 
