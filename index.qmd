@@ -17,6 +17,7 @@ following topics:
 - [How to move people happy with SAS over to an R backboned open source future?](/change-management.html)
 - [How best to engage and enable small/mid-size pharma to use open source tools](/smallmidpharma.html)
 - [Future core competency of clinical statistical programmer with AI/LLM](/llms.html)
+- [Can we do data storage and processing better in clinical trials?](/datatrials.html)
 
 :::
 
