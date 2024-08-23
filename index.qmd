@@ -39,4 +39,7 @@ following topics:
 
 [PHUSE Open Source guidance](https://phuse-org.github.io/E2E-OS-Guidance/)
 
+[2023 planning repo](https://rinpharma.github.io/positconf-roundtables-2023/)
+
+
 :::
