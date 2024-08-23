@@ -6,7 +6,24 @@ this document being created.
 
 ::: {.callout-note icon=false}
 
-## {{< fa users >}} F2F Roundtables in Chicago
+## {{< fa users >}} 2024 F2F Roundtables in Seattle
+
+~120 leaders from 40+ companies met F2F in Seattle for a series of
+discussions on the most pressing topics for late-stage reporting in R. 
+
+The discussion was crowdsourced via a github discussion, and led to the 
+following topics:
+
+- [How to move people happy with SAS over to an R backboned open source future?](/change-management.html)
+- [How best to engage and enable small/mid-size pharma to use open source tools](/smallmidpharma.html)
+- [Future core competency of clinical statistical programmer with AI/LLM](/llms.html)
+- [Can we do data storage and processing better in clinical trials?](/datatrials.html)
+
+:::
+
+::: {.callout-note icon=false}
+
+## {{< fa users >}} 2023 F2F Roundtables in Chicago
 
 ~60 leaders from 40+ companies met F2F in Chicago for a series of
 discussions on the most pressing topics for late-stage reporting in R. 
@@ -29,8 +46,6 @@ following topics:
 
 ## {{< fa graduation-cap >}} References
 
-[Promotional site for round-tables](https://rinpharma.github.io/positconf-roundtables-2023/)
-
 [R Validation Hub update](https://pharmar.github.io/events-rpharma2023/)
 
 [Doug's slides on the shared validated repo](https://pharmar.github.io/events-positconf2023/#/title-slide)
@@ -38,5 +53,8 @@ following topics:
 [CAMIS - comparing differences based on tool used](https://psiaims.github.io/CAMIS/)
 
 [PHUSE Open Source guidance](https://phuse-org.github.io/E2E-OS-Guidance/)
+
+[2023 planning repo](https://rinpharma.github.io/positconf-roundtables-2023/)
+
 
 :::
