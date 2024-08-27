@@ -50,13 +50,22 @@ following topics:
 
 ## {{< fa graduation-cap >}} References
 
-[R Validation Hub update](https://pharmar.github.io/events-rpharma2023/)
-
-[Doug's slides on the shared validated repo](https://pharmar.github.io/events-positconf2023/#/title-slide)
-
 [CAMIS - comparing differences based on tool used](https://psiaims.github.io/CAMIS/)
 
 [PHUSE Open Source guidance](https://phuse-org.github.io/E2E-OS-Guidance/)
+
+## 2024
+
+[R Validation Hub update](https://pharmar.github.io/events-positconf2024/#/title-slide)
+
+[2024 planning repo](https://rinpharma.github.io/rinpharma-summit-2024/)
+
+
+## 2023
+
+[R Validation Hub update](https://pharmar.github.io/events-rpharma2023/)
+
+[Doug's slides on the shared validated repo](https://pharmar.github.io/events-positconf2023/#/title-slide)
 
 [2023 planning repo](https://rinpharma.github.io/positconf-roundtables-2023/)
 
