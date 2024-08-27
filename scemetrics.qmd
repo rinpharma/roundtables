@@ -1,0 +1,61 @@
+# Sharing R code without sharing R code
+
+Chairs: James Black
+
+## 2024
+
+### Objectively track migrations/language use in studies?
+
+- Most companies are using Github or Gitlab for study code - if we know where all the repos are, can we scan them via the API to track things like which studies are using R, Python or still on SAS?
+- **Key Questions:**
+  - What code should be scanned? Look for files present? `.sas`, `.R`, `.py`, `.sql`, etc.? Is it more accurate than inbuilt language detection present in API endpoints?
+  - Should the focus be on studying all code written or only focus on study code (e.g. limit scope to org that holds studies)?
+  - Is there an API endpoint that can indicate which repository is being used?
+
+### Can we understand what packages are being used in studies?
+
+- **Idea:** 
+  - The Posit Package Manager API doesn't reliably say what validated R packages are used in each study, but as `renv` is used more, 
+    can we scan the `renv.lock` files to see what packages are being used? 
+- **Purpose:** 
+  - This helps validation teams, our teams working on R packages, as well as help flag if we need to identify who used 
+    a specific version of a specific package in a study.
+  - Where packages are 'pre-baked' into containers to speed up 'time to pulling data', want to keep that as lean as possible using metrics like this.
+
+### Understanding container use
+
+- **Challenges:**
+  - How do we understand uptake of managed images, and who is using old images? 
+  - Need for a strategy to manage container upgrades effectively.
+  - Actively understand patterns of image use across your SCE
+  - Look at patterns that should be dealt with - e.g. large numbers of idle interactive containers clogging worker nodes
+- **Idea:** 
+  - Pull k8's logs to get list of all active containers by person over time  
+
+### Keeping Connect lean
+
+- **Idea:** 
+  - Roche had an example where >500 broken items, and >500 items not touched in more than a year were on the server
+  - Use Connect data (the postgres database as the API is very slow) to remove content
+- **Purpose:** 
+  - Remove potentially GBs of un-used data on the Connect server, and also enforce retention rules
+
+### General notes
+
+  - Shift continues to data being outside of the SCE
+  - Some companies moved to 'iterate anywhere - final batch runs matter' stance. Some still consider every activity requiring validation.
+  - Discussion highlighted a split on whether internet access is blocked - in some companies there is no air gap, in ohers there is, particularly on 'validated batch runs'
+  - singularity compresses containers better
+  - big celebrations that now we do not need to rebuild containers each time workbench is updated!!
+  - Provenance is an audit/validation requirement
+  - Explore the potential use of common tools to data engineering that are absent in clinical reporting (e.g. dbt, airflow, prefect) 
+
+### Action Items and Questions
+- **Action Item:** 
+  - White paper with Mark Bynens on the SCE.
+  - In white paper, clarify what the SCE is and how to handle program environments and data integration more effectively.
+
+### References
+
+- James' posit::conf talk: [epijim.uk/talk/giving-your-scientific-computing-environment-sce-a-voice](https://epijim.uk/talk/giving-your-scientific-computing-environment-sce-a-voice/)
+- Alanah Jonas from GSK may have a relevant talk later in the year at PHUSE EU 2024

@@ -1,0 +1,24 @@
+# Sharing R code without sharing R code
+
+Chairs: Rohan Parmar and Min Lee 
+
+### Proposal
+
+You created a small shiny application for your colleagues in a small team (2-5 people), that application is now getting extensive usage with more than 20, 30 or even 300 users. How do you go about scaling up your application? We want to hear from other users' experience in creating long lived R based workflows. This can be anything from small snippets of code that started off as scripts that can be sequestered into R packages that are idiomatic to commonly used R interfaces to cater to a wider audience. Shiny apps that are doing computationally heavy tasks with multiple users that require you to think about scalability, fault tolerance, and complexity.
+
+### Expected impact
+
+Sharing how others have made their R code into something that is much more user friendly or easier to contribute to. Code that readily interfaces with prior frameworks like tidyverse or scales easily. Other R users can navigate the trade-offs around consistency and scalability. Make informed decisions when writing R code taking into account future necessities such as validation requirements or maintainability.
+
+[Productionalizing R code · rinpharma rinpharma-summit-2024 · Discussion #16](https://github.com/rinpharma/rinpharma-summit-2024/discussions/16)
+
+In the discussion, it was noted this was a common problem where an app grows into something bigger organically, and Nitesh flagged some connection to the topic of wanting to share R functions without sharing the R code.
+
+::: {.callout-warning}
+
+Notes not ready yet.
+
+:::
+
+# Resources
+

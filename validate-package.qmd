@@ -1,0 +1,51 @@
+# Validate R packages
+
+## 2024
+
+Chairs: Doug  Kelkhof and Margaret Wishart
+
+### Package Lifecycle Management and Validation
+
+Lifecycle Changes and Impact: Managing the lifecycle of R packages is crucial, particularly understanding what it means for a package to change its behavior. It's important to assess whether such changes are significant and if they impact the stability or reliability of the package. The use of tools like Diffify can help track lifecycle changes and validate whether new versions introduce breaking changes or fix bugs.
+
+Containerization and Stability: Containers, such as those created using Nix, are increasingly seen as a way forward for maintaining stable software environments. They help bundle specific package versions, ensuring that a validated environment can be reliably reproduced. However, there are challenges, such as what exactly gets bundled in a container and the legal implications (e.g., GPL license concerns). Posit snapshots are favored by some for controlled environments, as they significantly reduce maintenance, though migrating snapshots can introduce challenges.
+
+Snapshot Management: Deciding when to lock down a snapshot is crucial. Should it be at the beginning of a project, or after some initial work? Snapshots offer a stable point of reference, but as packages evolve, there’s a risk of missing out on important updates or bug fixes. The question of whether to use an old snapshot or stay on the cutting edge is a balancing act between stability and leveraging new features or fixes.
+
+Temporal Metrics: With rapidly changing packages, it’s important to look at temporal metrics to assess risks associated with quick changes. For instance, the validation of packages like Arrow needs to consider how a bug fix might impact its validation status and whether a high rate of change poses additional risks.
+
+### Risk Management and Validation Practices
+
+Risk Retrospective: There’s a need for a systematic approach to retrospectively evaluate risks. For example, running old tests on new package versions can reveal breaking changes or confirm that past bugs have been addressed. This process ensures that packages remain reliable over time, even as they evolve.
+
+Automation vs Human Involvement: While automation is key to maintaining consistency, especially in long-term projects, human oversight is crucial for high-risk packages. These packages often require additional validation steps, and there’s debate over how much human intervention is necessary. High-risk packages might involve more in-the-loop validation, while low-risk ones could rely more on automated processes.
+
+### Internal vs External Package Validation
+
+Differentiated Validation Criteria: Internal packages often have different validation criteria compared to those on CRAN. Internal developers might not be as familiar with traditional checks like R CMD checks, leading to a need for more tailored validation processes. It’s also noted that internal validation is more stringent, often requiring additional tests that aren’t open-sourced, which raises questions about whether these should be contributed to public repositories.
+
+Baseline and Organizational Validation: Organizations often maintain a baseline of validated packages and differentiate between internal and third-party vendor packages. Some organizations have recreated their own risk metrics tools, tailoring them to their specific needs. The audit process involves defining testing processes and being aware of the risks associated with package updates or changes.
+
+### Unit Testing and Quality Assurance
+
+Effective Testing Beyond Coverage: Simply hitting a coverage threshold is not enough; the quality of tests is crucial. For instance, high test coverage doesn’t guarantee that the tests are meaningful or effective. There’s a need to ensure that tests validate the core functionality of packages, particularly in statistical packages that might be treated differently due to their implications in analysis.
+
+Custom and Public Contributions: Organizations often write additional tests on top of package tests to further validate functionality. However, these tests are usually kept internal, which leads to a discussion on the potential benefits of contributing these tests to public repositories. Barriers to this include the time-intensive nature of creating these tests and a lack of familiarity with the contribution process.
+
+Regulatory and Industry Standards: In regulated industries, such as pharmaceuticals, there are higher requirements for package submissions, including unit tests and documentation. Collaboration with regulatory bodies like the FDA and EMA is essential to establish minimum validation requirements. Pharmaverse, for example, has adopted a notion that all packages must have standardized documentation and testing, accepted by the community.
+
+### Package Management and Environment Control
+
+Package Manager and Snapshot Control: Managing package snapshots is typically the responsibility of IT, with packages being added as needed. Renv is commonly used but can sometimes fail catastrophically, leading to a preference for Posit snapshots in controlled environments. This method cuts down maintenance significantly, though issues arise when migrating snapshots, as users may have to deal with multiple package version updates simultaneously.
+
+Containerization Challenges: While Docker containers are technically preferred for creating stable environments, there are trade-offs, such as handling individual environments and licensing concerns. Containers might be seen as derivative works under GPL, which complicates their use in proprietary settings. Nix offers a different approach by locking down R and package versions with a declarative installation method, though challenges remain with mirrors and installation reliability.
+Snapshot Migration and Version Locking: The decision of when to lock down a snapshot—whether at the beginning of a project or after some work has been done—is critical. Locking down too early might prevent access to necessary updates, while delaying it could introduce instability. Some organizations favor letting certain users work on the bleeding edge to vet new package versions, while others prioritize stability by locking down environments early on.
+
+### Action Items and Future Directions
+
+Validation Guidelines and Metrics: There’s a need to establish standard validation guidelines that include metrics to help determine risk levels. This could start with Pharmaverse and eventually be expanded to other areas in pharma and beyond.
+
+Collaboration with Regulatory Bodies: Working with entities like the FDA and EMA to develop minimum validation requirements and documentation standards for R packages is essential. This collaboration would help ensure that the industry adopts consistent and reliable validation practices.
+
+Text-Based Metric Files: Creating text-based files for major defined metrics would facilitate the tracking and management of package validation. This would help in setting clear criteria for evaluating package risk and determining when additional scrutiny is needed.
+

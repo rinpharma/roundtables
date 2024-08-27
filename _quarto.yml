@@ -21,15 +21,18 @@ book:
   chapters:
     - index.qmd
     - definitions.qmd
-    - modern-sce.qmd
-    - validate-shiny.qmd
+    - case-os.qmd
     - change-management.qmd
+    - datatrials.qmd
+    - modern-sce.qmd
     - multi-modal.qmd
     - os-depends.qmd
+    - rproducts.qmd
+    - scemetrics.qmd
     - shiny-csr.qmd
-    - case-os.qmd
     - smallmidpharma.qmd
-    - datatrials.qmd
+    - validate-package.qmd
+    - validate-shiny.qmd
     - contributors.qmd
     - references.qmd
 

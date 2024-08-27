@@ -14,10 +14,14 @@ discussions on the most pressing topics for late-stage reporting in R.
 The discussion was crowdsourced via a github discussion, and led to the 
 following topics:
 
-- [How to move people happy with SAS over to an R backboned open source future?](/change-management.html)
-- [How best to engage and enable small/mid-size pharma to use open source tools](/smallmidpharma.html)
+- [Transitioning our people from SAS to R](/change-management.html)
+- [How best to engage and enable small/mid-size pharma to use R and open source tools](/smallmidpharma.html)
 - [Future core competency of clinical statistical programmer with AI/LLM](/llms.html)
 - [Can we do data storage and processing better in clinical trials?](/datatrials.html)
+- [Sharing R data products externally](/rproducts.html)
+- [Validation of shiny apps](/validate-shiny.html)
+- [R package validation](/validate-package.html)
+- [Leveraging operational metrics for better SCEs/platforms](/scemetrics.html)
 
 :::
 
