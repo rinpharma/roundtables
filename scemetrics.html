@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Depending on OS – R/Pharma round tables</title>
+<title>8&nbsp; Sharing R code without sharing R code – R/Pharma round tables</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./rproducts.html" rel="next">
-<link href="./multi-modal.html" rel="prev">
+<link href="./shiny-csr.html" rel="next">
+<link href="./rproducts.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./os-depends.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Depending on OS</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./scemetrics.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sharing R code without sharing R code</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -190,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./os-depends.html" class="sidebar-item-text sidebar-link active">
+  <a href="./os-depends.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Depending on OS</span></span></a>
   </div>
 </li>
@@ -202,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./scemetrics.html" class="sidebar-item-text sidebar-link">
+  <a href="./scemetrics.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sharing R code without sharing R code</span></span></a>
   </div>
 </li>
@@ -252,7 +252,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#question" id="toc-question" class="nav-link active" data-scroll-target="#question"><span class="header-section-number">7</span> Question</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"><span class="header-section-number">8.1</span> 2024</a>
+  <ul class="collapse">
+  <li><a href="#objectively-track-migrationslanguage-use-in-studies" id="toc-objectively-track-migrationslanguage-use-in-studies" class="nav-link" data-scroll-target="#objectively-track-migrationslanguage-use-in-studies"><span class="header-section-number">8.1.1</span> Objectively track migrations/language use in studies?</a></li>
+  <li><a href="#can-we-understand-what-packages-are-being-used-in-studies" id="toc-can-we-understand-what-packages-are-being-used-in-studies" class="nav-link" data-scroll-target="#can-we-understand-what-packages-are-being-used-in-studies"><span class="header-section-number">8.1.2</span> Can we understand what packages are being used in studies?</a></li>
+  <li><a href="#understanding-container-use" id="toc-understanding-container-use" class="nav-link" data-scroll-target="#understanding-container-use"><span class="header-section-number">8.1.3</span> Understanding container use</a></li>
+  <li><a href="#keeping-connect-lean" id="toc-keeping-connect-lean" class="nav-link" data-scroll-target="#keeping-connect-lean"><span class="header-section-number">8.1.4</span> Keeping Connect lean</a></li>
+  <li><a href="#general-notes" id="toc-general-notes" class="nav-link" data-scroll-target="#general-notes"><span class="header-section-number">8.1.5</span> General notes</a></li>
+  <li><a href="#action-items-and-questions" id="toc-action-items-and-questions" class="nav-link" data-scroll-target="#action-items-and-questions"><span class="header-section-number">8.1.6</span> Action Items and Questions</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8.1.7</span> References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -261,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Depending on OS</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sharing R code without sharing R code</span></h1>
 </div>
 
 
@@ -278,26 +287,96 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Chairs: Mike Smith &amp; Ed Lauzier</p>
-<section id="question" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Question</h1>
-<p>How much risk is there in depending on external packages, and can we foster a clearer set of expectations between developers and people/companies that depend on these packages?</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Missing notes
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Content is still coming, an email will be shared once the site is complete.</p>
-<p>In the interim - the <a href="https://phuse-org.github.io/E2E-OS-Guidance/using.html">PHUSE Open Source guidance includes a chapter on depending on Open Source</a>.</p>
-</div>
-</div>
+<p>Chairs: James Black</p>
+<section id="section" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="section"><span class="header-section-number">8.1</span> 2024</h2>
+<section id="objectively-track-migrationslanguage-use-in-studies" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="objectively-track-migrationslanguage-use-in-studies"><span class="header-section-number">8.1.1</span> Objectively track migrations/language use in studies?</h3>
+<ul>
+<li>Most companies are using Github or Gitlab for study code - if we know where all the repos are, can we scan them via the API to track things like which studies are using R, Python or still on SAS?</li>
+<li><strong>Key Questions:</strong>
+<ul>
+<li>What code should be scanned? Look for files present? <code>.sas</code>, <code>.R</code>, <code>.py</code>, <code>.sql</code>, etc.? Is it more accurate than inbuilt language detection present in API endpoints?</li>
+<li>Should the focus be on studying all code written or only focus on study code (e.g.&nbsp;limit scope to org that holds studies)?</li>
+<li>Is there an API endpoint that can indicate which repository is being used?</li>
+</ul></li>
+</ul>
+</section>
+<section id="can-we-understand-what-packages-are-being-used-in-studies" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="can-we-understand-what-packages-are-being-used-in-studies"><span class="header-section-number">8.1.2</span> Can we understand what packages are being used in studies?</h3>
+<ul>
+<li><strong>Idea:</strong>
+<ul>
+<li>The Posit Package Manager API doesn’t reliably say what validated R packages are used in each study, but as <code>renv</code> is used more, can we scan the <code>renv.lock</code> files to see what packages are being used?</li>
+</ul></li>
+<li><strong>Purpose:</strong>
+<ul>
+<li>This helps validation teams, our teams working on R packages, as well as help flag if we need to identify who used a specific version of a specific package in a study.</li>
+<li>Where packages are ‘pre-baked’ into containers to speed up ‘time to pulling data’, want to keep that as lean as possible using metrics like this.</li>
+</ul></li>
+</ul>
+</section>
+<section id="understanding-container-use" class="level3" data-number="8.1.3">
+<h3 data-number="8.1.3" class="anchored" data-anchor-id="understanding-container-use"><span class="header-section-number">8.1.3</span> Understanding container use</h3>
+<ul>
+<li><strong>Challenges:</strong>
+<ul>
+<li>How do we understand uptake of managed images, and who is using old images?</li>
+<li>Need for a strategy to manage container upgrades effectively.</li>
+<li>Actively understand patterns of image use across your SCE</li>
+<li>Look at patterns that should be dealt with - e.g.&nbsp;large numbers of idle interactive containers clogging worker nodes</li>
+</ul></li>
+<li><strong>Idea:</strong>
+<ul>
+<li>Pull k8’s logs to get list of all active containers by person over time</li>
+</ul></li>
+</ul>
+</section>
+<section id="keeping-connect-lean" class="level3" data-number="8.1.4">
+<h3 data-number="8.1.4" class="anchored" data-anchor-id="keeping-connect-lean"><span class="header-section-number">8.1.4</span> Keeping Connect lean</h3>
+<ul>
+<li><strong>Idea:</strong>
+<ul>
+<li>Roche had an example where &gt;500 broken items, and &gt;500 items not touched in more than a year were on the server</li>
+<li>Use Connect data (the postgres database as the API is very slow) to remove content</li>
+</ul></li>
+<li><strong>Purpose:</strong>
+<ul>
+<li>Remove potentially GBs of un-used data on the Connect server, and also enforce retention rules</li>
+</ul></li>
+</ul>
+</section>
+<section id="general-notes" class="level3" data-number="8.1.5">
+<h3 data-number="8.1.5" class="anchored" data-anchor-id="general-notes"><span class="header-section-number">8.1.5</span> General notes</h3>
+<ul>
+<li>Shift continues to data being outside of the SCE</li>
+<li>Some companies moved to ‘iterate anywhere - final batch runs matter’ stance. Some still consider every activity requiring validation.</li>
+<li>Discussion highlighted a split on whether internet access is blocked - in some companies there is no air gap, in ohers there is, particularly on ‘validated batch runs’</li>
+<li>singularity compresses containers better</li>
+<li>big celebrations that now we do not need to rebuild containers each time workbench is updated!!</li>
+<li>Provenance is an audit/validation requirement</li>
+<li>Explore the potential use of common tools to data engineering that are absent in clinical reporting (e.g.&nbsp;dbt, airflow, prefect)</li>
+</ul>
+</section>
+<section id="action-items-and-questions" class="level3" data-number="8.1.6">
+<h3 data-number="8.1.6" class="anchored" data-anchor-id="action-items-and-questions"><span class="header-section-number">8.1.6</span> Action Items and Questions</h3>
+<ul>
+<li><strong>Action Item:</strong>
+<ul>
+<li>White paper with Mark Bynens on the SCE.</li>
+<li>In white paper, clarify what the SCE is and how to handle program environments and data integration more effectively.</li>
+</ul></li>
+</ul>
+</section>
+<section id="references" class="level3" data-number="8.1.7">
+<h3 data-number="8.1.7" class="anchored" data-anchor-id="references"><span class="header-section-number">8.1.7</span> References</h3>
+<ul>
+<li>James’ posit::conf talk: <a href="https://epijim.uk/talk/giving-your-scientific-computing-environment-sce-a-voice/">epijim.uk/talk/giving-your-scientific-computing-environment-sce-a-voice</a></li>
+<li>Alanah Jonas from GSK may have a relevant talk later in the year at PHUSE EU 2024</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -723,13 +802,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./multi-modal.html" class="pagination-link" aria-label="Multi-modal drug development">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Multi-modal drug development</span></span>
+      <a href="./rproducts.html" class="pagination-link" aria-label="Sharing R code without sharing R code">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sharing R code without sharing R code</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./rproducts.html" class="pagination-link" aria-label="Sharing R code without sharing R code">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sharing R code without sharing R code</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./shiny-csr.html" class="pagination-link" aria-label="Interactive CSR">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Interactive CSR</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

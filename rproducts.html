@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Depending on OS – R/Pharma round tables</title>
+<title>7&nbsp; Sharing R code without sharing R code – R/Pharma round tables</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./rproducts.html" rel="next">
-<link href="./multi-modal.html" rel="prev">
+<link href="./scemetrics.html" rel="next">
+<link href="./os-depends.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./os-depends.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Depending on OS</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rproducts.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sharing R code without sharing R code</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -190,13 +190,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./os-depends.html" class="sidebar-item-text sidebar-link active">
+  <a href="./os-depends.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Depending on OS</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rproducts.html" class="sidebar-item-text sidebar-link">
+  <a href="./rproducts.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sharing R code without sharing R code</span></span></a>
   </div>
 </li>
@@ -252,7 +252,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#question" id="toc-question" class="nav-link active" data-scroll-target="#question"><span class="header-section-number">7</span> Question</a></li>
+  <li><a href="#proposal" id="toc-proposal" class="nav-link active" data-scroll-target="#proposal"><span class="header-section-number">7.0.1</span> Proposal</a></li>
+  <li><a href="#expected-impact" id="toc-expected-impact" class="nav-link" data-scroll-target="#expected-impact"><span class="header-section-number">7.0.2</span> Expected impact</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources"><span class="header-section-number">8</span> Resources</a></li>
   </ul>
 </nav>
     </div>
@@ -261,7 +263,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Depending on OS</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sharing R code without sharing R code</span></h1>
 </div>
 
 
@@ -278,24 +280,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Chairs: Mike Smith &amp; Ed Lauzier</p>
-<section id="question" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Question</h1>
-<p>How much risk is there in depending on external packages, and can we foster a clearer set of expectations between developers and people/companies that depend on these packages?</p>
+<p>Chairs: Rohan Parmar and Min Lee</p>
+<section id="proposal" class="level3" data-number="7.0.1">
+<h3 data-number="7.0.1" class="anchored" data-anchor-id="proposal"><span class="header-section-number">7.0.1</span> Proposal</h3>
+<p>You created a small shiny application for your colleagues in a small team (2-5 people), that application is now getting extensive usage with more than 20, 30 or even 300 users. How do you go about scaling up your application? We want to hear from other users’ experience in creating long lived R based workflows. This can be anything from small snippets of code that started off as scripts that can be sequestered into R packages that are idiomatic to commonly used R interfaces to cater to a wider audience. Shiny apps that are doing computationally heavy tasks with multiple users that require you to think about scalability, fault tolerance, and complexity.</p>
+</section>
+<section id="expected-impact" class="level3" data-number="7.0.2">
+<h3 data-number="7.0.2" class="anchored" data-anchor-id="expected-impact"><span class="header-section-number">7.0.2</span> Expected impact</h3>
+<p>Sharing how others have made their R code into something that is much more user friendly or easier to contribute to. Code that readily interfaces with prior frameworks like tidyverse or scales easily. Other R users can navigate the trade-offs around consistency and scalability. Make informed decisions when writing R code taking into account future necessities such as validation requirements or maintainability.</p>
+<p><a href="https://github.com/rinpharma/rinpharma-summit-2024/discussions/16">Productionalizing R code · rinpharma rinpharma-summit-2024 · Discussion #16</a></p>
+<p>In the discussion, it was noted this was a common problem where an app grows into something bigger organically, and Nitesh flagged some connection to the topic of wanting to share R functions without sharing the R code.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Missing notes
+Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Content is still coming, an email will be shared once the site is complete.</p>
-<p>In the interim - the <a href="https://phuse-org.github.io/E2E-OS-Guidance/using.html">PHUSE Open Source guidance includes a chapter on depending on Open Source</a>.</p>
+<p>Notes not ready yet.</p>
 </div>
 </div>
+</section>
+<section id="resources" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Resources</h1>
 
 
 </section>
@@ -723,13 +733,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./multi-modal.html" class="pagination-link" aria-label="Multi-modal drug development">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Multi-modal drug development</span></span>
+      <a href="./os-depends.html" class="pagination-link" aria-label="Depending on OS">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Depending on OS</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./rproducts.html" class="pagination-link" aria-label="Sharing R code without sharing R code">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sharing R code without sharing R code</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./scemetrics.html" class="pagination-link" aria-label="Sharing R code without sharing R code">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sharing R code without sharing R code</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

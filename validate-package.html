@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Depending on OS – R/Pharma round tables</title>
+<title>11&nbsp; Validate R packages – R/Pharma round tables</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./rproducts.html" rel="next">
-<link href="./multi-modal.html" rel="prev">
+<link href="./validate-shiny.html" rel="next">
+<link href="./smallmidpharma.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./os-depends.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Depending on OS</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./validate-package.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Validate R packages</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -190,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./os-depends.html" class="sidebar-item-text sidebar-link active">
+  <a href="./os-depends.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Depending on OS</span></span></a>
   </div>
 </li>
@@ -220,7 +220,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./validate-package.html" class="sidebar-item-text sidebar-link">
+  <a href="./validate-package.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Validate R packages</span></span></a>
   </div>
 </li>
@@ -252,7 +252,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#question" id="toc-question" class="nav-link active" data-scroll-target="#question"><span class="header-section-number">7</span> Question</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"><span class="header-section-number">11.1</span> 2024</a>
+  <ul class="collapse">
+  <li><a href="#package-lifecycle-management-and-validation" id="toc-package-lifecycle-management-and-validation" class="nav-link" data-scroll-target="#package-lifecycle-management-and-validation"><span class="header-section-number">11.1.1</span> Package Lifecycle Management and Validation</a></li>
+  <li><a href="#risk-management-and-validation-practices" id="toc-risk-management-and-validation-practices" class="nav-link" data-scroll-target="#risk-management-and-validation-practices"><span class="header-section-number">11.1.2</span> Risk Management and Validation Practices</a></li>
+  <li><a href="#internal-vs-external-package-validation" id="toc-internal-vs-external-package-validation" class="nav-link" data-scroll-target="#internal-vs-external-package-validation"><span class="header-section-number">11.1.3</span> Internal vs External Package Validation</a></li>
+  <li><a href="#unit-testing-and-quality-assurance" id="toc-unit-testing-and-quality-assurance" class="nav-link" data-scroll-target="#unit-testing-and-quality-assurance"><span class="header-section-number">11.1.4</span> Unit Testing and Quality Assurance</a></li>
+  <li><a href="#package-management-and-environment-control" id="toc-package-management-and-environment-control" class="nav-link" data-scroll-target="#package-management-and-environment-control"><span class="header-section-number">11.1.5</span> Package Management and Environment Control</a></li>
+  <li><a href="#action-items-and-future-directions" id="toc-action-items-and-future-directions" class="nav-link" data-scroll-target="#action-items-and-future-directions"><span class="header-section-number">11.1.6</span> Action Items and Future Directions</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -261,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Depending on OS</span></h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Validate R packages</span></h1>
 </div>
 
 
@@ -278,26 +286,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Chairs: Mike Smith &amp; Ed Lauzier</p>
-<section id="question" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Question</h1>
-<p>How much risk is there in depending on external packages, and can we foster a clearer set of expectations between developers and people/companies that depend on these packages?</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Missing notes
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Content is still coming, an email will be shared once the site is complete.</p>
-<p>In the interim - the <a href="https://phuse-org.github.io/E2E-OS-Guidance/using.html">PHUSE Open Source guidance includes a chapter on depending on Open Source</a>.</p>
-</div>
-</div>
+<section id="section" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="section"><span class="header-section-number">11.1</span> 2024</h2>
+<p>Chairs: Doug Kelkhof and Margaret Wishart</p>
+<section id="package-lifecycle-management-and-validation" class="level3" data-number="11.1.1">
+<h3 data-number="11.1.1" class="anchored" data-anchor-id="package-lifecycle-management-and-validation"><span class="header-section-number">11.1.1</span> Package Lifecycle Management and Validation</h3>
+<p>Lifecycle Changes and Impact: Managing the lifecycle of R packages is crucial, particularly understanding what it means for a package to change its behavior. It’s important to assess whether such changes are significant and if they impact the stability or reliability of the package. The use of tools like Diffify can help track lifecycle changes and validate whether new versions introduce breaking changes or fix bugs.</p>
+<p>Containerization and Stability: Containers, such as those created using Nix, are increasingly seen as a way forward for maintaining stable software environments. They help bundle specific package versions, ensuring that a validated environment can be reliably reproduced. However, there are challenges, such as what exactly gets bundled in a container and the legal implications (e.g., GPL license concerns). Posit snapshots are favored by some for controlled environments, as they significantly reduce maintenance, though migrating snapshots can introduce challenges.</p>
+<p>Snapshot Management: Deciding when to lock down a snapshot is crucial. Should it be at the beginning of a project, or after some initial work? Snapshots offer a stable point of reference, but as packages evolve, there’s a risk of missing out on important updates or bug fixes. The question of whether to use an old snapshot or stay on the cutting edge is a balancing act between stability and leveraging new features or fixes.</p>
+<p>Temporal Metrics: With rapidly changing packages, it’s important to look at temporal metrics to assess risks associated with quick changes. For instance, the validation of packages like Arrow needs to consider how a bug fix might impact its validation status and whether a high rate of change poses additional risks.</p>
+</section>
+<section id="risk-management-and-validation-practices" class="level3" data-number="11.1.2">
+<h3 data-number="11.1.2" class="anchored" data-anchor-id="risk-management-and-validation-practices"><span class="header-section-number">11.1.2</span> Risk Management and Validation Practices</h3>
+<p>Risk Retrospective: There’s a need for a systematic approach to retrospectively evaluate risks. For example, running old tests on new package versions can reveal breaking changes or confirm that past bugs have been addressed. This process ensures that packages remain reliable over time, even as they evolve.</p>
+<p>Automation vs Human Involvement: While automation is key to maintaining consistency, especially in long-term projects, human oversight is crucial for high-risk packages. These packages often require additional validation steps, and there’s debate over how much human intervention is necessary. High-risk packages might involve more in-the-loop validation, while low-risk ones could rely more on automated processes.</p>
+</section>
+<section id="internal-vs-external-package-validation" class="level3" data-number="11.1.3">
+<h3 data-number="11.1.3" class="anchored" data-anchor-id="internal-vs-external-package-validation"><span class="header-section-number">11.1.3</span> Internal vs External Package Validation</h3>
+<p>Differentiated Validation Criteria: Internal packages often have different validation criteria compared to those on CRAN. Internal developers might not be as familiar with traditional checks like R CMD checks, leading to a need for more tailored validation processes. It’s also noted that internal validation is more stringent, often requiring additional tests that aren’t open-sourced, which raises questions about whether these should be contributed to public repositories.</p>
+<p>Baseline and Organizational Validation: Organizations often maintain a baseline of validated packages and differentiate between internal and third-party vendor packages. Some organizations have recreated their own risk metrics tools, tailoring them to their specific needs. The audit process involves defining testing processes and being aware of the risks associated with package updates or changes.</p>
+</section>
+<section id="unit-testing-and-quality-assurance" class="level3" data-number="11.1.4">
+<h3 data-number="11.1.4" class="anchored" data-anchor-id="unit-testing-and-quality-assurance"><span class="header-section-number">11.1.4</span> Unit Testing and Quality Assurance</h3>
+<p>Effective Testing Beyond Coverage: Simply hitting a coverage threshold is not enough; the quality of tests is crucial. For instance, high test coverage doesn’t guarantee that the tests are meaningful or effective. There’s a need to ensure that tests validate the core functionality of packages, particularly in statistical packages that might be treated differently due to their implications in analysis.</p>
+<p>Custom and Public Contributions: Organizations often write additional tests on top of package tests to further validate functionality. However, these tests are usually kept internal, which leads to a discussion on the potential benefits of contributing these tests to public repositories. Barriers to this include the time-intensive nature of creating these tests and a lack of familiarity with the contribution process.</p>
+<p>Regulatory and Industry Standards: In regulated industries, such as pharmaceuticals, there are higher requirements for package submissions, including unit tests and documentation. Collaboration with regulatory bodies like the FDA and EMA is essential to establish minimum validation requirements. Pharmaverse, for example, has adopted a notion that all packages must have standardized documentation and testing, accepted by the community.</p>
+</section>
+<section id="package-management-and-environment-control" class="level3" data-number="11.1.5">
+<h3 data-number="11.1.5" class="anchored" data-anchor-id="package-management-and-environment-control"><span class="header-section-number">11.1.5</span> Package Management and Environment Control</h3>
+<p>Package Manager and Snapshot Control: Managing package snapshots is typically the responsibility of IT, with packages being added as needed. Renv is commonly used but can sometimes fail catastrophically, leading to a preference for Posit snapshots in controlled environments. This method cuts down maintenance significantly, though issues arise when migrating snapshots, as users may have to deal with multiple package version updates simultaneously.</p>
+<p>Containerization Challenges: While Docker containers are technically preferred for creating stable environments, there are trade-offs, such as handling individual environments and licensing concerns. Containers might be seen as derivative works under GPL, which complicates their use in proprietary settings. Nix offers a different approach by locking down R and package versions with a declarative installation method, though challenges remain with mirrors and installation reliability. Snapshot Migration and Version Locking: The decision of when to lock down a snapshot—whether at the beginning of a project or after some work has been done—is critical. Locking down too early might prevent access to necessary updates, while delaying it could introduce instability. Some organizations favor letting certain users work on the bleeding edge to vet new package versions, while others prioritize stability by locking down environments early on.</p>
+</section>
+<section id="action-items-and-future-directions" class="level3" data-number="11.1.6">
+<h3 data-number="11.1.6" class="anchored" data-anchor-id="action-items-and-future-directions"><span class="header-section-number">11.1.6</span> Action Items and Future Directions</h3>
+<p>Validation Guidelines and Metrics: There’s a need to establish standard validation guidelines that include metrics to help determine risk levels. This could start with Pharmaverse and eventually be expanded to other areas in pharma and beyond.</p>
+<p>Collaboration with Regulatory Bodies: Working with entities like the FDA and EMA to develop minimum validation requirements and documentation standards for R packages is essential. This collaboration would help ensure that the industry adopts consistent and reliable validation practices.</p>
+<p>Text-Based Metric Files: Creating text-based files for major defined metrics would facilitate the tracking and management of package validation. This would help in setting clear criteria for evaluating package risk and determining when additional scrutiny is needed.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -723,13 +750,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./multi-modal.html" class="pagination-link" aria-label="Multi-modal drug development">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Multi-modal drug development</span></span>
+      <a href="./smallmidpharma.html" class="pagination-link" aria-label="Small/mid pharma &amp; OS">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Small/mid pharma &amp; OS</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./rproducts.html" class="pagination-link" aria-label="Sharing R code without sharing R code">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sharing R code without sharing R code</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./validate-shiny.html" class="pagination-link" aria-label="Validate shiny?">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Validate shiny?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

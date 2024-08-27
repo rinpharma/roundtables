@@ -4,7 +4,27 @@
     "href": "index.html",
     "title": "R/Pharma round tables",
     "section": "",
-    "text": "Scope and purpose\nThis document captures discussion, pain points and a path to next steps after the R/Pharma events of 2023. There are two events that led to this document being created.\n\n\n\n\n\n\n 2024 F2F Roundtables in Seattle\n\n\n\n~120 leaders from 40+ companies met F2F in Seattle for a series of discussions on the most pressing topics for late-stage reporting in R.\nThe discussion was crowdsourced via a github discussion, and led to the following topics:\n\nHow to move people happy with SAS over to an R backboned open source future?\nHow best to engage and enable small/mid-size pharma to use open source tools\nFuture core competency of clinical statistical programmer with AI/LLM\nCan we do data storage and processing better in clinical trials?\n\n\n\n\n\n\n\n\n\n 2023 F2F Roundtables in Chicago\n\n\n\n~60 leaders from 40+ companies met F2F in Chicago for a series of discussions on the most pressing topics for late-stage reporting in R.\nThe discussion was crowdsourced via a github discussion, and led to the following topics:\n\nWhat are our goals for a modern clinical reporting workflow, on a modern SCE?\nWhat are the risks with our increasing external business code dependencies?\nWe have a path to R package validation - but what are we doing with shiny apps?\nWhat is the path to an interactive CSR?\nThe case for contributing to OS\nWhere are we with our people?\nWhat should we be doing to leverage advances in LLMs/AA/AI impact? (at the drug development through to developer efficiency levels)\nWhat are the barriers bringing imaging/genomics/digital biomarkers and the CRF closer?\n\n\n\n\n\n\n\n\n\n References\n\n\n\nR Validation Hub update\nDoug’s slides on the shared validated repo\nCAMIS - comparing differences based on tool used\nPHUSE Open Source guidance\n2023 planning repo",
+    "text": "Scope and purpose\nThis document captures discussion, pain points and a path to next steps after the R/Pharma events of 2023. There are two events that led to this document being created.",
+    "crumbs": [
+      "Scope and purpose"
+    ]
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "R/Pharma round tables",
+    "section": "2024",
+    "text": "2024\nR Validation Hub update\n2024 planning repo",
+    "crumbs": [
+      "Scope and purpose"
+    ]
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "R/Pharma round tables",
+    "section": "2023",
+    "text": "2023\nR Validation Hub update\nDoug’s slides on the shared validated repo\n2023 planning repo",
     "crumbs": [
       "Scope and purpose"
     ]
@@ -20,283 +40,343 @@
     ]
   },
   {
-    "objectID": "modern-sce.html",
-    "href": "modern-sce.html",
-    "title": "1  Modern SCEs",
-    "section": "",
-    "text": "2 Question\nWhat are our goals for a modern clinical reporting workflow, on a modern SCE? What are our learnings today achieving that goal, and how can we better prepare ourselves to balance the drive to innovate while having to evolve people and processes?",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
-    ]
-  },
-  {
-    "objectID": "modern-sce.html#is-the-next-step-homegrown-or-vendor",
-    "href": "modern-sce.html#is-the-next-step-homegrown-or-vendor",
-    "title": "1  Modern SCEs",
-    "section": "3.1 Is the next step Homegrown or vendor",
-    "text": "3.1 Is the next step Homegrown or vendor\n\nSplit in vendor approaches vs homegrown for the new generation. We don’t know what the ideal is today, but we know we need to be able to evolve and adapt to new technologies and approaches much more than we did in the past.\nHomegrown usually means modular, as still relient on different open soruce and vendor solutions (e.g. AWS, Hashicorp, etc). Is a more accurate description turnkey vs modular?\nHow to ensure our modular platform scales is an important new aspect, especially using new open source tools.\nIn a turnkey, the vendor will have baked in provenance. In a modular we must focus on making sure metadata/provenance runs as a background across the system to ensure we can trace back from an insights and transformations to the source data.\nA major pain point is how things are funded - we are not used to funding a platform for sustained evolution/innovation, but in the data science space things are constantly evolving - so moving to operations/maintenance is equilivant to decay.\n\n\n3.1.1 Relationship with informatics partners\n\nThere is often tension between informatics and the business, with the growth of business written code that looks more like software (e.g. R packages) vs the the scripts/macros we use to make. We shared experiences finding a balance as we entered this new phase.\nIt was refreshing to see we have cases where informatics and the business are aligned on one goal, and we need to be more proactive trying to create these relationships (including inviting informatics to our pan-industry discussions. J&J + Roche had informatics representation at this meeting, but otherwise the dialogue was from the business perspective).",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
-    ]
-  },
-  {
-    "objectID": "modern-sce.html#what-is-an-sce",
-    "href": "modern-sce.html#what-is-an-sce",
-    "title": "1  Modern SCEs",
-    "section": "3.2 What is an SCE?",
-    "text": "3.2 What is an SCE?\n\nShould GxP and exploratory remain seperate platforms?\n\nSplit across companies in the group, with some companies having a single platform for both, and others having seperate platforms.\nWith initiatives like the digital protocol coming, we don’t know what the impact will be on routine clinical reporting, and what impacts this will have on the types of people and tasks needed to execute a CSR.\nPain points merging:\n\nValidation (CSV) is a long and high cost process in most companies, which can impact ability to support exploratory work.\nNeeds are different. E.g. clinical reporting is low compute, while design and biomarker work is often heavy in memory and data.\n\n\nIs data part of the SCE? Traditionally yes, but some but not all companies are de-coupling data from compute.\nWhether it’s in the SCE or not, tracebility is extra important in our domain of regulatory reporting.\nIt appeared across all companies access to an SCE is through a web-browser (not a local application)",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
-    ]
-  },
-  {
-    "objectID": "modern-sce.html#building-trust-in-businessopen-source-code",
-    "href": "modern-sce.html#building-trust-in-businessopen-source-code",
-    "title": "1  Modern SCEs",
-    "section": "3.3 Building trust in business/open source code",
-    "text": "3.3 Building trust in business/open source code\n\nThe Cathedral and the Bazaar by Eric Rayman was a recomended essay to read, that talks about ‘Cathedral’ products where the code is developed in a closed environment then released, vs ‘Bazaar’ products where the code is developed in the open. An arguement is the Bazaar model, as long as it is a project with enough eyeballs, will lead to shallow bugs; this is also known as Linus’ Law.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
-    ]
-  },
-  {
-    "objectID": "modern-sce.html#change-management-into-a-modern-sce",
-    "href": "modern-sce.html#change-management-into-a-modern-sce",
-    "title": "1  Modern SCEs",
-    "section": "3.4 Change-management into a modern SCE",
-    "text": "3.4 Change-management into a modern SCE\n\nWhat are we actually building? A general data science platform? A platform optimised for clinical reporting?\n\nThese are not the same platform, and which you pick has an impact. e.g. should statistical programmers learn git, or should we give a simple GUI for pushing code through QC and to Prod?\nThere is not a consensus about this for next-gen, with only a handful of companies expecting statistical programmers to work in the same way as general data scientists.\n\nHistorically we depended on SAS, it’s data formats, and filesystems. How to build a modern SCE that doesn’t?\n\nDo we enable legacy workflows to work in the new SCE?; Only new ways; or how do we find a balance to ensure business continuity while enabling innovation?\nThe human and process change management piece is massive, and SCE POs must work in tandem with statistical programming leadership.\nAgreement the biggest pain point is the dependency on file-based network share drives for data and insight outputs. One company mentioned they have millions of directories in their legacy SCE.\n\nMost companies have carried over having the outputs server be a network share drive, but would a more ‘publishing’ type model be more robust?",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
-    ]
-  },
-  {
-    "objectID": "modern-sce.html#general-notes",
-    "href": "modern-sce.html#general-notes",
-    "title": "1  Modern SCEs",
-    "section": "3.5 General notes",
-    "text": "3.5 General notes\n\nWe manage on user access. A question is whether we should control access based on user access and the intended use. In terms of both where they are working and what the context of the work is.\nWe need to rightsize our ambitions, as going to broad will slow us down.\nHow will moving to this latest generation be a positive impact on our financials? Interesting point made about putting ourselves in the shoes of someone like a CMO - if you don’t care about how the CSR is generated, how is the new SCE making the company money and when will we get a fiscal ROI?\nInteractive analysis is growing - need to prepare for when people want to use something like shiny for GxP\nThe ideal people to work on the SCEs are unicorns - they need to be able to work with the business, understand the trial processes, and be able to work with the technology. We need to be able to train people to be unicorns, and we need to be able to retain them.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Modern SCEs</span>"
-    ]
-  },
-  {
-    "objectID": "validate-shiny.html",
-    "href": "validate-shiny.html",
-    "title": "2  Validate shiny?",
-    "section": "",
-    "text": "2.1 2024\nChairs: Devin Pastoor and Ellis Hughes",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Validate shiny?</span>"
-    ]
-  },
-  {
-    "objectID": "validate-shiny.html#section-1",
-    "href": "validate-shiny.html#section-1",
-    "title": "2  Validate shiny?",
-    "section": "2.2 2023",
-    "text": "2.2 2023\nChairs: James Black and Harvey Lieberman\n\n2.2.1 Question\nWe have a path to R package validation - but what about shiny apps? In what context would validation become relevant to shiny app code, and how can we get ahead of this topic to pave a way forward for interactive CSRs?\n\n\n2.2.2 Topics discussed\n\n2.2.2.1 Do we need to validate?\n\nTiered approach / decision tree\n\nLowest is made by study team for study team. 2nd level is risk is unsupervised use, or specific contexts - e.g. making an app for dosing or safety. 3rd would be shiny CSR.\nIs the results going directly from the app into a submission?\nDon’t validate a shiny app - validate the static functions in the R packages. CSV may not be relevant for UIs (vs static R packages)\n\n\n\n\n2.2.2.2 What are we Testing and Why?\nThere is a clear difference of opinion throughout the industry, often led by quality groups. Some companies validate shiny apps as if they were distinct pieces of software, using their internal software validation procedures. These processes are often outdated and unsuitable, requiring timestamped user-testing and screen captures.\nOther companies solely consider packages, not even validating shiny apps, but validating just the logic. The group discussed a preferred way of working – separating the logic and the UI.\nThis brings up the question – do we really need to validate shiny apps? Can we just validate the logic?\n\n\n2.2.2.3 Who Does the Testing?\nAgain, there is some difference between companies in who does the testing. Generally, the developer writes the tests but tests are performed either by the business or by the quality group.\n\n\n2.2.2.4 Use of Automation\nQuestion posed to people present around the table: Does your company’s validation system allow for automation? Answers from the table: 8 companies = yes, 2 companies = no. Another 4 companies = no (offered by consultant who works with Pharma companies). Clearly a range of capabilities across the industry.\nFrom an automation perspective, the Pharma industry is very far behind the technology industry. Technology codebases tend to be far more complex but they are also automated. Can we learn from their platforms and apply their processes to validating shiny apps? Tools such as {shinytest2} are daunting to use. Can they be made more user friendly? There have been some steps to help automate these tasks – eg {shinyvalidator} but more work is needed in this area.\nIt’s very challenging to validate a reactive graph. Automated processes have the ability to detect changes in a single pixel – is this desirable or undesirable?\n\n\n2.2.2.5 Types of Testing\nThere is a clear difference across companies in opinions as to the amount of unit testing vs UAT and end-user testing. Unit tests are easy to write but are do not demonstrate how an app works. {shinytest2} can be used for end-user testing but, as mentioned above, may be daunting to use, may not be acceptable within a quality organization and may not fit in current work practices.\nUnit tests are generally written as code is written. They are fast to write and fast to execute. End-to-end tests, however, are written once code is complete and tend to be slow to execute.\n\n\n2.2.2.6 Robust UIs?\n\nGood to have unit tests - often manual testing. Automated can easily get messed up as the code evolves.\nWe should use the git flow - e.g. protect master and disable manual deployments\nShow or download R code is perfect for reproducibility → e.g. show code button\n\nBut then need to actually run that in a prod batch run\nthis use can case skip validation as code is run as study code\n\nSome cases where you don’t want to export and run code → e.g. output used directly for decision making are coming\nHow to handle risk of UI problems if our focus is on the static code - e.g. misnamed reactive values so wrong values being shown, even if static R packages giving correct results.\nRisk based is really important - e.g. for something like dark mode breaking, we need to know what requirements are high risk (e.g. table is correct) vs low risk (e.g. dark mode button)\n\n\n\n2.2.2.7 Ideas to improve the process\n\nValidation tests as text files (ATDD/BDD from software engineering).\n\nFrame in Gherkin format plus package of fixtures\nContribute test code to public packages\nWhen companies write extra tests, make a PR to add them to the actual package test suite and get others in the community to review and comment\nExtend to more than tests – documentation, etc.\nWe need clarity around packages used in submissions.\nWould big Pharma be willing to list all packages that pass their internal risk-assessment and share? Also share why they pass/fail a risk-assessment?\nValidating shiny apps – can we share some cross-industry experience?\nQA vs validation. At what stage should I worry about validation?\n\nCan we talk to QA departments / QA senior leadership to get them to write up their thoughts / requirements? Ask “How can we make your job easier?”\n\n\nShould we include QA and more IT at next year’s summit?\n\n\n\n2.2.2.8 Actions\n\nCan we share some common high level guidance on stratifying risk in shiny shared across companies? (Pfizer has written this already internally).\nDiscuss if we should have an extension of R package whitepaper to cover shiny?\n\n\n\n\n\n\n\n\n\n\n\n\nEstablish a CSR working group (first talk to Shiny submissions working group to establish overlap?)",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Validate shiny?</span>"
-    ]
-  },
-  {
-    "objectID": "change-management.html",
-    "href": "change-management.html",
-    "title": "3  Change management",
-    "section": "",
-    "text": "3.1 2024 notes\nChairs: Cassie Murcray and Dror Berel",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Change management</span>"
-    ]
-  },
-  {
-    "objectID": "change-management.html#notes",
-    "href": "change-management.html#notes",
-    "title": "3  Change management",
-    "section": "",
-    "text": "3.1.1 Summary: Transitioning from SAS to R in the Pharmaceutical Industry\nOver the past two years, there has been a significant shift in the pharmaceutical industry from SAS to R, driven by the rising costs of SAS licenses and the influx of new talent trained in R and other open-source tools. Despite these trends, the industry’s conservative nature, particularly in a highly regulated environment, often results in a reluctance to change well-established practices.\nAs of 2024, this transition is well underway, with several companies already setting timelines for a complete migration to R. This includes replicating legacy SAS code in R for ongoing and long-term studies, as well as opting not to renew SAS licenses. While some SAS programmers find the transition to R more intuitive, others may face significant challenges.\n\n\n3.1.2 Supporting SAS Programmers in Transitioning to R\nTo facilitate the learning process for SAS programmers, various strategies can be employed:\n\nTraditional Training and Mentorship: Programs such as Posit Academy and mentoring from experienced R programmers are essential. Large organizations often establish Centers of Excellence, where a designated “R floating buddy” mentors SAS programmers throughout the various stages of learning R. This mentorship should be conducted with patience and empathy, recognizing the challenges of adapting to a new programming language with different principles and syntax.\nStrategic Learning Approaches:\n\nAddress Key Pain Points: Focus on demonstrating how specific challenges are effectively resolved with R, highlighting the value of the R-based solution, and celebrating small wins to foster continued learning.\nSimplify the Learning Ecosystem: Introduce a simple set of R packages, such as the tidyverse, before gradually introducing more advanced concepts. Avoid overwhelming learners with multiple equivalent approaches.\nGradual Progression: Start with basic concepts and gradually introduce more advanced topics like version control, beginning with individual contributions and progressing to collaborative work.\n\n\n\n\n3.1.3 Managing the Transition\nThe successful shift from SAS to R requires active management by senior leadership, including clear directives, timelines, and ongoing support. It is crucial to allocate time for learning while maintaining productivity on ongoing projects.\n\n\n3.1.4 Action Items\nTo support this transition, the following resources should be developed:\n\nCheat Sheets: Create reference guides with common code examples translated from SAS to R.\nCross-Tool Comparison: Develop a Comparative Analysis of Methods and Implementations in SAS, R, and Python (CAMIS) to help programmers understand the default parameters and methods used in each tool.\n\nThis transition will not happen organically; it requires deliberate management and a structured approach to ensure successful adoption of R across the industry.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Change management</span>"
-    ]
-  },
-  {
-    "objectID": "change-management.html#notes-1",
-    "href": "change-management.html#notes-1",
-    "title": "3  Change management",
-    "section": "3.2 2023 notes",
-    "text": "3.2 2023 notes\nChairs: Matthew Kumar and Cassie Burns\n\n3.2.1 Question\nWhere are we on getting data analysts and data scientists that work with clinical data on board (in particular, those delivering CSRs and submission packages)? What are the challenges - what has been overcome?\n\n\n3.2.2 Who are our people?\nPrefaced both sessions by asking individuals to define the our in our people;\n\nStat Programmers\nStatisticians\nData Management\nOther CSR-deliverable oriented roles (e.g. medical and scientific writing)\nManagement, Leadership\n\nTheme: R Adoption and Challenges\n\nThe adoption of R requires varied types of commitment depending on the perspective of the stakeholders involved, notably management and employees.\nLeadership usually supports the adoption of R, yet, in many cases, they don’t adequately communicate or advocate its application. Common concerns include the lack of realized ROI and the perception of R as a “nice-to-have” rather than a necessity.\nIt is not viable to mandate or compel individuals to learn R.\nSeasoned programmers, who prefer proprietary software, may leave the company if forced to switch.\nThese programmers often prefer to maintain current workflows that involve proprietary tools, established macros, homegrown IDEs, etc.\nSome in management endorse an approach of “mandate” or “force,” while others aim to “encourage.”\nExperienced stat programmers cite R’s learning curve as an obstacle to transition, and some don’t see the ROI in making the switch.\n\nTheme: Change Management\n\nImplementing proper change management was emphasized by several attendees in both sessions.\nOrganically, through change management, approximately 25% of experienced statistical programmers or statisticians have successfully completed R training, while the remaining 75% have shown resistance.\nAmong the successful 25%, only 5% have applied what they’ve learned in actual study work. This is often due to time constraints related to product deliverables.\nMapping the transition to R with learning and development goals is one strategy.\nA structured learning plan and a roadmap for R upskilling are essential. This includes trainings focused on R, particularly in the context of the pharmaceutical industry, and from a proprietary software programmer’s perspective.\nIdentification of champions or early adopters among statistical programmers could aid in transitioning colleagues.\nSeveral companies shared their strategies for promoting community learning (e.g., bi-monthly meetings, presentations, assignments), both on a “just in time” basis and on a regular schedule.\nPointing individuals to ongoing efforts and resources, such as R in Pharma, PharmaVerse, Phuse, etc., can boost awareness and participation.\nGranting individuals protected or dedicated time to learn and fail is recommended. An analogy used was “giving them a safe sandbox to try making a castle.”\nR need not be used for all tasks immediately. A more measured approach, such as starting with creating figures and then moving to more complex tasks, like AdAM programming, could better build confidence and competence.\nEnsuring enough transition time and clear direction (“as of X date, we’ll work in R”) is crucial.\nHaving leadership advocacy is vital at the end of the day.\n\n\n\n3.2.3 Theme: Emerging Talent\n\nNewer talent is increasingly trained in open-source approaches and languages, with fewer exposed to proprietary tools.\nWith the rise of data science as a field of study, many are less interested in joining a company for routine implementation work; they identify as “data scientists” and have been trained in markedly different ways.\nThis affects talent attraction, development, and retention within a company.\nInnovation can come from new hires, justifying the need to foster their development and listen to their insights.\nThere’s a unique opportunity for co-mentorship: new hires (proficient in R, Python, etc.) and existing staff (experts in domain knowledge, clinical trials, etc.): how vs what/why\nThere’s a need for clear “career pathing” or “trajectories” within statistical programming as roles evolve. Examples include:\n\n “Analyst” requires traditional statistical programming knowledge and training\n“Engineer” needs DevOps skills and a systems mindset\n“Tool builder” needs a software engineering mindset\n\nGeneral trends suggest companies are demanding a secondary language in addition to proprietary software (not necessarily R), but knowledge of at least two languages indicates an individual could reasonably learn R.\n\n\n\n3.2.4 Theme: Other Points and Considerations\n\nQuestions to consider include: What kind of training will people need in the future state? How should the support be arranged to enable the future state, potentially with IT and DEV involvement?\nDue to the required skillset, statistics and programming now need to work together more than ever\nStakeholders seek the benefits of R (e.g., Shiny, Rmarkdown), but often lack personnel to build and maintain these assets.\nR and Shiny tools can be utilized in more areas beyond TLF programming such as dose decision meetings, clinical trial design, administrative tasks, and long-term-focused applications.\nLegacy infrastructure (e.g., virtual machines and proprietary software) can pose challenges when implementing newer approaches like R and Shiny, making the transition difficult and cumbersome.\nAI and GPT can be a valuable tool in transitioning to R, but won’t completely replace a programmer. It can be used to effectively explain or translate existing code or generate entirely new code.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Change management</span>"
-    ]
-  },
-  {
-    "objectID": "multi-modal.html",
-    "href": "multi-modal.html",
-    "title": "4  Multi-modal drug development",
-    "section": "",
-    "text": "Chair: Katie Igartua\n\n5 Question\nThere is more need than ever to integrate different roles, and ways of working, along with different data modalities. What are the barriers bringing imaging/genomics/digital biomarkers and the CRF closer, how could we overcome them, and what is our envisioned benefit?\n\n\n6 Topics discussed\n\nUse of real-world evidence data (RWE) for contextualizing clinical trial samples to support indication selection, patient settings and combination therapy strategies.\n\nChallenges for users arise when leveraging multiple sources (both public and licensed) given biases such as in abstraction rules or genomic assays.\nBest practices of real world evidence outcomes analyses (eg. rwPFS, rwOS).\n\nIntegration of Claims datasets and validation. Requirement for multiple lines of evidence for a given event would enrich the quality and usability of the data and bypass biases from the source of claims data.\nImaging validation frameworks. Challenges discussed include i) interpretability and adoption of deep networks models and utility relative to the gold standard (e.g. prediction vs. RESIST criteria), ii) transferability of models across different instrument platforms and iii) variability of pathologist vs. radiologist calls in the labels.\nUse of smart devices in clinical trials. Consensus was that this is more common in non-oncology areas (e.g. cardio). How can we mitigate risk of compliance in trials?\nContextualizing small patient cohorts with rich phenotype data and longitudinal data. Liquid assays for monitoring resistance mechanisms in oncology.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multi-modal drug development</span>"
-    ]
-  },
-  {
-    "objectID": "os-depends.html",
-    "href": "os-depends.html",
-    "title": "5  Depending on OS",
-    "section": "",
-    "text": "Chairs: Mike Smith & Ed Lauzier\n\n6 Question\nHow much risk is there in depending on external packages, and can we foster a clearer set of expectations between developers and people/companies that depend on these packages?\n\n\n\n\n\n\nMissing notes\n\n\n\nContent is still coming, an email will be shared once the site is complete.\nIn the interim - the PHUSE Open Source guidance includes a chapter on depending on Open Source.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Depending on OS</span>"
-    ]
-  },
-  {
-    "objectID": "shiny-csr.html",
-    "href": "shiny-csr.html",
-    "title": "6  Interactive CSR",
-    "section": "",
-    "text": "Chairs: Ning Leng and Phil Bowsher\n\n7 Question\nIf we assume it’s technically possible to transfer - what would it mean to give an interactive CSR? How would primary, secondary and ad-hoc analysis be viewed? Would views change depending on role (e.g. sponsor, statistical reviewer, clinical reviewer)?\n\n\n8 Why?\nThe current process of CSR generation and review involves generating large amounts of tables and plots. In such scenarios, we believe an interactive application would provide a more efficient method to explore both primary and secondary analysis results.\n\n\n9 Barriers\n\nInternally\n\nMost companies have a highly process driven to medical writing, where any change is difficult to implement\n\nExternal / FDA\n\nConcern of encouraging data fishing, if controls on for instance subgroup analysis are not in place?\nNeed cross industry harmonization as HA is highly unlikely to accept each pharma company submitting an interactive CSR based on a different framework\n\n\n\n\n10 Requirements\n\nCan an interactive CSR by default be limited to only analyses defined in the SAP, should/can exploring a wider scope be allowed with clear and explicit intent by the app user?\n\nHow is the ROI of interactivity in a CSR impacted if it’s limited to produce only pre-specified anlayses? Would different reviewers have different access? (e.g. statisticla vs clinical)\n\nThere is a gap in patient profile modules and patient narratives in shiny apps\n\n\n\n11 Path to the CSR\nThere are many places where this tooling can be applied before the CSR:\n\nMonitoring\nDecision making - data in clinical science hands\nEfficiency boost (e.g. at unblinding app is on hand)\nCSR\n\nCan we define the tangible benefits? What is the ROI over different use cases? Could this allow health authorities to make less requests? How does this lead to faster reviews in tangible terms?\nHow would access control and security work? How would this be audited? Would this be validated? How would results be archived?\nCan commenting be possible (as you can markup a PDF/work doc)?\nExisting frameworks exist - e.g. teal from NEST. ARDs may mean additional results can be pre-generated in a controlled way - but ARDs can’t further process data.\n\n\n12 Resources\nEric Nantz, from the R Submissions working group, which have been working with the FDA on a shiny submisson as part of pilot 2:",
-    "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Interactive CSR</span>"
-    ]
-  },
-  {
     "objectID": "case-os.html",
     "href": "case-os.html",
-    "title": "7  The case for OS",
+    "title": "1  The case for OS",
     "section": "",
-    "text": "8 Question\nWhat is stopping people and companies from contributions in OS? Can we define the case for contributing to OS?",
+    "text": "2 Question\nWhat is stopping people and companies from contributions in OS? Can we define the case for contributing to OS?",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The case for OS</span>"
     ]
   },
   {
     "objectID": "case-os.html#licencing",
     "href": "case-os.html#licencing",
-    "title": "7  The case for OS",
-    "section": "9.1 Licencing",
-    "text": "9.1 Licencing\n\nR’s core is released on a copyleft GPL license, so there are concerns around any additions we make being required to publish back to the community. This is a concern for companies that are not in the business of selling software, but rather use software as a tool to do their business.\nPython is seen as less of risk, as it is released via permissive licence\nIs there really a legal risk for copy-left licences, and if so under what circumstances? (e.g. using it internally for a plot vs making and selling an app or algorithm that uses the copyleft dependency)\nCan we understand better how IP is protected in OS?",
+    "title": "1  The case for OS",
+    "section": "3.1 Licencing",
+    "text": "3.1 Licencing\n\nR’s core is released on a copyleft GPL license, so there are concerns around any additions we make being required to publish back to the community. This is a concern for companies that are not in the business of selling software, but rather use software as a tool to do their business.\nPython is seen as less of risk, as it is released via permissive licence\nIs there really a legal risk for copy-left licences, and if so under what circumstances? (e.g. using it internally for a plot vs making and selling an app or algorithm that uses the copyleft dependency)\nCan we understand better how IP is protected in OS?",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The case for OS</span>"
     ]
   },
   {
     "objectID": "case-os.html#process",
     "href": "case-os.html#process",
-    "title": "7  The case for OS",
-    "section": "9.2 Process",
-    "text": "9.2 Process\n\nWhen using an internal package in a filing, we can package it directly as part of the study code and give to the FDA - which is seen as less of a risk than publishing it as OS where the global community can view the code.\nFolks often want to contribute - but there are some limitations both professionally (e.g. internal process to contribute) and personally\nIf someone works on a project in their own time, there is a concern that treated is a company asset even though they are doing it outside of working hours. What is the actual boundary between work and personal contributions?\nPeople making the policies need to actually understand the topic of OS",
+    "title": "1  The case for OS",
+    "section": "3.2 Process",
+    "text": "3.2 Process\n\nWhen using an internal package in a filing, we can package it directly as part of the study code and give to the FDA - which is seen as less of a risk than publishing it as OS where the global community can view the code.\nFolks often want to contribute - but there are some limitations both professionally (e.g. internal process to contribute) and personally\nIf someone works on a project in their own time, there is a concern that treated is a company asset even though they are doing it outside of working hours. What is the actual boundary between work and personal contributions?\nPeople making the policies need to actually understand the topic of OS",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The case for OS</span>"
     ]
   },
   {
     "objectID": "case-os.html#liability",
     "href": "case-os.html#liability",
-    "title": "7  The case for OS",
-    "section": "9.3 Liability",
-    "text": "9.3 Liability\n\nWe know the liability is similar between OS and proprietary software, but there is a perception that all OS is more risky",
+    "title": "1  The case for OS",
+    "section": "3.3 Liability",
+    "text": "3.3 Liability\n\nWe know the liability is similar between OS and proprietary software, but there is a perception that all OS is more risky",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The case for OS</span>"
     ]
   },
   {
     "objectID": "case-os.html#people",
     "href": "case-os.html#people",
-    "title": "7  The case for OS",
-    "section": "9.4 People",
-    "text": "9.4 People\n\nOS contributions are seen as nice to have - how can this be prioritised vs project work?\nBe involved in projects like Oak, NEST and admiral brings recognition to the contributors\nOften projects are mostly driven by a handful, or even a couple, of people. What if someone leaves? Is OS actually a benefit here as same developer could promote and lead to use of the package at their new company?\nWrite up a short post / article titled “Here’s why you should allow your people to contribute to open source”\nWrite a blog post and short PDF that can be shared internally at the leadership level",
+    "title": "1  The case for OS",
+    "section": "3.4 People",
+    "text": "3.4 People\n\nOS contributions are seen as nice to have - how can this be prioritised vs project work?\nBe involved in projects like Oak, NEST and admiral brings recognition to the contributors\nOften projects are mostly driven by a handful, or even a couple, of people. What if someone leaves? Is OS actually a benefit here as same developer could promote and lead to use of the package at their new company?\nWrite up a short post / article titled “Here’s why you should allow your people to contribute to open source”\nWrite a blog post and short PDF that can be shared internally at the leadership level",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The case for OS</span>"
     ]
   },
   {
     "objectID": "case-os.html#resources",
     "href": "case-os.html#resources",
-    "title": "7  The case for OS",
-    "section": "9.5 Resources",
-    "text": "9.5 Resources\n\nPHUSE Open Source guidance",
+    "title": "1  The case for OS",
+    "section": "3.5 Resources",
+    "text": "3.5 Resources\n\nPHUSE Open Source guidance",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The case for OS</span>"
     ]
   },
   {
     "objectID": "case-os.html#what-can-we-do",
     "href": "case-os.html#what-can-we-do",
-    "title": "7  The case for OS",
-    "section": "9.6 What can we do?",
-    "text": "9.6 What can we do?\n\nCreate a framework to help articulate the benefit, and help to tackle the concerns/process that gets in the way",
+    "title": "1  The case for OS",
+    "section": "3.6 What can we do?",
+    "text": "3.6 What can we do?\n\nCreate a framework to help articulate the benefit, and help to tackle the concerns/process that gets in the way",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The case for OS</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The case for OS</span>"
     ]
   },
   {
-    "objectID": "smallmidpharma.html",
-    "href": "smallmidpharma.html",
-    "title": "8  Small/mid pharma & OS",
+    "objectID": "change-management.html",
+    "href": "change-management.html",
+    "title": "2  Change management",
     "section": "",
-    "text": "Chair: Katie Igartua and Kas Yousefi\n\n8.0.1 Proposal\nA pressing topic I think we should discuss is how best to engage and enable small/mid-sized pharma to use open source Ecosystems.\nIt can be sometimes overwhelming and would be helpful to have an idea where to start to join the open source journey and utilize the resources and approaches already available.\nSome questions:\n\nHow to go about setting up an open source Environment? What are the hurdles? How can the crowd-sourced groups help?\nCould small pharma use R for IB/DSUR? Does this need to be in a validated environment?\nHow do other small pharma companies uses open-source environments? and what would be areas for collaboration?\n\n\n\n8.0.2 Expected impact\nI believe this topic would be a benefit because small pharma often needs to be innovative, but due to resource limits may rely on traditional approaches and heavily rely on CROs. Having stronger small pharma presence could help in new resources and approaches for open-sourced solutions\n\n\n8.0.3 Prior discussions/work\nSome prior work includes……\n\nBBSW Panel Discussion for Open Source Tools in Small/mid sized pharma\nHow best to engage and enable small/mid-size pharma to use open source tools · rinpharma rinpharma-summit-2024 · Discussion #17\n\n\n\n9 Round table\n\nOpen sourcing adoption/contribution barrier\n\nrisk taking when you only have one product\ncost: small companies often fully outsource regulatory work to CROs, hard to justify additional investment on infra or open source work for non regulatory tasks\nIT resource: posit installation for small pharma - small company may not have the right in house IT talent to even get posit running\nAre you ready to be a shiny dev ops person & R admin?\n\nWhat are use cases to use open source? mainly in non validated env\n\ndata review, monitoring, visualization, patient profile, DSUR\nIDCC uses shiny for IDMC close sessions (instead of long pdf)\n\nAsks to the community\n\ncan large pharma open source their infra config? such as AMS yaml file?\n\nfrom the perspective at the intersection of IT, DS, stat\n\nwhat about a “single” opinionated workflow (pharmaverse is seen more as a comprehensive tool box)\n\nfrom an independent body such as r consortium?\nor can individual big pharma publish the whole workflow\n\n\nGxP set up: timing tradeoff - is it good to set up early or late? setting up early can put on restrictions that is hard to change later. balance of flexibility, best practice and cost",
+    "text": "2.1 2024 notes\nChairs: Cassie Murcray and Dror Berel",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Small/mid pharma & OS</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Change management</span>"
+    ]
+  },
+  {
+    "objectID": "change-management.html#notes",
+    "href": "change-management.html#notes",
+    "title": "2  Change management",
+    "section": "",
+    "text": "2.1.1 Summary: Transitioning from SAS to R in the Pharmaceutical Industry\nOver the past two years, there has been a significant shift in the pharmaceutical industry from SAS to R, driven by the rising costs of SAS licenses and the influx of new talent trained in R and other open-source tools. Despite these trends, the industry’s conservative nature, particularly in a highly regulated environment, often results in a reluctance to change well-established practices.\nAs of 2024, this transition is well underway, with several companies already setting timelines for a complete migration to R. This includes replicating legacy SAS code in R for ongoing and long-term studies, as well as opting not to renew SAS licenses. While some SAS programmers find the transition to R more intuitive, others may face significant challenges.\n\n\n2.1.2 Supporting SAS Programmers in Transitioning to R\nTo facilitate the learning process for SAS programmers, various strategies can be employed:\n\nTraditional Training and Mentorship: Programs such as Posit Academy and mentoring from experienced R programmers are essential. Large organizations often establish Centers of Excellence, where a designated “R floating buddy” mentors SAS programmers throughout the various stages of learning R. This mentorship should be conducted with patience and empathy, recognizing the challenges of adapting to a new programming language with different principles and syntax.\nStrategic Learning Approaches:\n\nAddress Key Pain Points: Focus on demonstrating how specific challenges are effectively resolved with R, highlighting the value of the R-based solution, and celebrating small wins to foster continued learning.\nSimplify the Learning Ecosystem: Introduce a simple set of R packages, such as the tidyverse, before gradually introducing more advanced concepts. Avoid overwhelming learners with multiple equivalent approaches.\nGradual Progression: Start with basic concepts and gradually introduce more advanced topics like version control, beginning with individual contributions and progressing to collaborative work.\n\n\n\n\n2.1.3 Managing the Transition\nThe successful shift from SAS to R requires active management by senior leadership, including clear directives, timelines, and ongoing support. It is crucial to allocate time for learning while maintaining productivity on ongoing projects.\n\n\n2.1.4 Action Items\nTo support this transition, the following resources should be developed:\n\nCheat Sheets: Create reference guides with common code examples translated from SAS to R.\nCross-Tool Comparison: Develop a Comparative Analysis of Methods and Implementations in SAS, R, and Python (CAMIS) to help programmers understand the default parameters and methods used in each tool.\n\nThis transition will not happen organically; it requires deliberate management and a structured approach to ensure successful adoption of R across the industry.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Change management</span>"
+    ]
+  },
+  {
+    "objectID": "change-management.html#notes-1",
+    "href": "change-management.html#notes-1",
+    "title": "2  Change management",
+    "section": "2.2 2023 notes",
+    "text": "2.2 2023 notes\nChairs: Matthew Kumar and Cassie Burns\n\n2.2.1 Question\nWhere are we on getting data analysts and data scientists that work with clinical data on board (in particular, those delivering CSRs and submission packages)? What are the challenges - what has been overcome?\n\n\n2.2.2 Who are our people?\nPrefaced both sessions by asking individuals to define the our in our people;\n\nStat Programmers\nStatisticians\nData Management\nOther CSR-deliverable oriented roles (e.g. medical and scientific writing)\nManagement, Leadership\n\nTheme: R Adoption and Challenges\n\nThe adoption of R requires varied types of commitment depending on the perspective of the stakeholders involved, notably management and employees.\nLeadership usually supports the adoption of R, yet, in many cases, they don’t adequately communicate or advocate its application. Common concerns include the lack of realized ROI and the perception of R as a “nice-to-have” rather than a necessity.\nIt is not viable to mandate or compel individuals to learn R.\nSeasoned programmers, who prefer proprietary software, may leave the company if forced to switch.\nThese programmers often prefer to maintain current workflows that involve proprietary tools, established macros, homegrown IDEs, etc.\nSome in management endorse an approach of “mandate” or “force,” while others aim to “encourage.”\nExperienced stat programmers cite R’s learning curve as an obstacle to transition, and some don’t see the ROI in making the switch.\n\nTheme: Change Management\n\nImplementing proper change management was emphasized by several attendees in both sessions.\nOrganically, through change management, approximately 25% of experienced statistical programmers or statisticians have successfully completed R training, while the remaining 75% have shown resistance.\nAmong the successful 25%, only 5% have applied what they’ve learned in actual study work. This is often due to time constraints related to product deliverables.\nMapping the transition to R with learning and development goals is one strategy.\nA structured learning plan and a roadmap for R upskilling are essential. This includes trainings focused on R, particularly in the context of the pharmaceutical industry, and from a proprietary software programmer’s perspective.\nIdentification of champions or early adopters among statistical programmers could aid in transitioning colleagues.\nSeveral companies shared their strategies for promoting community learning (e.g., bi-monthly meetings, presentations, assignments), both on a “just in time” basis and on a regular schedule.\nPointing individuals to ongoing efforts and resources, such as R in Pharma, PharmaVerse, Phuse, etc., can boost awareness and participation.\nGranting individuals protected or dedicated time to learn and fail is recommended. An analogy used was “giving them a safe sandbox to try making a castle.”\nR need not be used for all tasks immediately. A more measured approach, such as starting with creating figures and then moving to more complex tasks, like AdAM programming, could better build confidence and competence.\nEnsuring enough transition time and clear direction (“as of X date, we’ll work in R”) is crucial.\nHaving leadership advocacy is vital at the end of the day.\n\n\n\n2.2.3 Theme: Emerging Talent\n\nNewer talent is increasingly trained in open-source approaches and languages, with fewer exposed to proprietary tools.\nWith the rise of data science as a field of study, many are less interested in joining a company for routine implementation work; they identify as “data scientists” and have been trained in markedly different ways.\nThis affects talent attraction, development, and retention within a company.\nInnovation can come from new hires, justifying the need to foster their development and listen to their insights.\nThere’s a unique opportunity for co-mentorship: new hires (proficient in R, Python, etc.) and existing staff (experts in domain knowledge, clinical trials, etc.): how vs what/why\nThere’s a need for clear “career pathing” or “trajectories” within statistical programming as roles evolve. Examples include:\n\n “Analyst” requires traditional statistical programming knowledge and training\n“Engineer” needs DevOps skills and a systems mindset\n“Tool builder” needs a software engineering mindset\n\nGeneral trends suggest companies are demanding a secondary language in addition to proprietary software (not necessarily R), but knowledge of at least two languages indicates an individual could reasonably learn R.\n\n\n\n2.2.4 Theme: Other Points and Considerations\n\nQuestions to consider include: What kind of training will people need in the future state? How should the support be arranged to enable the future state, potentially with IT and DEV involvement?\nDue to the required skillset, statistics and programming now need to work together more than ever\nStakeholders seek the benefits of R (e.g., Shiny, Rmarkdown), but often lack personnel to build and maintain these assets.\nR and Shiny tools can be utilized in more areas beyond TLF programming such as dose decision meetings, clinical trial design, administrative tasks, and long-term-focused applications.\nLegacy infrastructure (e.g., virtual machines and proprietary software) can pose challenges when implementing newer approaches like R and Shiny, making the transition difficult and cumbersome.\nAI and GPT can be a valuable tool in transitioning to R, but won’t completely replace a programmer. It can be used to effectively explain or translate existing code or generate entirely new code.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Change management</span>"
     ]
   },
   {
     "objectID": "datatrials.html",
     "href": "datatrials.html",
-    "title": "9  Can we do data better?",
+    "title": "3  Can we do data better?",
     "section": "",
-    "text": "9.1 2024\nChairs: Stephanie Lussier and Doug Kelkhoff",
+    "text": "3.1 2024\nChairs: Stephanie Lussier and Doug Kelkhoff",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Can we do data better?</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Can we do data better?</span>"
     ]
   },
   {
     "objectID": "datatrials.html#section",
     "href": "datatrials.html#section",
-    "title": "9  Can we do data better?",
+    "title": "3  Can we do data better?",
     "section": "",
-    "text": "9.1.1 databases\nA lot of thought currently about databases, but not a lot of companies using it in primary data flows (although it is used in curated trial data for secondary use, e.g. Novartis’ Data42 and Roche’s EDIS).\n\n\n9.1.2 Blockers\n\nDependence on CROs who deliver SAS datasets generated by SAS code is a factor.\nOften fear from IT groups about the cloud, which is sometimes confusing when platforms like medidate are already cloud-based and other companies already have STDM/ADaM in AWS S3/cloud.\nUnclear justification for changes, particularly what are we getting from databases for current STDM/ADaM primary use; existing systems are mostly functional.\nChallenges with concurrent data access by multiple teams in some file based approaches, leading to errors.\n\n\n\n9.1.3 an approach around tortoiseSVN\n\nOne company had been using tortoiseSVN for a while, and is considering moving to snowflake.\nPros: Integration with version control and modern cloud storage solutions.\nCons:\n\nHigher entry threshold for users.\nGap in a user friendly GUI\nStoring data in ‘normal’ version control rather than tools designed for data versioning rapidly leads to bloated repositories.\n\n\n\n\n9.1.4 Version Control and Data Storage\n\nAlignment code versioning in Git; data versioning in tools like S3 versioning\nS3 can be accessed as a mounted drive (e.g. Lustre) and the S3 API.\n\n\n\n9.1.5 Denodo as Data Fabric Mesh\nOne company uses Denodo as a data fabric mesh; users interact via Denodo, which serves as an API layer. No direct interaction with the source data by users.\n\n\n9.1.6 Nontabular Data\n\nNot common for statistical programmers working on clinical trial data.\n\n\n\n9.1.7 CDISC Dataset JSON vs. Manifest JSON\nWriting CDISC JSON is super slow and potentially not sufficient for regular working data.\n\n\n9.1.8 Popularity and Concerns with Parquet Datasets\n\nAdmiral tool generates Parquet directly; others convert from SAS to Parquet.\nQuestions about the longevity and maintenance requirements of Parquet as it’s a blob (vs a ‘human readable’ format like CSV/JSON)\n\n\n\n9.1.9 Handling Legacy Data\n\nSuggest stacking legacy data into a database if for secondary data use\n\n\n\n9.1.10 Change Management\n\nFor statistical programming, direct instruction to new systems is necessary.\nEmphasize direct support over broad training.\nSimplify systems for users to reduce friction.\nConsider a GUI similar to Azure.\nFocus on reducing the user burden.\n\n\n\n9.1.11 Different Data Use Cases\nDifferences in data use (e.g., Shiny App vs. regulatory documents). Dashboards directly accessing EDC without needing snapshots.\n\n\n9.1.12 Summary\nUncertain value in moving from CDISC data standards to databases. Limited interest and action in this area across the organization. Not a high priority given other ongoing organizational changes. Ongoing shift away from SAS-based datasets and file storage to cloud-based systems, with increasing use of Parquet.\n\n\n9.1.13 Action Items\n\nSCE whitepaper - mark bynum from J&J\nIs there actual value / gain in databases?\nNot the best investment relative to other non-data changes going on across organization (e.g. R, containers, etc)",
+    "text": "3.1.1 databases\nA lot of thought currently about databases, but not a lot of companies using it in primary data flows (although it is used in curated trial data for secondary use, e.g. Novartis’ Data42 and Roche’s EDIS).\n\n\n3.1.2 Blockers\n\nDependence on CROs who deliver SAS datasets generated by SAS code is a factor.\nOften fear from IT groups about the cloud, which is sometimes confusing when platforms like medidate are already cloud-based and other companies already have STDM/ADaM in AWS S3/cloud.\nUnclear justification for changes, particularly what are we getting from databases for current STDM/ADaM primary use; existing systems are mostly functional.\nChallenges with concurrent data access by multiple teams in some file based approaches, leading to errors.\n\n\n\n3.1.3 an approach around tortoiseSVN\n\nOne company had been using tortoiseSVN for a while, and is considering moving to snowflake.\nPros: Integration with version control and modern cloud storage solutions.\nCons:\n\nHigher entry threshold for users.\nGap in a user friendly GUI\nStoring data in ‘normal’ version control rather than tools designed for data versioning rapidly leads to bloated repositories.\n\n\n\n\n3.1.4 Version Control and Data Storage\n\nAlignment code versioning in Git; data versioning in tools like S3 versioning\nS3 can be accessed as a mounted drive (e.g. Lustre) and the S3 API.\n\n\n\n3.1.5 Denodo as Data Fabric Mesh\nOne company uses Denodo as a data fabric mesh; users interact via Denodo, which serves as an API layer. No direct interaction with the source data by users.\n\n\n3.1.6 Nontabular Data\n\nNot common for statistical programmers working on clinical trial data.\n\n\n\n3.1.7 CDISC Dataset JSON vs. Manifest JSON\nWriting CDISC JSON is super slow and potentially not sufficient for regular working data.\n\n\n3.1.8 Popularity and Concerns with Parquet Datasets\n\nAdmiral tool generates Parquet directly; others convert from SAS to Parquet.\nQuestions about the longevity and maintenance requirements of Parquet as it’s a blob (vs a ‘human readable’ format like CSV/JSON)\n\n\n\n3.1.9 Handling Legacy Data\n\nSuggest stacking legacy data into a database if for secondary data use\n\n\n\n3.1.10 Change Management\n\nFor statistical programming, direct instruction to new systems is necessary.\nEmphasize direct support over broad training.\nSimplify systems for users to reduce friction.\nConsider a GUI similar to Azure.\nFocus on reducing the user burden.\n\n\n\n3.1.11 Different Data Use Cases\nDifferences in data use (e.g., Shiny App vs. regulatory documents). Dashboards directly accessing EDC without needing snapshots.\n\n\n3.1.12 Summary\nUncertain value in moving from CDISC data standards to databases. Limited interest and action in this area across the organization. Not a high priority given other ongoing organizational changes. Ongoing shift away from SAS-based datasets and file storage to cloud-based systems, with increasing use of Parquet.\n\n\n3.1.13 Action Items\n\nSCE whitepaper - mark bynum from J&J\nIs there actual value / gain in databases?\nNot the best investment relative to other non-data changes going on across organization (e.g. R, containers, etc)",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Can we do data better?</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Can we do data better?</span>"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html",
+    "href": "modern-sce.html",
+    "title": "4  Modern SCEs",
+    "section": "",
+    "text": "5 Question\nWhat are our goals for a modern clinical reporting workflow, on a modern SCE? What are our learnings today achieving that goal, and how can we better prepare ourselves to balance the drive to innovate while having to evolve people and processes?",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html#is-the-next-step-homegrown-or-vendor",
+    "href": "modern-sce.html#is-the-next-step-homegrown-or-vendor",
+    "title": "4  Modern SCEs",
+    "section": "6.1 Is the next step Homegrown or vendor",
+    "text": "6.1 Is the next step Homegrown or vendor\n\nSplit in vendor approaches vs homegrown for the new generation. We don’t know what the ideal is today, but we know we need to be able to evolve and adapt to new technologies and approaches much more than we did in the past.\nHomegrown usually means modular, as still relient on different open soruce and vendor solutions (e.g. AWS, Hashicorp, etc). Is a more accurate description turnkey vs modular?\nHow to ensure our modular platform scales is an important new aspect, especially using new open source tools.\nIn a turnkey, the vendor will have baked in provenance. In a modular we must focus on making sure metadata/provenance runs as a background across the system to ensure we can trace back from an insights and transformations to the source data.\nA major pain point is how things are funded - we are not used to funding a platform for sustained evolution/innovation, but in the data science space things are constantly evolving - so moving to operations/maintenance is equilivant to decay.\n\n\n6.1.1 Relationship with informatics partners\n\nThere is often tension between informatics and the business, with the growth of business written code that looks more like software (e.g. R packages) vs the the scripts/macros we use to make. We shared experiences finding a balance as we entered this new phase.\nIt was refreshing to see we have cases where informatics and the business are aligned on one goal, and we need to be more proactive trying to create these relationships (including inviting informatics to our pan-industry discussions. J&J + Roche had informatics representation at this meeting, but otherwise the dialogue was from the business perspective).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html#what-is-an-sce",
+    "href": "modern-sce.html#what-is-an-sce",
+    "title": "4  Modern SCEs",
+    "section": "6.2 What is an SCE?",
+    "text": "6.2 What is an SCE?\n\nShould GxP and exploratory remain seperate platforms?\n\nSplit across companies in the group, with some companies having a single platform for both, and others having seperate platforms.\nWith initiatives like the digital protocol coming, we don’t know what the impact will be on routine clinical reporting, and what impacts this will have on the types of people and tasks needed to execute a CSR.\nPain points merging:\n\nValidation (CSV) is a long and high cost process in most companies, which can impact ability to support exploratory work.\nNeeds are different. E.g. clinical reporting is low compute, while design and biomarker work is often heavy in memory and data.\n\n\nIs data part of the SCE? Traditionally yes, but some but not all companies are de-coupling data from compute.\nWhether it’s in the SCE or not, tracebility is extra important in our domain of regulatory reporting.\nIt appeared across all companies access to an SCE is through a web-browser (not a local application)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html#building-trust-in-businessopen-source-code",
+    "href": "modern-sce.html#building-trust-in-businessopen-source-code",
+    "title": "4  Modern SCEs",
+    "section": "6.3 Building trust in business/open source code",
+    "text": "6.3 Building trust in business/open source code\n\nThe Cathedral and the Bazaar by Eric Rayman was a recomended essay to read, that talks about ‘Cathedral’ products where the code is developed in a closed environment then released, vs ‘Bazaar’ products where the code is developed in the open. An arguement is the Bazaar model, as long as it is a project with enough eyeballs, will lead to shallow bugs; this is also known as Linus’ Law.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html#change-management-into-a-modern-sce",
+    "href": "modern-sce.html#change-management-into-a-modern-sce",
+    "title": "4  Modern SCEs",
+    "section": "6.4 Change-management into a modern SCE",
+    "text": "6.4 Change-management into a modern SCE\n\nWhat are we actually building? A general data science platform? A platform optimised for clinical reporting?\n\nThese are not the same platform, and which you pick has an impact. e.g. should statistical programmers learn git, or should we give a simple GUI for pushing code through QC and to Prod?\nThere is not a consensus about this for next-gen, with only a handful of companies expecting statistical programmers to work in the same way as general data scientists.\n\nHistorically we depended on SAS, it’s data formats, and filesystems. How to build a modern SCE that doesn’t?\n\nDo we enable legacy workflows to work in the new SCE?; Only new ways; or how do we find a balance to ensure business continuity while enabling innovation?\nThe human and process change management piece is massive, and SCE POs must work in tandem with statistical programming leadership.\nAgreement the biggest pain point is the dependency on file-based network share drives for data and insight outputs. One company mentioned they have millions of directories in their legacy SCE.\n\nMost companies have carried over having the outputs server be a network share drive, but would a more ‘publishing’ type model be more robust?",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "modern-sce.html#general-notes",
+    "href": "modern-sce.html#general-notes",
+    "title": "4  Modern SCEs",
+    "section": "6.5 General notes",
+    "text": "6.5 General notes\n\nWe manage on user access. A question is whether we should control access based on user access and the intended use. In terms of both where they are working and what the context of the work is.\nWe need to rightsize our ambitions, as going to broad will slow us down.\nHow will moving to this latest generation be a positive impact on our financials? Interesting point made about putting ourselves in the shoes of someone like a CMO - if you don’t care about how the CSR is generated, how is the new SCE making the company money and when will we get a fiscal ROI?\nInteractive analysis is growing - need to prepare for when people want to use something like shiny for GxP\nThe ideal people to work on the SCEs are unicorns - they need to be able to work with the business, understand the trial processes, and be able to work with the technology. We need to be able to train people to be unicorns, and we need to be able to retain them.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modern SCEs</span>"
+    ]
+  },
+  {
+    "objectID": "multi-modal.html",
+    "href": "multi-modal.html",
+    "title": "5  Multi-modal drug development",
+    "section": "",
+    "text": "Chair: Katie Igartua\n\n6 Question\nThere is more need than ever to integrate different roles, and ways of working, along with different data modalities. What are the barriers bringing imaging/genomics/digital biomarkers and the CRF closer, how could we overcome them, and what is our envisioned benefit?\n\n\n7 Topics discussed\n\nUse of real-world evidence data (RWE) for contextualizing clinical trial samples to support indication selection, patient settings and combination therapy strategies.\n\nChallenges for users arise when leveraging multiple sources (both public and licensed) given biases such as in abstraction rules or genomic assays.\nBest practices of real world evidence outcomes analyses (eg. rwPFS, rwOS).\n\nIntegration of Claims datasets and validation. Requirement for multiple lines of evidence for a given event would enrich the quality and usability of the data and bypass biases from the source of claims data.\nImaging validation frameworks. Challenges discussed include i) interpretability and adoption of deep networks models and utility relative to the gold standard (e.g. prediction vs. RESIST criteria), ii) transferability of models across different instrument platforms and iii) variability of pathologist vs. radiologist calls in the labels.\nUse of smart devices in clinical trials. Consensus was that this is more common in non-oncology areas (e.g. cardio). How can we mitigate risk of compliance in trials?\nContextualizing small patient cohorts with rich phenotype data and longitudinal data. Liquid assays for monitoring resistance mechanisms in oncology.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Multi-modal drug development</span>"
+    ]
+  },
+  {
+    "objectID": "os-depends.html",
+    "href": "os-depends.html",
+    "title": "6  Depending on OS",
+    "section": "",
+    "text": "Chairs: Mike Smith & Ed Lauzier\n\n7 Question\nHow much risk is there in depending on external packages, and can we foster a clearer set of expectations between developers and people/companies that depend on these packages?\n\n\n\n\n\n\nMissing notes\n\n\n\nContent is still coming, an email will be shared once the site is complete.\nIn the interim - the PHUSE Open Source guidance includes a chapter on depending on Open Source.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Depending on OS</span>"
+    ]
+  },
+  {
+    "objectID": "rproducts.html",
+    "href": "rproducts.html",
+    "title": "7  Sharing R code without sharing R code",
+    "section": "",
+    "text": "Chairs: Rohan Parmar and Min Lee\n\n7.0.1 Proposal\nYou created a small shiny application for your colleagues in a small team (2-5 people), that application is now getting extensive usage with more than 20, 30 or even 300 users. How do you go about scaling up your application? We want to hear from other users’ experience in creating long lived R based workflows. This can be anything from small snippets of code that started off as scripts that can be sequestered into R packages that are idiomatic to commonly used R interfaces to cater to a wider audience. Shiny apps that are doing computationally heavy tasks with multiple users that require you to think about scalability, fault tolerance, and complexity.\n\n\n7.0.2 Expected impact\nSharing how others have made their R code into something that is much more user friendly or easier to contribute to. Code that readily interfaces with prior frameworks like tidyverse or scales easily. Other R users can navigate the trade-offs around consistency and scalability. Make informed decisions when writing R code taking into account future necessities such as validation requirements or maintainability.\nProductionalizing R code · rinpharma rinpharma-summit-2024 · Discussion #16\nIn the discussion, it was noted this was a common problem where an app grows into something bigger organically, and Nitesh flagged some connection to the topic of wanting to share R functions without sharing the R code.\n\n\n\n\n\n\nWarning\n\n\n\nNotes not ready yet.\n\n\n\n\n8 Resources",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Sharing R code without sharing R code</span>"
+    ]
+  },
+  {
+    "objectID": "scemetrics.html",
+    "href": "scemetrics.html",
+    "title": "8  Sharing R code without sharing R code",
+    "section": "",
+    "text": "8.1 2024",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sharing R code without sharing R code</span>"
+    ]
+  },
+  {
+    "objectID": "scemetrics.html#section",
+    "href": "scemetrics.html#section",
+    "title": "8  Sharing R code without sharing R code",
+    "section": "",
+    "text": "8.1.1 Objectively track migrations/language use in studies?\n\nMost companies are using Github or Gitlab for study code - if we know where all the repos are, can we scan them via the API to track things like which studies are using R, Python or still on SAS?\nKey Questions:\n\nWhat code should be scanned? Look for files present? .sas, .R, .py, .sql, etc.? Is it more accurate than inbuilt language detection present in API endpoints?\nShould the focus be on studying all code written or only focus on study code (e.g. limit scope to org that holds studies)?\nIs there an API endpoint that can indicate which repository is being used?\n\n\n\n\n8.1.2 Can we understand what packages are being used in studies?\n\nIdea:\n\nThe Posit Package Manager API doesn’t reliably say what validated R packages are used in each study, but as renv is used more, can we scan the renv.lock files to see what packages are being used?\n\nPurpose:\n\nThis helps validation teams, our teams working on R packages, as well as help flag if we need to identify who used a specific version of a specific package in a study.\nWhere packages are ‘pre-baked’ into containers to speed up ‘time to pulling data’, want to keep that as lean as possible using metrics like this.\n\n\n\n\n8.1.3 Understanding container use\n\nChallenges:\n\nHow do we understand uptake of managed images, and who is using old images?\nNeed for a strategy to manage container upgrades effectively.\nActively understand patterns of image use across your SCE\nLook at patterns that should be dealt with - e.g. large numbers of idle interactive containers clogging worker nodes\n\nIdea:\n\nPull k8’s logs to get list of all active containers by person over time\n\n\n\n\n8.1.4 Keeping Connect lean\n\nIdea:\n\nRoche had an example where &gt;500 broken items, and &gt;500 items not touched in more than a year were on the server\nUse Connect data (the postgres database as the API is very slow) to remove content\n\nPurpose:\n\nRemove potentially GBs of un-used data on the Connect server, and also enforce retention rules\n\n\n\n\n8.1.5 General notes\n\nShift continues to data being outside of the SCE\nSome companies moved to ‘iterate anywhere - final batch runs matter’ stance. Some still consider every activity requiring validation.\nDiscussion highlighted a split on whether internet access is blocked - in some companies there is no air gap, in ohers there is, particularly on ‘validated batch runs’\nsingularity compresses containers better\nbig celebrations that now we do not need to rebuild containers each time workbench is updated!!\nProvenance is an audit/validation requirement\nExplore the potential use of common tools to data engineering that are absent in clinical reporting (e.g. dbt, airflow, prefect)\n\n\n\n8.1.6 Action Items and Questions\n\nAction Item:\n\nWhite paper with Mark Bynens on the SCE.\nIn white paper, clarify what the SCE is and how to handle program environments and data integration more effectively.\n\n\n\n\n8.1.7 References\n\nJames’ posit::conf talk: epijim.uk/talk/giving-your-scientific-computing-environment-sce-a-voice\nAlanah Jonas from GSK may have a relevant talk later in the year at PHUSE EU 2024",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sharing R code without sharing R code</span>"
+    ]
+  },
+  {
+    "objectID": "shiny-csr.html",
+    "href": "shiny-csr.html",
+    "title": "9  Interactive CSR",
+    "section": "",
+    "text": "Chairs: Ning Leng and Phil Bowsher\n\n10 Question\nIf we assume it’s technically possible to transfer - what would it mean to give an interactive CSR? How would primary, secondary and ad-hoc analysis be viewed? Would views change depending on role (e.g. sponsor, statistical reviewer, clinical reviewer)?\n\n\n11 Why?\nThe current process of CSR generation and review involves generating large amounts of tables and plots. In such scenarios, we believe an interactive application would provide a more efficient method to explore both primary and secondary analysis results.\n\n\n12 Barriers\n\nInternally\n\nMost companies have a highly process driven to medical writing, where any change is difficult to implement\n\nExternal / FDA\n\nConcern of encouraging data fishing, if controls on for instance subgroup analysis are not in place?\nNeed cross industry harmonization as HA is highly unlikely to accept each pharma company submitting an interactive CSR based on a different framework\n\n\n\n\n13 Requirements\n\nCan an interactive CSR by default be limited to only analyses defined in the SAP, should/can exploring a wider scope be allowed with clear and explicit intent by the app user?\n\nHow is the ROI of interactivity in a CSR impacted if it’s limited to produce only pre-specified anlayses? Would different reviewers have different access? (e.g. statisticla vs clinical)\n\nThere is a gap in patient profile modules and patient narratives in shiny apps\n\n\n\n14 Path to the CSR\nThere are many places where this tooling can be applied before the CSR:\n\nMonitoring\nDecision making - data in clinical science hands\nEfficiency boost (e.g. at unblinding app is on hand)\nCSR\n\nCan we define the tangible benefits? What is the ROI over different use cases? Could this allow health authorities to make less requests? How does this lead to faster reviews in tangible terms?\nHow would access control and security work? How would this be audited? Would this be validated? How would results be archived?\nCan commenting be possible (as you can markup a PDF/work doc)?\nExisting frameworks exist - e.g. teal from NEST. ARDs may mean additional results can be pre-generated in a controlled way - but ARDs can’t further process data.\n\n\n15 Resources\nEric Nantz, from the R Submissions working group, which have been working with the FDA on a shiny submisson as part of pilot 2:",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Interactive CSR</span>"
+    ]
+  },
+  {
+    "objectID": "smallmidpharma.html",
+    "href": "smallmidpharma.html",
+    "title": "10  Small/mid pharma & OS",
+    "section": "",
+    "text": "Chair: Katie Igartua and Kas Yousefi\n\n10.0.1 Proposal\nA pressing topic I think we should discuss is how best to engage and enable small/mid-sized pharma to use open source Ecosystems.\nIt can be sometimes overwhelming and would be helpful to have an idea where to start to join the open source journey and utilize the resources and approaches already available.\nSome questions:\n\nHow to go about setting up an open source Environment? What are the hurdles? How can the crowd-sourced groups help?\nCould small pharma use R for IB/DSUR? Does this need to be in a validated environment?\nHow do other small pharma companies uses open-source environments? and what would be areas for collaboration?\n\n\n\n10.0.2 Expected impact\nI believe this topic would be a benefit because small pharma often needs to be innovative, but due to resource limits may rely on traditional approaches and heavily rely on CROs. Having stronger small pharma presence could help in new resources and approaches for open-sourced solutions\n\n\n10.0.3 Prior discussions/work\nSome prior work includes……\n\nBBSW Panel Discussion for Open Source Tools in Small/mid sized pharma\nHow best to engage and enable small/mid-size pharma to use open source tools · rinpharma rinpharma-summit-2024 · Discussion #17\n\n\n\n11 Round table\n\nOpen sourcing adoption/contribution barrier\n\nrisk taking when you only have one product\ncost: small companies often fully outsource regulatory work to CROs, hard to justify additional investment on infra or open source work for non regulatory tasks\nIT resource: posit installation for small pharma - small company may not have the right in house IT talent to even get posit running\nAre you ready to be a shiny dev ops person & R admin?\n\nWhat are use cases to use open source? mainly in non validated env\n\ndata review, monitoring, visualization, patient profile, DSUR\nIDCC uses shiny for IDMC close sessions (instead of long pdf)\n\nAsks to the community\n\ncan large pharma open source their infra config? such as AMS yaml file?\n\nfrom the perspective at the intersection of IT, DS, stat\n\nwhat about a “single” opinionated workflow (pharmaverse is seen more as a comprehensive tool box)\n\nfrom an independent body such as r consortium?\nor can individual big pharma publish the whole workflow\n\n\nGxP set up: timing tradeoff - is it good to set up early or late? setting up early can put on restrictions that is hard to change later. balance of flexibility, best practice and cost",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Small/mid pharma & OS</span>"
+    ]
+  },
+  {
+    "objectID": "validate-package.html",
+    "href": "validate-package.html",
+    "title": "11  Validate R packages",
+    "section": "",
+    "text": "11.1 2024\nChairs: Doug Kelkhof and Margaret Wishart",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Validate R packages</span>"
+    ]
+  },
+  {
+    "objectID": "validate-package.html#section",
+    "href": "validate-package.html#section",
+    "title": "11  Validate R packages",
+    "section": "",
+    "text": "11.1.1 Package Lifecycle Management and Validation\nLifecycle Changes and Impact: Managing the lifecycle of R packages is crucial, particularly understanding what it means for a package to change its behavior. It’s important to assess whether such changes are significant and if they impact the stability or reliability of the package. The use of tools like Diffify can help track lifecycle changes and validate whether new versions introduce breaking changes or fix bugs.\nContainerization and Stability: Containers, such as those created using Nix, are increasingly seen as a way forward for maintaining stable software environments. They help bundle specific package versions, ensuring that a validated environment can be reliably reproduced. However, there are challenges, such as what exactly gets bundled in a container and the legal implications (e.g., GPL license concerns). Posit snapshots are favored by some for controlled environments, as they significantly reduce maintenance, though migrating snapshots can introduce challenges.\nSnapshot Management: Deciding when to lock down a snapshot is crucial. Should it be at the beginning of a project, or after some initial work? Snapshots offer a stable point of reference, but as packages evolve, there’s a risk of missing out on important updates or bug fixes. The question of whether to use an old snapshot or stay on the cutting edge is a balancing act between stability and leveraging new features or fixes.\nTemporal Metrics: With rapidly changing packages, it’s important to look at temporal metrics to assess risks associated with quick changes. For instance, the validation of packages like Arrow needs to consider how a bug fix might impact its validation status and whether a high rate of change poses additional risks.\n\n\n11.1.2 Risk Management and Validation Practices\nRisk Retrospective: There’s a need for a systematic approach to retrospectively evaluate risks. For example, running old tests on new package versions can reveal breaking changes or confirm that past bugs have been addressed. This process ensures that packages remain reliable over time, even as they evolve.\nAutomation vs Human Involvement: While automation is key to maintaining consistency, especially in long-term projects, human oversight is crucial for high-risk packages. These packages often require additional validation steps, and there’s debate over how much human intervention is necessary. High-risk packages might involve more in-the-loop validation, while low-risk ones could rely more on automated processes.\n\n\n11.1.3 Internal vs External Package Validation\nDifferentiated Validation Criteria: Internal packages often have different validation criteria compared to those on CRAN. Internal developers might not be as familiar with traditional checks like R CMD checks, leading to a need for more tailored validation processes. It’s also noted that internal validation is more stringent, often requiring additional tests that aren’t open-sourced, which raises questions about whether these should be contributed to public repositories.\nBaseline and Organizational Validation: Organizations often maintain a baseline of validated packages and differentiate between internal and third-party vendor packages. Some organizations have recreated their own risk metrics tools, tailoring them to their specific needs. The audit process involves defining testing processes and being aware of the risks associated with package updates or changes.\n\n\n11.1.4 Unit Testing and Quality Assurance\nEffective Testing Beyond Coverage: Simply hitting a coverage threshold is not enough; the quality of tests is crucial. For instance, high test coverage doesn’t guarantee that the tests are meaningful or effective. There’s a need to ensure that tests validate the core functionality of packages, particularly in statistical packages that might be treated differently due to their implications in analysis.\nCustom and Public Contributions: Organizations often write additional tests on top of package tests to further validate functionality. However, these tests are usually kept internal, which leads to a discussion on the potential benefits of contributing these tests to public repositories. Barriers to this include the time-intensive nature of creating these tests and a lack of familiarity with the contribution process.\nRegulatory and Industry Standards: In regulated industries, such as pharmaceuticals, there are higher requirements for package submissions, including unit tests and documentation. Collaboration with regulatory bodies like the FDA and EMA is essential to establish minimum validation requirements. Pharmaverse, for example, has adopted a notion that all packages must have standardized documentation and testing, accepted by the community.\n\n\n11.1.5 Package Management and Environment Control\nPackage Manager and Snapshot Control: Managing package snapshots is typically the responsibility of IT, with packages being added as needed. Renv is commonly used but can sometimes fail catastrophically, leading to a preference for Posit snapshots in controlled environments. This method cuts down maintenance significantly, though issues arise when migrating snapshots, as users may have to deal with multiple package version updates simultaneously.\nContainerization Challenges: While Docker containers are technically preferred for creating stable environments, there are trade-offs, such as handling individual environments and licensing concerns. Containers might be seen as derivative works under GPL, which complicates their use in proprietary settings. Nix offers a different approach by locking down R and package versions with a declarative installation method, though challenges remain with mirrors and installation reliability. Snapshot Migration and Version Locking: The decision of when to lock down a snapshot—whether at the beginning of a project or after some work has been done—is critical. Locking down too early might prevent access to necessary updates, while delaying it could introduce instability. Some organizations favor letting certain users work on the bleeding edge to vet new package versions, while others prioritize stability by locking down environments early on.\n\n\n11.1.6 Action Items and Future Directions\nValidation Guidelines and Metrics: There’s a need to establish standard validation guidelines that include metrics to help determine risk levels. This could start with Pharmaverse and eventually be expanded to other areas in pharma and beyond.\nCollaboration with Regulatory Bodies: Working with entities like the FDA and EMA to develop minimum validation requirements and documentation standards for R packages is essential. This collaboration would help ensure that the industry adopts consistent and reliable validation practices.\nText-Based Metric Files: Creating text-based files for major defined metrics would facilitate the tracking and management of package validation. This would help in setting clear criteria for evaluating package risk and determining when additional scrutiny is needed.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Validate R packages</span>"
+    ]
+  },
+  {
+    "objectID": "validate-shiny.html",
+    "href": "validate-shiny.html",
+    "title": "12  Validate shiny?",
+    "section": "",
+    "text": "12.1 2024\nChairs: Devin Pastoor and Ellis Hughes",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Validate shiny?</span>"
+    ]
+  },
+  {
+    "objectID": "validate-shiny.html#section",
+    "href": "validate-shiny.html#section",
+    "title": "12  Validate shiny?",
+    "section": "",
+    "text": "Warning\n\n\n\nNotes not ready yet.",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Validate shiny?</span>"
+    ]
+  },
+  {
+    "objectID": "validate-shiny.html#section-1",
+    "href": "validate-shiny.html#section-1",
+    "title": "12  Validate shiny?",
+    "section": "12.2 2023",
+    "text": "12.2 2023\nChairs: James Black and Harvey Lieberman\n\n12.2.1 Question\nWe have a path to R package validation - but what about shiny apps? In what context would validation become relevant to shiny app code, and how can we get ahead of this topic to pave a way forward for interactive CSRs?\n\n\n12.2.2 Topics discussed\n\n12.2.2.1 Do we need to validate?\n\nTiered approach / decision tree\n\nLowest is made by study team for study team. 2nd level is risk is unsupervised use, or specific contexts - e.g. making an app for dosing or safety. 3rd would be shiny CSR.\nIs the results going directly from the app into a submission?\nDon’t validate a shiny app - validate the static functions in the R packages. CSV may not be relevant for UIs (vs static R packages)\n\n\n\n\n12.2.2.2 What are we Testing and Why?\nThere is a clear difference of opinion throughout the industry, often led by quality groups. Some companies validate shiny apps as if they were distinct pieces of software, using their internal software validation procedures. These processes are often outdated and unsuitable, requiring timestamped user-testing and screen captures.\nOther companies solely consider packages, not even validating shiny apps, but validating just the logic. The group discussed a preferred way of working – separating the logic and the UI.\nThis brings up the question – do we really need to validate shiny apps? Can we just validate the logic?\n\n\n12.2.2.3 Who Does the Testing?\nAgain, there is some difference between companies in who does the testing. Generally, the developer writes the tests but tests are performed either by the business or by the quality group.\n\n\n12.2.2.4 Use of Automation\nQuestion posed to people present around the table: Does your company’s validation system allow for automation? Answers from the table: 8 companies = yes, 2 companies = no. Another 4 companies = no (offered by consultant who works with Pharma companies). Clearly a range of capabilities across the industry.\nFrom an automation perspective, the Pharma industry is very far behind the technology industry. Technology codebases tend to be far more complex but they are also automated. Can we learn from their platforms and apply their processes to validating shiny apps? Tools such as {shinytest2} are daunting to use. Can they be made more user friendly? There have been some steps to help automate these tasks – eg {shinyvalidator} but more work is needed in this area.\nIt’s very challenging to validate a reactive graph. Automated processes have the ability to detect changes in a single pixel – is this desirable or undesirable?\n\n\n12.2.2.5 Types of Testing\nThere is a clear difference across companies in opinions as to the amount of unit testing vs UAT and end-user testing. Unit tests are easy to write but are do not demonstrate how an app works. {shinytest2} can be used for end-user testing but, as mentioned above, may be daunting to use, may not be acceptable within a quality organization and may not fit in current work practices.\nUnit tests are generally written as code is written. They are fast to write and fast to execute. End-to-end tests, however, are written once code is complete and tend to be slow to execute.\n\n\n12.2.2.6 Robust UIs?\n\nGood to have unit tests - often manual testing. Automated can easily get messed up as the code evolves.\nWe should use the git flow - e.g. protect master and disable manual deployments\nShow or download R code is perfect for reproducibility → e.g. show code button\n\nBut then need to actually run that in a prod batch run\nthis use can case skip validation as code is run as study code\n\nSome cases where you don’t want to export and run code → e.g. output used directly for decision making are coming\nHow to handle risk of UI problems if our focus is on the static code - e.g. misnamed reactive values so wrong values being shown, even if static R packages giving correct results.\nRisk based is really important - e.g. for something like dark mode breaking, we need to know what requirements are high risk (e.g. table is correct) vs low risk (e.g. dark mode button)\n\n\n\n12.2.2.7 Ideas to improve the process\n\nValidation tests as text files (ATDD/BDD from software engineering).\n\nFrame in Gherkin format plus package of fixtures\nContribute test code to public packages\nWhen companies write extra tests, make a PR to add them to the actual package test suite and get others in the community to review and comment\nExtend to more than tests – documentation, etc.\nWe need clarity around packages used in submissions.\nWould big Pharma be willing to list all packages that pass their internal risk-assessment and share? Also share why they pass/fail a risk-assessment?\nValidating shiny apps – can we share some cross-industry experience?\nQA vs validation. At what stage should I worry about validation?\n\nCan we talk to QA departments / QA senior leadership to get them to write up their thoughts / requirements? Ask “How can we make your job easier?”\n\n\nShould we include QA and more IT at next year’s summit?\n\n\n\n12.2.2.8 Actions\n\nCan we share some common high level guidance on stratifying risk in shiny shared across companies? (Pfizer has written this already internally).\nDiscuss if we should have an extension of R package whitepaper to cover shiny?\n\n\n\n\n\n\n\n\n\n\n\n\nEstablish a CSR working group (first talk to Shiny submissions working group to establish overlap?)",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Validate shiny?</span>"
     ]
   },
   {
     "objectID": "contributors.html",
     "href": "contributors.html",
-    "title": "10  Contributors",
+    "title": "13  Contributors",
     "section": "",
-    "text": "10.1 Round table advisory board\nOrdered alphabetically by company;",
+    "text": "13.1 Round table advisory board\nOrdered alphabetically by company;",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Contributors</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Contributors</span>"
     ]
   },
   {
     "objectID": "contributors.html#round-table-advisory-board",
     "href": "contributors.html#round-table-advisory-board",
-    "title": "10  Contributors",
+    "title": "13  Contributors",
     "section": "",
     "text": "Cassie Milmont; Amgen\nLee Min; Amgen\nMichael Blanks, R/Pharma executive; Beigene\nNing Leng, R/Pharma organizing committee; Genentech\nDoug Kehlkoff, R Validation Hub Lead; Genentech\nMichael Rimler; GSK\nAndy Nicholls; GSK\nVolha Tryputsen, R/Pharma organizing committee; J&J\nSumesh Kalappurakal; J&J\nMark Bynens; J&J\nHarvey Lieberman, R/Pharma executive; Novartis\nShannon Pileggi; The Prostate Cancer Clinical Trials Consortium (PCCTC)\nMike Smith; Pfizer\nMax Kuhn; Posit\nRich Ioannone; Posit\nPaulo Bargo, R/Pharma executive\nJames Black, R/Pharma executive; Roche",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Contributors</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Contributors</span>"
     ]
   },
   {
     "objectID": "contributors.html#organising-committee",
     "href": "contributors.html#organising-committee",
-    "title": "10  Contributors",
-    "section": "10.2 Organising committee",
-    "text": "10.2 Organising committee\n\nPhil Bowsher, R/Pharma executive; Posit\nJames Black, R/Pharma executive; Roche\nHarvey Lieberman, R/Pharma executive; Novartis",
+    "title": "13  Contributors",
+    "section": "13.2 Organising committee",
+    "text": "13.2 Organising committee\n\nPhil Bowsher, R/Pharma executive; Posit\nJames Black, R/Pharma executive; Roche\nHarvey Lieberman, R/Pharma executive; Novartis",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Contributors</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Contributors</span>"
     ]
   },
   {
     "objectID": "contributors.html#participants",
     "href": "contributors.html#participants",
-    "title": "10  Contributors",
-    "section": "10.3 Participants",
-    "text": "10.3 Participants\nOrdered alphabetically by company;\n\nRose (Abbot Labs)\nMike (Astellas)\nLimin (Atmos)\nDaniel (Astrazeneca)\nKevin (BI)\nMathias (BI)\nEric (Biogen)\nMary (BMS)\nNicole (Denali)\nMike Thomas (Flatiron Health)\nDaniel (Formycin)\nSatish Murphy (Johnson & Johnson)\nNick (Johnson & Johnson)\nJan (Moffat Cancer Centre)\nHarvey (Novartis)\nLi (Onc)\nJames Kim (Pfizer)\nMike (Pfizer)\nMichael Meyer (Posit)\nDoug (Roche)\nJeeva (Roche)\nJames Black (Roche)\nAndrew (Sanofi)\nAbigail (Tempest)\nSusheel (Vertex)\nDerek (WL Gore)",
+    "title": "13  Contributors",
+    "section": "13.3 Participants",
+    "text": "13.3 Participants\nOrdered alphabetically by company;\n\nRose (Abbot Labs)\nMike (Astellas)\nLimin (Atmos)\nDaniel (Astrazeneca)\nKevin (BI)\nMathias (BI)\nEric (Biogen)\nMary (BMS)\nNicole (Denali)\nMike Thomas (Flatiron Health)\nDaniel (Formycin)\nSatish Murphy (Johnson & Johnson)\nNick (Johnson & Johnson)\nJan (Moffat Cancer Centre)\nHarvey (Novartis)\nLi (Onc)\nJames Kim (Pfizer)\nMike (Pfizer)\nMichael Meyer (Posit)\nDoug (Roche)\nJeeva (Roche)\nJames Black (Roche)\nAndrew (Sanofi)\nAbigail (Tempest)\nSusheel (Vertex)\nDerek (WL Gore)",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Contributors</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Contributors</span>"
     ]
   }
 ]
